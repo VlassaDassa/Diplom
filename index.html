@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+        crossorigin="anonymous">
+    </script>
 
     <title>Управление образования</title>
+
 </head>
-<body>  
+<body>
+    <div class="overlay"></div>
+
+
     <header class="headerWrapper">
         <div class="header container">
 
@@ -27,43 +37,74 @@
         </div> <!-- ./contaner -->
     </header> <!-- ./headerWrapper -->
 
+
     <section class="menu">
-
-        <div class="container menuWrapper">
-            <a href="#" class="menu_item">
+        <ul class="container menuWrapper">
+            <li class="menu_item menu_item--mainPage">
                 Главная
-            </a>
+            </li>
 
-            <a href="#" class="menu_item">
-                Контакты
-            </a>
+            <li class="menu_item">
+                Управление
+            </li>
 
-            <a href="#" class="menu_item">
-                Вакансии
-            </a>
-
-            <a href="#" class="menu_item">
-                Документы
-            </a>
-
-            <a href="#" class="menu_item">
-                О нас
-            </a>
-
-            <a href="#" class="menu_item">
-                Мероприятия
-            </a>
-
-            <a href="#" class="menu_item">
+            <li class="menu_item">
                 Деятельность
-            </a>
+            </li>
 
-            <div class="menu_item">
-                Ещё
-            </div>
-            
-        </div> <!-- ./container menuWrapper -->
+            <li class="menu_item">
+                Документы
+            </li>
+
+            <li class="menu_item">
+                Подведомственные организации
+            </li>
+
+            <li class="menu_item">
+                Приёмная
+            </li>
+
+            <li class="menu_item">
+                Контакты
+            </li>
+        </ul> <!-- ./container menuWrapper -->
     </section> <!-- ./menu -->
+
+
+    <section class="extendedMenu">
+        <div class="container extendedMenuWrapper">
+
+            <div class="extendedMenu-titleWrapper">
+                <h1 class="extendedMenu-title">Управление</h1>
+            </div>
+
+            <div class="extendedMenu-linkWrapper">
+                <ul class="extendedMenu-linkColumn" id="column1">
+                    <!-- <li class="extendedMenu-link">Противодействие коррупции</li>
+
+
+                    <li class="extendedMenu-link">
+                        <h1 class="linkName">Планы и отчёты</h1>
+                        <ul class="extendedLinks">
+                            <li class="extendedLinks-item">Начальник и заместители</li>
+                            <li class="extendedLinks-item">МКУ ЦМХО</li>
+                        </ul>
+                    </li>
+
+                    <li class="extendedMenu-link">Структура управления</li>
+                    <li class="extendedMenu-link">Положение об управлении</li> -->
+                </ul>
+
+                <ul class="extendedMenu-linkColumn"  id="column2">
+                    <!-- <li class="extendedMenu-link">Противодействие коррупции</li>
+                    <li class="extendedMenu-link">Планы и отчёты</li>
+                    <li class="extendedMenu-link">Структура управления</li>
+                    <li class="extendedMenu-link">Положение об управлении</li> -->
+                </ul>
+            </div>
+
+        </div>
+    </section> <!-- ./extendedMenu -->
     
     
     <main class="mainPage">
@@ -75,7 +116,6 @@
 
                 <div class="pgnWrapper">
                     <div class="pgnItem pgnItemCurrent"></div>
-                    <div class="pgnItem"></div>
                     <div class="pgnItem"></div>
                 </div>
             </section> <!-- ./slider -->
@@ -241,7 +281,8 @@
 
 
     <footer class="footer">
-
     </footer>
+
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>
