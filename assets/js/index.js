@@ -265,7 +265,7 @@ $(document).ready(() => {
         },
 
         {
-            'name': 'Приемная',
+            'name': 'Приёмная',
             'fields': [
                 {
                     'name': 'Личный прием',
@@ -319,7 +319,9 @@ $(document).ready(() => {
                 const extendedLinks = $('<ul>', {'class': 'extendedLinks'});
 
                 item.fields.forEach(function (field) {
-                    const extendedLinksItem = $('<li>', {'class': 'extendedLinks-item'}).text(field.name);
+                    const extendedLinksItem = $('<li>', {'class': 'extendedLinks-item'})
+                    const extendedLinksItemLink = $('<a>', {'href': field.link}).text(field.name);
+                    extendedLinksItem.append(extendedLinksItemLink)
                     extendedLinks.append(extendedLinksItem);
                 });
 
@@ -331,7 +333,9 @@ $(document).ready(() => {
                     column2.append(linkItem);
                 }
             } else {
-                const listItem = $('<li>', {'class': 'extendedMenu-link'}).text(item.name);
+                const listItem = $('<li>', {'class': 'extendedMenu-link'})
+                const listItemLink = $('<a>', {'href': item.link}).text(item.name);
+                listItem.append(listItemLink)
 
                 if (index % 2 === 0) {
                     column1.append(listItem);
@@ -396,7 +400,7 @@ $(document).ready(() => {
 
 
     // Открытие/закрытие вложенного списка
-    $('.extendedMenu-linkWrapper').on('click', '.extendedMenu-link', function() {
+    $('.extendedMenu-linkWrapper').on('click', '.extendedMenu-link:not(.extendedLinks-item)', function(event) {
         if (!$(this).find('.linkName').length > 0) { return }
     
         if ($(this).hasClass('extendedMenu-link--selected')) {
@@ -408,5 +412,11 @@ $(document).ready(() => {
             $(this).find('.linkName').addClass('linkName--selected')
             $(this).find('.extendedLinks').addClass('extendedLinks--selected')
         }
+    });
+
+
+
+    $('.extendedMenu-linkWrapper').on('click', '.extendedLinks-item', function(event) {
+        event.stopPropagation();
     });
 })
