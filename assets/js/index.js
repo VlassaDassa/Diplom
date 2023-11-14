@@ -352,8 +352,8 @@ $(document).ready(() => {
     function closeExtendedMenu() {
         $('.extendedMenu').removeClass('extendedMenu--show')
         $('.menu_item').removeClass('menu_item--selected')
+        $('.overlay').removeClass('overlay--show')
     }
-
 
 
     // Открытие расширенного меню и заполнение его
@@ -388,7 +388,6 @@ $(document).ready(() => {
     })
 
 
-
     // Закрытие расширенного меню
     $('.overlay, .menu_item--mainPage').on('click', function() {
         var isOpen = $('.extendedMenu').hasClass('extendedMenu--show')
@@ -402,6 +401,7 @@ $(document).ready(() => {
         }
 
         $('.overlay').removeClass('overlay--show')
+        $('body').css('overflow', 'auto');
     })
 
 
@@ -426,9 +426,114 @@ $(document).ready(() => {
         event.stopPropagation();
     });
 
+
     // Открытие мобильного меню
     $('#menu').on('click', function() {
         $('.mobileMenu').addClass('mobileMenu--show')
         $('.overlay').addClass('overlay--show')
+
+        $('body').css('overflow', 'hidden');
     })
+
+
+    // Закрытие мобильного меню
+    $('.mobileMenuClose').on('click', function() {
+        $('.mobileMenu').removeClass('mobileMenu--show')
+        $('.overlay').removeClass('overlay--show')
+        
+        $('body').css('overflow', 'auto');
+    })
+
+
+    // Заполнение мобильного меню
+    function fillMobileMenu(fields) {
+        var parent = $('.mobileMenuWrapper')
+        
+        $('.mobileLink').remove()
+
+        fields.forEach((field) => {
+            if (field.fields) {
+                parent.append(
+                    `
+                        <div class="mobileLink mobileLink--extended">
+                            <p class="mobileLink--text">${field['name']}</p>
+                            <img src="./assets/images/menuArrow.svg" class="mobileLink--img">
+                        </div>
+                    `
+                )
+            }
+
+            else {
+                parent.append(
+                    `
+                        <a href=${field['link']} class="mobileLink">${field['name']}</a>
+                    `
+                )
+            }
+        })
+
+       
+    }
+
+
+    // Начальное заполнение мобильного меню
+    function startFillMobileMenu() {
+        var parent = $('.mobileMenuWrapper')
+        $('.mobileLink').remove()
+
+        // Объявление уровня вложенности
+        $('.mobileMenu-title').data('lvl', '1')
+
+        navigations.forEach((item) => {
+            if (item['fields']) {
+                parent.append(
+                    `
+                        <div class="mobileLink mobileLink--extended">
+                            <p class="mobileLink--text">${item['name']}</p>
+                            <img src="./assets/images/menuArrow.svg" class="mobileLink--img">
+                        </div>
+                    `
+                )
+            }
+        })
+    }
+    startFillMobileMenu()
+
+
+    // Заполнение мобильного меню вторым уровнем
+    function secondLvlMobileMenu(name) {
+        if ($('.mobileMenu-title').data().lvl === '1') {
+            $('.mobileMenu-title').data('lvl', '2')
+
+            const item = navigations.find(item => item.name === name)
+            fillMobileMenu(item.fields)
+        }
+
+        else if ($('.mobileMenu-title').data('lvl') === '2') {
+            $('.mobileMenu-title').data('lvl', '3')
+             
+            const parentItem = navigations.find(item => item.name === $('.mobileMenu-title').text().trim())
+            const item = parentItem.fields.find(item => item.name === name)
+            fillMobileMenu(item.fields)
+        }
+
+         // Установка заголовка
+         $('.mobileMenu-titleText').text(name)
+         $('.mobileMenu-title').addClass('mobileMenu-title--show')
+    }
+
+
+    // Обработчик нажатия на элемент мобильного меню
+    $('.mobileMenuWrapper').on('click', '.mobileLink--extended', function() {
+        secondLvlMobileMenu($(this).find('.mobileLink--text').text())
+    })
+
+
+    // Обработчик кнопки "Назад" в мобильном меню
+    $('.mobileMenu-backBtn').on('click', function() {
+        startFillMobileMenu()
+        $('.mobileMenu-title').removeClass('mobileMenu-title--show')
+    }) 
+    
+    
 })
