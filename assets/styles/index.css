@@ -19,7 +19,6 @@ html {
     height: 100%;
 
     background: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(3px);
 
     cursor: pointer;
 
@@ -67,6 +66,13 @@ html {
 }
 
 
+@media (max-width: 1024px) {
+    .overlay--show {
+        z-index: 9;
+    }
+}
+
+
 /* Header */
 .header {
     display: flex;
@@ -109,10 +115,86 @@ html {
 }
 
 
+.mobileHeader {
+    background: #F6F6F6;
+    padding-top: 20px;
+
+    display: none;
+}
+
+
+.mobileHeaderWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.headerBtnsWrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+
+.headerBtn {
+    padding: 7px 20px;
+
+    background: #2F82FF;
+    font-weight: 500;
+    border-radius: 5px;
+    
+    color: white;
+    font-size: 16px;
+    
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.headerBtn:hover {
+    background: #4992ff;
+}
+
+
+.headerItem {
+    font-weight: 500;
+    font-size: 16px;
+
+    transition: all 0.1s ease-in-out;
+}
+
+
+.headerItem:hover {
+    color: #505050;
+}
+
+
 
 @media (max-width: 1450px) {
     .headerIconWrapper {
         display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .emblemWrapper {
+        display: none;
+    }
+
+    
+    .headerWrapper {
+        height: 200px;
+    }
+
+
+    .headerText {
+        font-size: 32px;
+    }
+
+
+    .mobileHeader {
+        display: block;
     }
 }
 /* ./Header */
@@ -173,13 +255,89 @@ html {
 }
 
 
+.line {
+    display: none;
+}
+
+
 @media (max-width: 1450px) {
     .menu_item {
         font-size: 16px;
     }
 }
 
+
+@media (max-width: 1024px) {
+    .menu {
+        display: none;
+
+        height: 10px;
+
+        border-radius: 5px;
+    }
+
+    .line {
+        display: block;
+    }
+}
+
 /* ./Menu */
+
+
+/* Mobile menu */
+.mobileMenu {
+    position: fixed;
+
+    background: white;
+    box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.25);
+
+    height: 100%;
+    width: 350px;
+
+    padding: 100px 25px;
+
+    z-index: 9;
+
+    left: -400px;
+
+    display: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.mobileMenu--show {
+    left: 0;
+}
+
+
+.mobileMenuClose {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    height: 25px;
+    width: 25px;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.mobileMenuClose:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 1024px) {
+    .mobileMenu {
+        display: block;
+    }
+}
+
+/* ./Mobile menu */
+
 
 
 /* Extended menu */

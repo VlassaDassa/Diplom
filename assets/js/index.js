@@ -351,7 +351,6 @@ $(document).ready(() => {
     // Закрытие расширенного меню
     function closeExtendedMenu() {
         $('.extendedMenu').removeClass('extendedMenu--show')
-        $('.overlay').removeClass('overlay--show')
         $('.menu_item').removeClass('menu_item--selected')
     }
 
@@ -396,6 +395,13 @@ $(document).ready(() => {
         if (isOpen) {
             closeExtendedMenu()
         }
+
+        var mobileMenuIsOpen = $('.mobileMenu').hasClass('mobileMenu--show')
+        if (mobileMenuIsOpen) {
+            $('.mobileMenu').removeClass('mobileMenu--show')
+        }
+
+        $('.overlay').removeClass('overlay--show')
     })
 
 
@@ -415,8 +421,14 @@ $(document).ready(() => {
     });
 
 
-
+    // Перехват
     $('.extendedMenu-linkWrapper').on('click', '.extendedLinks-item', function(event) {
         event.stopPropagation();
     });
+
+    // Открытие мобильного меню
+    $('#menu').on('click', function() {
+        $('.mobileMenu').addClass('mobileMenu--show')
+        $('.overlay').addClass('overlay--show')
+    })
 })
