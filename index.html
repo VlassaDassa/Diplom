@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0">
+    
 
     <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/toUp.css">
+
     <link rel="stylesheet" href="./assets/styles/index.css">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
 
-    <script
-        src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
-        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
-        crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script src='https://pos.gosuslugi.ru/bin/script.min.js'></script>
     <link rel="stylesheet" href="./assets/styles/gosuslugi.css">
@@ -37,7 +38,7 @@
               </div>  
 
         </div>
-    </div>
+    </div> <!-- ./mobileMenu -->
  
     <section class="mobileHeader">
         <div class="container">
@@ -131,7 +132,7 @@
         <div class="container">
             <section class="slider">
                 <div class="imgWrapper">
-                    <div id="js-show-iframe-wrapper">
+                    <div class="slide" id="js-show-iframe-wrapper">
                         <div class="pos-banner-fluid bf-22">
                       
                           <div class="bf-22__decor">
@@ -140,6 +141,8 @@
                               <div class="bf-22__slogan">Решаем вместе</div>
                             </div>
                           </div>
+
+                          
                           <div class="bf-22__content">
                             <div class="bf-22__text">
                               Есть предложения по организации учебного процесса или знаете, как сделать школу лучше?
@@ -147,7 +150,6 @@
                       
                             <div class="bf-22__bottom-wrap">
                               <div class="bf-22__btn-wrap">
-                                <!-- pos-banner-btn_2 не удалять; другие классы не добавлять -->
                                 <button class="pos-banner-btn_2" type="button">Написать о проблеме
                                 </button>
                               </div>
@@ -156,6 +158,8 @@
                       
                         </div>
                     </div>
+
+                    <img src="./assets/images/slider1.jpg" class="sliderPhoto slide">
                 </div>
 
                 <div class="pgnWrapper">
@@ -163,6 +167,41 @@
                     <div class="pgnItem"></div>
                 </div>
             </section> <!-- ./slider -->
+        </div> <!-- ./container -->
+
+        <div class="container">
+            <section class="gosuslugiInfo">
+
+                <img src="./assets/images/slider1.jpg" class="gosulugiPhoto gosulugiPhoto--desktop">
+                <img src="./assets/images/godPedagoga.jpg" class="gosulugiPhoto gosulugiPhoto--mobile">
+
+                <div id="js-show-iframe-wrapper">
+                    <div class="pos-banner-fluid bf-22">
+                  
+                      <div class="bf-22__decor">
+                        <div class="bf-22__logo-wrap">
+                          <img class="bf-22__logo" src="https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo-blue.svg" alt="Госуслуги">
+                          <div class="bf-22__slogan">Решаем вместе</div>
+                        </div>
+                      </div>
+
+                      
+                      <div class="bf-22__content">
+                        <div class="bf-22__text">
+                          Есть предложения по организации учебного процесса или знаете, как сделать школу лучше?
+                        </div>
+                  
+                        <div class="bf-22__bottom-wrap">
+                          <div class="bf-22__btn-wrap">
+                            <button class="pos-banner-btn_2" type="button">Написать о проблеме
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                  
+                    </div>
+                </div>
+            </section> <!-- ./gosuslugiInfo -->
         </div> <!-- ./container -->
 
         <section class="aboutUs grayBg">
@@ -200,6 +239,28 @@
                     </p>
                 </div> <!-- ./aboutUsItem -->
 
+
+                <div class="aboutUs-mobileText">
+                    <p class="aboutUsItem-text">
+                        Мы приветствуем педагогов, работников дошкольного и дополнительного образования, 
+                        заведующих школьными библиотеками, руководителей образовательных учреждений, 
+                        учащихся и их родителей на сайте Управления образования 
+                        Администрации Конаковского района.
+                    </p>
+
+                    <p class="aboutUsItem-text">
+                        Мы убеждены: страница в Интернете сделает процесс обучения и воспитания более открытым и доступным, 
+                        поддержит общественное участие в жизни каждой школы, детского сада, спортивного клуба и творческого объединения детей и юношества, 
+                        активизирует использование информационных ресурсов глобальной сети для образования юных конаковцев, 
+                        выстроит новые связи работников просвещения и их воспитанников, 
+                        послужит становлению современного информационного общества.
+                    </p>
+
+                    <p class="aboutUsItem-text">
+                        Здесь вы сможете узнать новости в системе образования, изучить нормативные правовые акты, 
+                        прочесть аналитические статьи по вопросам образования.
+                    </p>
+                </div>
             </div> 
         </section>
 
@@ -218,6 +279,7 @@
 
                             <div class="contentWrapper">
                                 <h1 class="newsItem-title">Конкурс</h1>
+                                <p class="newsItem-date--mobile">18/10/2023</p>
                                 <p class="newsItem-text">
                                     13 октября на базе МБОУ СОШ № 1 поселка Редкино прошел межмуниципальный
                                     конкурс чтецов «Своих не бросаем» (в поддержку СВО).
@@ -237,6 +299,7 @@
 
                             <div class="contentWrapper">
                                 <h1 class="newsItem-title">Конкурс</h1>
+                                <p class="newsItem-date--mobile">18/10/2023</p>
                                 <p class="newsItem-text">
                                     В Конаковском районе проведен районный конкурс чтецов, посвященный 
                                     Году педагога и наставника, среди детей дошкольного возраста
@@ -256,6 +319,7 @@
 
                             <div class="contentWrapper">
                                 <h1 class="newsItem-title">Награждение</h1>
+                                <p class="newsItem-date--mobile">18/10/2023</p>
                                 <p class="newsItem-text">
                                     В Твери состоялось награждение финалистов 
                                     городского соревнования «Безопасное колесо – 2023».
@@ -375,7 +439,67 @@
 
                     <a href="#" class="navigationsColumn-item">Деятельность</a>
                 </div>
-            </div>
+            </div> <!-- ./Desktop footer -->
+
+            <div class="mobile_footer_wrapper">
+                <div class="mobile_footer_wrapper__item">
+                    <div class="mobile_footer_wrapper__title">Управление</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Положение об Управлении</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Планы и отчеты</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Структура Управления</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__item -->
+    
+                <div class="mobile_footer_wrapper__item">
+                    <div class="mobile_footer_wrapper__title">ДЕЯТЕЛЬНОСТЬ</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Муниципальные услуги</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Государственная итоговая аттестация</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Дополнительное образование</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Образование детей с особыми образовательными потребностями</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Воспитательная работа</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Профилактика асоциального поведения несовершеннолетних</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Безопасность</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Прием в образовательные организации</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Работа с кадрами</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Семейное образвоание и самообразование</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Организация питания детей</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Организация летнего отдыха и оздоровления детей</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Оценка качества образования</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__item -->
+    
+                <div class="mobile_footer_wrapper__item">
+                    <div class="mobile_footer_wrapper__title">ДОКУМЕНТЫ</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Федеральные документы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Муниципальные документы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Региональные документы</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__item -->
+
+
+                <div class="mobile_footer_wrapper__item">
+                    <div class="mobile_footer_wrapper__title">ПОДВЕДОМСТВЕННЫЕ ОРГАНИЗАЦИИ</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Школы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Учреждения дополнительного образования</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Детские сады</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__item -->
+
+                <div class="mobile_footer_wrapper__item">
+                    <div class="mobile_footer_wrapper__title">ПРИЁМНАЯ</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Личный прием</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Задать вопрос</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Часто задаваемые вопросы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Горячие линии</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__item -->
+               
+            </div> <!-- ./mobile_footer_wrapper -->
 
             <div class="contacts">
                 <a href=""><img src="./assets/images/vk.svg" class="socialNetWorkIcon"></a> 
@@ -385,8 +509,12 @@
 
     </footer>
 
+    <button class="scroll-to-top-btn" title="Наверх"></button>
+
+
     <script src="./assets/js/index.js"></script>
 
+    <script src="./assets/js/to_up.js"></script>
 
     <!-- Для госуслуг -->
     <script>

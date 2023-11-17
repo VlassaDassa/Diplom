@@ -381,7 +381,6 @@ $(document).ready(() => {
         if (isOpen) {return}
 
         else {
-            console.log('Меняем заполняемость')
             $('.extendedMenu').addClass('extendedMenu--show')
             $('.overlay').addClass('overlay--show')
         }
@@ -536,4 +535,81 @@ $(document).ready(() => {
     }) 
     
     
+   // Слайдер
+   const slides = $(".slide");
+    const pgnItems = $(".pgnItem");
+
+    let currentIndex = 0;
+    let intervalId;
+
+    function showSlide(index) {
+      slides.css("opacity", 0);
+      slides.eq(index).css("opacity", 1);
+
+      pgnItems.removeClass("pgnItemCurrent").eq(index).addClass("pgnItemCurrent");
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function startAutoSlide() {
+      intervalId = setInterval(nextSlide, 3000);
+    }
+
+    function stopAutoSlide() {
+      clearInterval(intervalId);
+    }
+
+    pgnItems.on("click", function() {
+      currentIndex = $(this).index();
+      showSlide(currentIndex);
+      stopAutoSlide();
+      
+      startAutoSlide();
+    });
+
+    showSlide(currentIndex);
+    startAutoSlide();
+
+
+    // Подвал
+    $(document).ready(function() {
+        $('.mobile_footer_wrapper__title').click(function(event) {
+            $(this).toggleClass('active').next().slideToggle(300);
+        })
+    })
+
+
+    // Добавление новостей
+    $('.showMore').on('click', function() {
+        const parent = $('.newsWrapper')
+
+        const item = `
+        <div class="newsItemWrapper">
+            <div class="newsItem">
+                <div class="newsImgWrapper">
+                    <img src="./assets/images/newsImage_3.jpg" class="newsImage">
+                </div>
+
+                <div class="contentWrapper">
+                    <h1 class="newsItem-title">Конкурс</h1>
+                    <p class="newsItem-date--mobile">18/10/2023</p>
+                    <p class="newsItem-text">
+                        13 октября на базе МБОУ СОШ № 1 поселка Редкино прошел межмуниципальный
+                        конкурс чтецов «Своих не бросаем» (в поддержку СВО).
+                    </p>
+                    <p class="newsItem-date">18/10/2023</p>
+                    <a href="#" class="newsItem-link"><img src="./assets/images/arrow.svg" class="newsItemLink-icon"></a>
+                </div>
+
+            </div>
+        </div>
+        `
+
+        $(item).hide().appendTo(parent).fadeIn();
+        $(item).hide().appendTo(parent).fadeIn();
+        $(item).hide().appendTo(parent).fadeIn();
+    })
 })
