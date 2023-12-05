@@ -1,4 +1,59 @@
 $(document).ready(() => {
+    
+    function setResolution(width) {
+        const devTools = window.__DEVTOOLS__;
+        if (devTools) {
+            devTools.inspectorFrontendAPI.emulateViewport({ width: width, height: 1080, deviceScaleFactor: 1 });
+        }
+    }
+    
+    // Пример использования, чтобы установить разрешение 1920px
+    setResolution(1920);
+
+
+    // Картинка в зависимости от темы
+    const themeChangePictuge = () => {
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme)
+
+        const imagePath = './assets/images/'
+        const theme = document.documentElement.getAttribute('data-theme')
+
+        const headerImage = theme === 'dark' ? 'headerIconDark.svg' : 'headerIcon.svg';
+        document.querySelector('.headerIconWrapper').querySelector('img').src = imagePath + headerImage;
+
+        const themeBtn = theme === 'dark' ? 'lightTheme.svg' : 'darkTheme.svg';
+        document.querySelector('.themeBtn').src = imagePath + themeBtn;
+    }
+    themeChangePictuge()
+
+
+    // Смена темы
+    document.querySelector('.themeBtn').addEventListener('click', switchTheme, false);
+    function switchTheme(e) {
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme)
+
+        if (currentTheme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        
+        else {
+                document.documentElement.setAttribute('data-theme', 'light');
+                localStorage.setItem('theme', 'light');
+        }
+
+        themeChangePictuge()
+    }
+
+
+
+
+
+
+
+
     // Данные для заполнения расширенного меню
     const navigations = [
         {
@@ -612,4 +667,7 @@ $(document).ready(() => {
         $(item).hide().appendTo(parent).fadeIn();
         $(item).hide().appendTo(parent).fadeIn();
     })
+
+
+    
 })

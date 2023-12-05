@@ -1,9 +1,22 @@
+@import url('./_variables.css');
+
+
+
+
+
 html {
-    font-family: 'Montserrat', sans-serif;
-    color: #2F2F2F;
+    font-family: var(--font-default);
+    color: var(--text-color);
+    letter-spacing: var(--letter-spacing-small);
 
     overflow-x: hidden;
 }
+
+
+.imgVis {
+    opacity: var(--show-image);
+}
+    
 
 ::-webkit-scrollbar {
     width: 0.5em;
@@ -16,6 +29,11 @@ html {
   
 ::-webkit-scrollbar-track {
     background-color: #f1f1f1; 
+}
+
+
+body {
+    background: var(--base-color);
 }
 
 
@@ -60,7 +78,7 @@ html {
 
 
 .grayBg {
-    background: #F6F6F6;
+    background: var(--secondary-color);
 
     padding: 50px 0;
 }
@@ -111,7 +129,7 @@ html {
 
 
 .headerWrapper {
-    background: #F6F6F6;
+    background: var(--secondary-color);
     height: 300px;
     width: 100%;
 
@@ -140,7 +158,7 @@ html {
 
 
 .mobileHeader {
-    background: #F6F6F6;
+    background: var(--secondary-color);
     padding-top: 20px;
 
     display: none;
@@ -164,11 +182,11 @@ html {
 .headerBtn {
     padding: 7px 20px;
 
-    background: #2F82FF;
+    background: var(--accent-color);
     font-weight: 500;
     border-radius: 5px;
     
-    color: white;
+    color: var(--light-text-color);
     font-size: 16px;
     
     cursor: pointer;
@@ -177,7 +195,7 @@ html {
 
 
 .headerBtn:hover {
-    background: #4992ff;
+    background: var(--hover-accent);
 }
 
 
@@ -193,6 +211,10 @@ html {
     color: #505050;
 }
 
+
+.emblemWrapper {
+    opacity: var(--opacity-gerb);
+}
 
 
 @media (max-width: 1450px) {
@@ -265,7 +287,7 @@ html {
 
 /* Menu */
 .menu {
-    background: #2F82FF;
+    background: var(--accent-color);
     height: 50px;
 
     box-shadow: 0px 4px 23px 2px rgba(0, 0, 0, 0.25);
@@ -300,12 +322,12 @@ html {
 
 
 .menu_item:hover { 
-    color: #93BEFF;
+    color: var(--hover-light);
 }
 
 
 .menu_item--selected {
-    background: #226AD6;
+    background: var(--selected-accent-color);
     border-radius: 5px;
 
     transition: all 0.3s ease-in-out;
@@ -313,7 +335,7 @@ html {
 
 .menu_item--selected:hover {
     color: white;
-    background: #2c74df;
+    background: var(--accent-color);
 }
 
 
@@ -357,7 +379,7 @@ html {
 .mobileMenu {
     position: fixed;
 
-    background: white;
+    background: var(--base-color);
     box-shadow: 3px 0px 10px 1px rgba(0, 0, 0, 0.25);
 
     height: 100%;
@@ -434,7 +456,7 @@ html {
 
 
 .mobileLink:hover {
-    color: #2F82FF;
+    color: var(--hover-accent);
 }
 
 .mobileLink--extended {
@@ -470,7 +492,7 @@ html {
     align-items: center;
 
     border-radius: 5px;
-    background: #2F82FF;
+    background: var(--accent-color);
 
     width: 60px;
     height: 24px;
@@ -483,7 +505,7 @@ html {
 
 
 .mobileMenu-backBtn:hover {
-    background: #3f8bfe;
+    background: var(--hover-accent);
 }
 
 
@@ -516,7 +538,7 @@ html {
 
 /* Extended menu */
 .extendedMenu {
-    background: white;
+    background: var(--base-color);
     border-radius: 0px 0px 50px 50px;
 
     width: 100%;
@@ -599,7 +621,7 @@ html {
 }
 
 .extendedMenu-link:hover {
-    color: #2F82FF;
+    color: var(--hover-accent);
 }
 
 .extendedMenu-link--selected {
@@ -616,7 +638,7 @@ html {
 
 
 .linkName--selected {
-    background: #5498FF;
+    background: var(--accent-color);
     color: white;
     border-radius: 5px;
     padding: 10px;
@@ -643,12 +665,12 @@ html {
 
 
 .extendedMenu-link--selected .extendedLinks-item{
-    color: initial;
+    color: var(--light-text-color);
 }
 
 
 .linkName--selected:hover {
-    background: #66a2fb;
+    background: var(--hover-accent);
 }
 
 
@@ -664,7 +686,7 @@ html {
 
 
 .extendedLinks-item:hover {
-    color: #2F82FF;
+    color: var(--accent-color);
 }
 
 .extendedLinks-item + .extendedLinks-item {
@@ -801,7 +823,7 @@ html {
     height: 7px;
     
     border-radius: 10px;
-    background: #77ADFF;
+    background: var(--hover-accent);
     cursor: pointer;
 
     transition: all 0.1s ease-in-out;
@@ -809,7 +831,7 @@ html {
 
 
 .pgnItemCurrent {
-    background: #2F82FF;
+    background: var(--accent-color);
 }
 
 @media (max-width: 1024px) {
@@ -846,7 +868,7 @@ html {
     padding: 20px 30px;
 
     border-radius: 15px;
-    border: 1px solid #2F2F2F;
+    border: 1px solid var(--text-color);
 
     width: 1000px;
 
@@ -1022,7 +1044,7 @@ html {
     font-size: 14px;
     font-weight: 600;
 
-    color: rgb(47, 47, 47, 0.72);
+    color: var(--pale-text);
 }
 
 
@@ -1037,7 +1059,7 @@ html {
 
 
 .newsItem-link {
-    background: #2F82FF;
+    background: var(--accent-color);
     border-radius: 10px;
 
     padding: 10px 15px;
@@ -1052,7 +1074,7 @@ html {
 
 
 .newsItem-link:hover {
-    background: #4d92fa;
+    background: var(--hover-accent);
 }
 
 
@@ -1063,7 +1085,7 @@ html {
 
 .showMore {
     border-radius: 10px;
-    background: #2F82FF;
+    background: var(--accent-color);
     color: white;
     font-weight: 500;
     display: block;
@@ -1079,7 +1101,7 @@ html {
 
 
 .showMore:hover {
-    background: #4d92fa;
+    background: var(--hover-accent);
 }
 
 
@@ -1089,7 +1111,7 @@ html {
     font-size: 14px;
     font-weight: 600;
 
-    color: rgb(47, 47, 47, 0.72);
+    color: var(--text-color);
 }
 
 
@@ -1213,7 +1235,7 @@ html {
 
 
 .phoneItem {
-    border-bottom: 1px solid rgb(47, 47, 47, 0.5);
+    border-bottom: 1px solid var(--border-bottom);
     padding-bottom: 20px;
 }
 
@@ -1356,7 +1378,7 @@ html {
     height: 100px;
     width: 100%;
     border-radius: 50px;
-    background: #F6F6F6;
+    background: var(--base-color);
 }
 
 
@@ -1533,3 +1555,32 @@ html {
 /* ./Footer */
 
 
+/* Theme */
+.themeBtn {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transform: rotate(0eg);
+    transition: all 2s ease-in-out;
+}
+
+.themeBtn:hover {
+    transform: rotate(360deg);
+}
+
+
+@media (max-width: 1024px) {
+    .themeBtn {
+        bottom: 25px;
+        right: 25px;
+        backdrop-filter: blur(5px);
+    }
+}
+/* ./Theme */
