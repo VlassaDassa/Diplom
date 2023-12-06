@@ -1,14 +1,72 @@
 $(document).ready(() => {
     
-    function setResolution(width) {
-        const devTools = window.__DEVTOOLS__;
-        if (devTools) {
-            devTools.inspectorFrontendAPI.emulateViewport({ width: width, height: 1080, deviceScaleFactor: 1 });
+    // Открыть версию для слабовидящих
+    $('.visionBtn').on('click', () => {
+       $('.settingVision').addClass('settingVision--show')
+       $('.overlay').addClass('overlay--showww')
+    })
+
+    // Закрыть версию для слабовидящих
+    $('.overlay').on('click', () => {
+        $('.settingVision').removeClass('settingVision--show')
+        $('.overlay').removeClass('overlay--showww')
+    })
+
+    $('.settingVisionCloseBtn').on('click', () => {
+        $('.settingVision').removeClass('settingVision--show')
+        $('.overlay').removeClass('overlay--showww')
+    })
+
+
+    // Версия для слабовидящих
+    const setSettingVis = (btn) => {
+        const attrData = $(btn).attr('data-setVis') 
+
+
+        if (attrData === "serif") {
+            document.documentElement.setAttribute('data-font-type', 'serif')
+            $('.font-type').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
         }
+
+        else if (attrData === "notSerif") {
+            document.documentElement.setAttribute('data-font-type', 'notSerif')
+            $('.font-type').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "spacingSmall") {
+            document.documentElement.setAttribute('data-letter-spacing', 'small')
+            $('.letter-space').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "spacingMedium") {
+            document.documentElement.setAttribute('data-letter-spacing', 'medium')
+            $('.letter-space').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "spacingBig") {
+            document.documentElement.setAttribute('data-letter-spacing', 'big')
+            $('.letter-space').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "imageHide") {
+            document.documentElement.setAttribute('data-hide-image', 'hide')
+            $('.imgHideShow').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "imageShow") {
+            document.documentElement.setAttribute('data-hide-image', 'show')
+            $('.imgHideShow').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+        
     }
-    
-    // Пример использования, чтобы установить разрешение 1920px
-    setResolution(1920);
+    $('.settingVision-btn').on('click', () => setSettingVis(event.target))
 
 
     // Картинка в зависимости от темы
@@ -24,6 +82,9 @@ $(document).ready(() => {
 
         const themeBtn = theme === 'dark' ? 'lightTheme.svg' : 'darkTheme.svg';
         document.querySelector('.themeBtn').src = imagePath + themeBtn;
+
+        const closeBtn = theme === 'dark' ? 'closeIcoDark.svg' : 'closeIco.svg';
+        document.querySelector('.settingVisionCloseBtn').src = imagePath + closeBtn;
     }
     themeChangePictuge()
 
@@ -32,8 +93,8 @@ $(document).ready(() => {
     document.querySelector('.themeBtn').addEventListener('click', switchTheme, false);
     function switchTheme(e) {
         const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
-        document.documentElement.setAttribute('data-theme', currentTheme)
 
+        document.documentElement.setAttribute('data-theme', currentTheme)
         if (currentTheme === 'light') {
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
@@ -46,11 +107,6 @@ $(document).ready(() => {
 
         themeChangePictuge()
     }
-
-
-
-
-
 
 
 

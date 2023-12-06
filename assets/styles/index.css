@@ -5,16 +5,16 @@
 
 
 html {
-    font-family: var(--font-default);
+    font-family: var(--font-type);
     color: var(--text-color);
-    letter-spacing: var(--letter-spacing-small);
+    letter-spacing: var(--letter-spacing);
 
     overflow-x: hidden;
 }
 
 
 .imgVis {
-    opacity: var(--show-image);
+    opacity: var(--hide-image);
 }
     
 
@@ -66,6 +66,11 @@ body {
 .overlay--show {
     opacity: 1;
     z-index: 1;
+}
+
+.overlay--showww {
+    opacity: 1;
+    z-index: 98;
 }
 
 
@@ -186,7 +191,7 @@ body {
     font-weight: 500;
     border-radius: 5px;
     
-    color: var(--light-text-color);
+    color: white;
     font-size: 16px;
     
     cursor: pointer;
@@ -1584,3 +1589,132 @@ body {
     }
 }
 /* ./Theme */
+
+
+
+/* Vision */
+.settingVision {
+    position: fixed;
+    z-index: 99;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 720px;
+
+    padding: 40px;
+
+    border-radius: 10px;
+    background-color: var(--base-color);
+    box-shadow: 0px 4px 23px 2px rgba(0, 0, 0, 0.25);
+
+    display: none;
+}
+
+
+.settingVision--show {
+    display: block;
+}
+
+
+
+.settingVisionCloseBtn {
+    position: absolute;
+
+    top: 40px;
+    right: 40px;
+
+    width: 30px;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.settingVisionCloseBtn:hover {
+    opacity: 0.5;
+}
+
+.settingVisionCloseBtn:active {
+    transform: scale(0.7);
+}
+
+
+.settingVision-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.settingVision-itemWrapper {
+    margin-top: 15px;
+
+    display: flex;
+    column-gap: 20px;
+}
+
+
+.settingVision-btn {
+    font-size: 24px;
+    font-weight: 500;
+
+    padding: 10px 15px;
+
+    border-radius: 10px;
+    background: white;
+    border: 2px solid rgba(47, 47, 47, 0.5);
+
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+
+    color: #2F2F2F;
+}
+
+
+.settingVision-btn:hover{
+    background: rgb(233, 233, 233);
+}
+
+
+.settingVision-row {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 60px;
+    margin-top: 40px;
+}
+
+
+.settingVision-btn--selected {
+    border: none;
+    background: #A2C7FD;
+    transition: all 0.1s ease-in-out;
+}
+
+.settingVision-btn--selected:hover {
+    background: #84b2f7;
+}
+
+
+.visionBtn {
+    position: fixed;
+    bottom: 200px;
+    right: 100px;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transform: rotate(0eg);
+    transition: all 2s ease-in-out;
+}
+
+@media (max-width: 1024px) {
+    .visionBtn,
+    .settingVision {
+        display: none;
+    }
+}
+/* ./Vision */
