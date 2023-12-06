@@ -1,15 +1,5 @@
 $(document).ready(() => {
-    
-    function setResolution(width) {
-        const devTools = window.__DEVTOOLS__;
-        if (devTools) {
-            devTools.inspectorFrontendAPI.emulateViewport({ width: width, height: 1080, deviceScaleFactor: 1 });
-        }
-    }
-    
-    // Пример использования, чтобы установить разрешение 1920px
-    setResolution(1920);
-
+    // document.documentElement.style.zoom = "200%";
 
     // Картинка в зависимости от темы
     const themeChangePictuge = () => {

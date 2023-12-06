@@ -25,6 +25,10 @@
 
     --hide-image: 0;
     --show-image: 1;
+
+    --scale-big: 200%;
+    --scale-medium: 150%;
+    --scale-default: 100%;
  
 }
   
