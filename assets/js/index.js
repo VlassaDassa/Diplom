@@ -1,29 +1,236 @@
 $(document).ready(() => {
-    // document.documentElement.style.zoom = "200%";
+    
+        
+    // Изменение масштаба
+    const bigZoom = (btn) => {
+        $(btn).addClass('settingVision-btn--selected')
+        $('.defaultScale').removeClass('settingVision-btn--selected')
 
-    // Картинка в зависимости от темы
-    const themeChangePictuge = () => {
-        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
-        document.documentElement.setAttribute('data-theme', currentTheme)
+        document.body.style.zoom = 1.5;
+        var originalStyles = {};
 
-        const imagePath = './assets/images/'
-        const theme = document.documentElement.getAttribute('data-theme')
+        function setStyles(selector, styles) {
+            originalStyles[selector] = $(selector).attr('style') || '';
+            $(selector).css(styles);
+        }
 
-        const headerImage = theme === 'dark' ? 'headerIconDark.svg' : 'headerIcon.svg';
-        document.querySelector('.headerIconWrapper').querySelector('img').src = imagePath + headerImage;
+        function resetStyles() {
+            document.body.style.zoom = 1;
+            $('.defaultScale').addClass('settingVision-btn--selected')
+            $('.bigScale').removeClass('settingVision-btn--selected')
 
-        const themeBtn = theme === 'dark' ? 'lightTheme.svg' : 'darkTheme.svg';
-        document.querySelector('.themeBtn').src = imagePath + themeBtn;
+            for (var selector in originalStyles) {
+                $(selector).attr('style', originalStyles[selector]);
+            }
+        }
+
+        setStyles('.container', {
+            'max-width': '1440px',
+            'padding': '0 50px',
+            'margin': '0 auto'
+        });
+
+
+        setStyles('.headerIconWrapper', {
+            'display': 'none'
+        });
+
+        setStyles('.emblemWrapper', {
+            'display': 'none'
+        });
+
+        setStyles('.headerWrapper', {
+            'height': '200px'
+        });
+
+        setStyles('.headerText', {
+            'font-size': '32px'
+        });
+
+
+        setStyles('.menu_item', {
+            'font-size': '16px'
+        });
+
+        setStyles('.extendedMenu-titleWrapper', {
+            'display': 'none'
+        });
+
+        setStyles('.extendedMenu-linkWrapper', {
+            'border-left': 'none',
+            'padding-left': '0px',
+            'display': 'flex',
+            'justify-content': 'space-around',
+            'align-items': 'start',
+            'width': '100%'
+        });
+
+        setStyles('.extendedMenu-linkColumn', {
+            'width': '40%'
+        });
+
+        setStyles('.extendedMenu-link + .extendedMenu-link', {
+            'margin-top': '20px'
+        });
+
+        setStyles('.linkName, .extendedMenu-link', {
+            'font-size': '18px'
+        });
+
+        setStyles('.wifiIcon', {
+            'display': 'none'
+        });
+
+        setStyles('.aboutUsIcon, .aboutUsItem', {
+            'display': 'none'
+        });
+
+        setStyles('.aboutUs-mobileText', {
+            'display': 'block'
+        });
+
+        setStyles('.aboutUsItem-text + .aboutUsItem-text', {
+            'margin-top': '30px'
+        });
+
+        setStyles('.aboutUsTitle', {
+            'font-size': '32px'
+        });
+
+        setStyles('.aboutUs', {
+            'margin-top': '50px'
+        });
+
+        setStyles('.newsItem-link', {
+            'display': 'none'
+        });
+
+        setStyles('.phoneImg', {
+            'display': 'none'
+        });
+
+        setStyles('.phoneItems', {
+            'width': '100%'
+        });
+
+
+        setStyles('.settingVision-title', {
+            'font-size': '20px'
+        })
+
+        setStyles('.settingVision-row', {
+            'row-gap': '20px',
+            'margin-top': '20px',
+        })
+
+        setStyles('.settingVision-btn', {
+            'font-size': '20px',
+            'padding': '7px 12px',
+        })
+
+        setStyles('.settingVision', {
+            'width': '500px'
+        })
+
+
+        // Обработчик нажатия на кнопку
+        $('.defaultScale, .resetOptions').on('click', function () {
+            resetStyles();
+        });
     }
-    themeChangePictuge()
+    $('.bigScale').on('click', () => bigZoom(event.target))
+
+
+    // Открыть версию для слабовидящих
+    $('.visionBtn').on('click', () => {
+       $('.settingVision').addClass('settingVision--show')
+       $('.overlay').addClass('overlay--showww')
+    })
+
+    // Закрыть версию для слабовидящих
+    $('.overlay').on('click', () => {
+        $('.settingVision').removeClass('settingVision--show')
+        $('.overlay').removeClass('overlay--showww')
+    })
+
+    $('.settingVisionCloseBtn').on('click', () => {
+        $('.settingVision').removeClass('settingVision--show')
+        $('.overlay').removeClass('overlay--showww')
+    })
+
+
+    // Версия для слабовидящих
+    const setSettingVis = (btn) => {
+        const attrData = $(btn).attr('data-setVis') 
+
+        if (attrData === "serif") {
+            document.documentElement.setAttribute('data-font-type', 'serif')
+            $('.font-type').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "notSerif") {
+            document.documentElement.setAttribute('data-font-type', 'notSerif')
+            $('.font-type').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "spacingSmall") {
+            document.documentElement.setAttribute('data-letter-spacing', 'small')
+            $('.letter-space').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "spacingMedium") {
+            document.documentElement.setAttribute('data-letter-spacing', 'medium')
+            $('.letter-space').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "spacingBig") {
+            document.documentElement.setAttribute('data-letter-spacing', 'big')
+            $('.letter-space').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "imageHide") {
+            document.documentElement.setAttribute('data-hide-image', 'hide')
+            $('.imgHideShow').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+
+        else if (attrData === "imageShow") {
+            document.documentElement.setAttribute('data-hide-image', 'show')
+            $('.imgHideShow').removeClass('settingVision-btn--selected')
+            $(btn).addClass('settingVision-btn--selected')
+        }
+        
+    }
+    $('.settingVision-btn').on('click', () => setSettingVis(event.target))
+
+
+
+    // Сброс всех опций
+    $('.resetOptions').on('click', () => {
+        document.documentElement.setAttribute('data-hide-image', 'hide')
+        document.documentElement.setAttribute('data-font-type', 'notSerif')
+        document.documentElement.setAttribute('data-letter-spacing', 'small')
+
+        $('.settingVision-btn').removeClass('settingVision-btn--selected');
+
+        $('[data-setVis="notSerif"]').addClass('settingVision-btn--selected')
+        $('[data-setVis="spacingSmall"]').addClass('settingVision-btn--selected')
+        $('[data-setVis="imageHide"]').addClass('settingVision-btn--selected')
+        $('.defaultScale').addClass('settingVision-btn--selected')
+    })
 
 
     // Смена темы
     document.querySelector('.themeBtn').addEventListener('click', switchTheme, false);
     function switchTheme(e) {
         const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
-        document.documentElement.setAttribute('data-theme', currentTheme)
 
+        document.documentElement.setAttribute('data-theme', currentTheme)
         if (currentTheme === 'light') {
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
@@ -36,12 +243,6 @@ $(document).ready(() => {
 
         themeChangePictuge()
     }
-
-
-
-
-
-
 
 
     // Данные для заполнения расширенного меню
@@ -418,7 +619,6 @@ $(document).ready(() => {
         // Меняем заполнение расширенного меню
         var menuName = $(this).text().trim()
         fillExtendedMenu(menuName)
-        fillExtendedMenu(menuName)
 
 
         // Открытие расширенного меню
@@ -544,6 +744,31 @@ $(document).ready(() => {
     startFillMobileMenu()
 
 
+    // Картинка в зависимости от темы
+    const themeChangePictuge = () => {
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme)
+
+        const imagePath = './assets/images/'
+        const theme = document.documentElement.getAttribute('data-theme')
+
+        const headerImage = theme === 'dark' ? 'headerIconDark.svg' : 'headerIcon.svg';
+        document.querySelector('.headerIconWrapper').querySelector('img').src = imagePath + headerImage;
+
+        const themeBtn = theme === 'dark' ? 'lightTheme.svg' : 'darkTheme.svg';
+        document.querySelector('.themeBtn').src = imagePath + themeBtn;
+
+        const closeBtn = theme === 'dark' ? 'closeIcoDark.svg' : 'closeIco.svg';
+        document.querySelector('.settingVisionCloseBtn').src = imagePath + closeBtn;
+        document.querySelector('.mobileMenuClose').src = imagePath + closeBtn;
+
+        const menuArrow = theme === 'dark' ? 'menuArrowDark.svg' : 'menuArrow.svg'
+        
+        $('.mobileLink--img').attr('src', imagePath + menuArrow)
+    }
+    themeChangePictuge()
+
+
     // Заполнение мобильного меню вторым уровнем
     function secondLvlMobileMenu(name) {
         if ($('.mobileMenu-title').data().lvl === '1') {
@@ -570,6 +795,7 @@ $(document).ready(() => {
     // Обработчик нажатия на элемент мобильного меню
     $('.mobileMenuWrapper').on('click', '.mobileLink--extended', function() {
         secondLvlMobileMenu($(this).find('.mobileLink--text').text())
+        themeChangePictuge()
     })
 
 
@@ -577,6 +803,7 @@ $(document).ready(() => {
     $('.mobileMenu-backBtn').on('click', function() {
         startFillMobileMenu()
         $('.mobileMenu-title').removeClass('mobileMenu-title--show')
+        themeChangePictuge()
     }) 
     
     

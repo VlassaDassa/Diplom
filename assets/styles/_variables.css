@@ -15,22 +15,31 @@
     --opacity-gerb: 1;
 
     /* vision */
-    --letter-spacing-big: 10px;
-    --letter-spacing-medium: 5px;
-    --letter-spacing-small: unset;
+    --letter-spacing: unset;
 
-
-    --font-serif: 'Times New Roman', Times, serif;
-    --font-default: 'Montserrat', sans-serif;
+    --font-type: 'Montserrat', sans-serif;
 
     --hide-image: 0;
-    --show-image: 1;
-
-    --scale-big: 200%;
-    --scale-medium: 150%;
-    --scale-default: 100%;
  
 }
+
+[data-letter-spacing="medium"] {
+    --letter-spacing: 5px;
+}
+
+[data-letter-spacing="big"] {
+    --letter-spacing: 10px;
+}
+
+[data-font-type="serif"] {
+    --font-type: 'Times New Roman', Times, serif;
+}
+
+[data-hide-image="hide"] {
+    --hide-image: 1;
+}
+
+
   
 [data-theme='dark'] {
     --base-color: #212121;

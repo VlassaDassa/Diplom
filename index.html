@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-size="small" data-letter-spacing="small" data-font-type="notSerif" data-hide-image="hide">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0">
@@ -22,7 +22,54 @@
 </head>
 
 <body>
+
+    <div class="settingVision">
+        <img src="./assets/images/closeIco.svg" alt="Закрыть" class="settingVisionCloseBtn">
+
+        <div class="settingVision-row">
+            
+            <div class="settingVision-item">
+                <h1 class="settingVision-title">Шрифт</h1>
+                <div class="settingVision-itemWrapper">
+                    <button data-setVis="notSerif" class="font-type settingVision-btn settingVision-btn--selected">Без засечек</button>
+                    <button data-setVis="serif" class="font-type settingVision-btn">С засечками</button>
+                </div>
+            </div>
+
+            <div class="settingVision-item">
+                <h1 class="settingVision-title">Расстояние между буквами</h1>
+                <div class="settingVision-itemWrapper">
+                    <button data-setVis="spacingSmall" class="letter-space settingVision-btn settingVision-btn--selected">Маленькое</button>
+                    <button data-setVis="spacingMedium" class="letter-space settingVision-btn">Среднее</button>
+                    <button data-setVis="spacingBig" class="letter-space settingVision-btn">Большое</button>
+                </div>
+            </div>
+
+            <div class="settingVision-item">
+                <h1 class="settingVision-title">Скрывать изображения</h1>
+                <div class="settingVision-itemWrapper">
+                    <button data-setVis="imageShow" class="imgHideShow settingVision-btn">Скрывать</button>
+                    <button data-setVis="imageHide" class="imgHideShow settingVision-btn settingVision-btn--selected">Не скрывать</button>
+                </div>
+            </div>
+
+            <div class="settingVision-item">
+                <h1 class="settingVision-title">Масштаб</h1>
+                <div class="settingVision-itemWrapper">
+                    <button class="defaultScale settingVision-btn settingVision-btn--selected">Обычный</button>
+                    <button class="bigScale settingVision-btn">Большой</button>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <button class="resetOptions">Сбросить</button>
+
+    </div>
+
     <div class="overlay"></div>
+
 
     <div class="mobileMenu">
         <img src="./assets/images/closeIco.svg" alt="Закрыть" class="mobileMenuClose">
@@ -174,7 +221,7 @@
                 <img src="./assets/images/slider1.jpg" class="gosulugiPhoto gosulugiPhoto--desktop">
                 <img src="./assets/images/godPedagoga.jpg" class="gosulugiPhoto gosulugiPhoto--mobile">
 
-                <div id="js-show-iframe-wrapper">
+                <div id="js-show-iframe-wrapper" class="js-show-iframe-wrapperMOBILE">
                     <div class="pos-banner-fluid bf-22">
                   
                       <div class="bf-22__decor">
@@ -511,6 +558,7 @@
     <button class="scroll-to-top-btn" title="Наверх"></button>
 
     <img class='themeBtn' src="./assets/images/darkTheme.svg" alt="Выбор темы">
+    <img class='visionBtn' src="./assets/images/visionBtn.svg" alt="Версия для слабовидящих">
 
 
     <script src="./assets/js/index.js"></script>
