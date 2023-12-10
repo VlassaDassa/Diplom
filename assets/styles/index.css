@@ -1740,3 +1740,12 @@ body {
 
 
 
+
+
+
+/* News */
+.news {
+    color: var(--text-color);
+    margin: 100px 0;
+}
+/* ./News */
