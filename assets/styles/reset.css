@@ -61,3 +61,14 @@ button {
 	border: none;
 	outline: none;
 }
+
+
+input {
+	color: inherit;
+	font-family: inherit;
+
+	border: none;
+	outline: none;
+}
+
+

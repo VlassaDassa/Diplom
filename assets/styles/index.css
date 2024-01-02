@@ -77,6 +77,7 @@ body {
 .title {
     font-size: 32px;
     font-weight: 600;
+    line-height: 1.3;
 
     margin-bottom: 30px;
 }
@@ -1894,3 +1895,529 @@ body {
     }
 }
 /* ./News */
+
+
+
+/* Contacts */
+
+.contactsPage {
+    margin: 100px 0;
+}
+
+
+.contactsWrapper {
+    margin-top: 70px;
+}
+
+
+.contactsRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.contactsRow + .contactsRow {
+    border-bottom: 1px solid var(--border-bottom);
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.contactsRow:last-child {
+    margin-bottom: 20px;
+}
+
+
+.contactsName {
+    max-width: 380px;
+    width: 100%;  
+}
+
+.contactsDirectPhone {
+    max-width: 310px;
+    width: 100%;
+}
+
+.contactsInternalPhone {
+    max-width: 299px;
+    width: 100%;
+}
+
+.contactsOffice {
+    max-width: 187px;
+    width: 100%;
+}
+
+
+.contactsText-name {
+    font-size: 20px;
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+}
+
+
+.contactsText-position {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--pale-text);
+    line-height: 1.5;
+}
+
+
+.contactsSubtitle {
+    font-weight: 600;
+    color: var(--pale-text);
+}
+
+
+.contactsDirectPhone,
+.contactsInternalPhone,
+.contactsOffice {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+}
+
+
+.contactsShowMore {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
+.findContainer {
+    display: inline-block;
+    height: 100%;
+
+    position: relative;
+}
+
+
+.findInput {
+    height: 50px;
+    font-size: 20px;
+    padding-right: 50px;
+    background: var(--base-color);
+    
+    border-bottom: 1px solid var(--border-bottom);
+}
+
+
+.findLoupIco {
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -40%);
+    right: 0;
+
+    cursor: pointer;
+}
+
+.highlighted {
+    background: beige;
+}
+
+
+@media (max-width: 1190px) {
+    .contactsIco {
+        display: none;
+    }
+
+    .contactsRow--header {
+        display: none;
+    }
+
+    .contactsText-name {
+        font-size: 18px;
+    }
+
+    .contactsText-position {
+        font-size: 14px;
+    }
+
+    .contactsDirectPhone, .contactsInternalPhone, .contactsOffice {
+        font-size: 16px;
+    }
+
+    .contactsWrapper {
+        margin-top: 0px;
+    }
+}
+
+
+@media (max-width: 1060px) {
+    .contactsRow {
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    .contactsText-name {
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+
+
+    .contactsName {
+        margin-bottom: 20px;
+    }
+
+    .contactsInternalPhone, .contactsOffice {
+        margin-top: 10px;
+    }
+
+    .contactsDirectPhone, .contactsInternalPhone, .contactsOffice {
+        column-gap: 10px;
+    }
+
+    .contactsSubtitle {
+        color: #2F82FF;
+    }
+}
+
+
+@media (max-width: 590px) {
+    .findInput {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .contactsShowMore {
+        margin-right: 25px;
+    }
+}
+
+
+@media (max-width: 478px) {
+    .contactsControls {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .findInput {
+        order: 1;
+        flex: 1;
+    }
+
+    .findContainer {
+        display: flex; 
+        margin-top: 15px; 
+    }
+
+    .contactsShowMore {
+        order: 2;
+        margin: unset;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+}
+
+/* ./Contacts */
+
+
+/* AddressDetails */
+
+.addressDetails {
+    margin-top: 140px;
+
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.addressDetails-text + .addressDetails-text {
+    margin-top: 25px;
+}
+
+.addressDetails-text {
+    line-height: 1.5;
+}
+
+
+.addressDetails-strongText {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .addressDetails {
+        font-size: 18px;
+    }
+
+    .addressDetails-text + .addressDetails-text {
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .addressDetails {
+        font-size: 16px;
+    }
+
+    .addressDetails-text + .addressDetails-text {
+        margin-top: 10px;
+    }
+}
+/* ./AddressDetails */
+
+
+
+/* GuestBook */
+
+.guestBook {
+    margin-top: 140px;
+}
+
+
+.guestBookWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    
+    margin-top: 40px;
+}
+
+
+.guestBookForm {
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.guestBookArrow {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+
+.guestBook-bigText {
+    max-width: 571px;
+    font-weight: 600;
+    font-size: 48px;
+
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+
+.guestBook-input {
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+
+    padding-bottom: 20px;
+    background: var(--base-color);
+
+    border-bottom: 1px solid var(--border-bottom);
+}
+
+
+.guestBook-input + .guestBook-input {
+    margin-top: 50px;
+}
+
+.guestBook-ShowMore {
+    width: 100%;
+}
+
+
+@media (max-width: 1520px) {
+    .guestBookArrow {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1060px) {
+    .guestBook-bigText {
+        display: none;
+    }
+
+    .guestBook-ShowMore {
+        margin-top: 15px;
+    }
+}
+
+/* ./GuestBook */
+
+
+
+/* Messages */
+.messages {
+    margin-top: 140px;
+}
+
+.messagesWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.messagesContainer {
+    max-width: 600px;
+    margin-top: 60px;
+}
+
+
+.svgIco {
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+
+    position: sticky;
+    top: 300px;
+}
+
+.svgIco:active {
+    transform: scale(1.5);
+}
+
+
+.messageItem {
+    font-weight: 400;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-bottom);
+}
+
+.messageItem + .messageItem {
+    margin-top: 40px;
+}
+
+
+.messageItem-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.messageItem-nameWrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    margin-bottom: 10px;
+}
+
+.messageItem-personIco {
+    width: 25px;
+    height: 25px;
+}
+
+
+.messageItem-content {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.messageItem-name {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+.messageItem-date {
+    color: var(--pale-text);
+    opacity: 0.5;
+
+    margin-bottom: 15px;
+}
+
+
+.messagesShowMore {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+.guestBook--title {
+    margin-bottom: -20px;
+}
+
+
+@media (max-width: 1280px) {
+    .messageIco {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .messageItem-content {
+        font-size: 18px;
+    }
+
+    .messageItem-name {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .messageItem-content {
+        font-size: 16px;
+    }
+
+    .messageItem-name {
+        font-size: 18px;
+    }
+}
+/* ./Messages */
+
+
+@media (max-width: 1280px) {
+    .contactsPage {
+        margin-top: 75px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .contactsPage {
+        margin-top: 50px;
+    }
+
+    .addressDetails {
+        margin-top: 100px;
+    }
+
+    .guestBook {
+        margin-top: 100px;
+    }
+
+    .messages {
+        margin-top: 100px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .contactsPage {
+        margin-top: 25px;
+    }
+
+    .addressDetails {
+        margin-top: 75px;
+    }
+
+    .guestBook {
+        margin-top: 75px;
+    }
+
+    .messages {
+        margin-top: 75px;
+    }
+}

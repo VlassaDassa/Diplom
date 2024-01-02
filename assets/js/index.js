@@ -1,5 +1,203 @@
+// Расширение для игнорирования регистра при поиске по фамилии на странице "Контакты"
+$.extend($.expr[":"], {
+    "contains-ci": function(elem, i, match, array) {
+        return (elem.textContent || elem.innerText || "").toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
+    }
+});
+
 $(document).ready(() => {
+    // Данные для страницы "Контакты"
+    const contactsData = [
+        {
+            'fullname': 'Кожехов Михаил Сергеевич',
+            'position': 'начальник управления образования',
+            'phoneNumber': '4-97-96',
+            'internalPhoneNumber': '501',
+            'office': '408',
+        },
+
+        {
+            'fullname': 'Клюшанова Светлана Викторовна',
+            'position': 'заместитель начальника управления образования',
+            'phoneNumber': '4-97-95',
+            'internalPhoneNumber': '509',
+            'office': '408',
+        },
+
+        {
+            'fullname': 'Ферлей Татьяна Юрьевна',
+            'position': 'заместитель начальника управления образования',
+            'phoneNumber': '4-97-95',
+            'internalPhoneNumber': '523',
+            'office': '408',
+        },
+
+        {
+            'fullname': 'Кулиева Любовь Николаевна',
+            'position': 'заведующий отделом дошкольного, общего и дополнительного образования',
+            'phoneNumber': '4-97-95',
+            'internalPhoneNumber': '524',
+            'office': '402',
+        },
+
+        {
+            'fullname': 'Гормаш Екатерина Геннадьевна',
+            'position': 'заместитель заведующего отделом дошкольного, общего и дополнительного образования',
+            'phoneNumber': '4-97-99',
+            'internalPhoneNumber': '510',
+            'office': '406',
+        },
+
+        {
+            'fullname': 'Брусова Елена Константиновна',
+            'position': 'главный специалист не муниципальной службы отдела дошкольного, общего и дополнительного образования',
+            'phoneNumber': '4-97-99',
+            'internalPhoneNumber': '510',
+            'office': '406',
+        },
+
+        {
+            'fullname': 'Шарапова Мария Владимировна',
+            'position': 'главный специалист не муниципальной службы отдела дошкольного, общего и дополнительного образования',
+            'phoneNumber': '4-97-95',
+            'internalPhoneNumber': '507',
+            'office': '402',
+        },
+
+        {
+            'fullname': 'Захмылова Татьяна Васильевна',
+            'position': 'главный специалист не муниципальной службы отдела дошкольного, общего и дополнительного образования',
+            'phoneNumber': '4-97-95',
+            'internalPhoneNumber': '505',
+            'office': '402',
+        },
+
+        {
+            'fullname': 'Гурьянова Людмила Юрьевна',
+            'position': 'заведующий отделом мониторинга и организационной работы',
+            'phoneNumber': '4-97-95',
+            'internalPhoneNumber': '506',
+            'office': '404',
+        },
+
+        {
+            'fullname': 'Иванова Олеся Юрьевна',
+            'position': 'заместитель заведующего отделом мониторинга и организационной работы',
+            'phoneNumber': '4-97-95',
+            'internalPhoneNumber': '518',
+            'office': '403',
+        },
+
+        {
+            'fullname': 'Мирошниченко Ольга Алексеевна',
+            'position': 'заместитель заведующего отделом материально-технического обеспечения',
+            'phoneNumber': '4-97-95',
+            'internalPhoneNumber': '521',
+            'office': '427',
+        },
+
+        {
+            'fullname': 'Солонина Ирина Анатольевна',
+            'position': 'главный специалист не муниципальной службы',
+            'phoneNumber': '4-97-95',
+            'internalPhoneNumber': '500',
+            'office': '408',
+        },
+    ]
+
+    // Количество контактов, отображаемых на странице
+    const itemsPerPage = 3; 
+    let currentPage = 1;
+
+    // Заполнение таблицы с контактами
+    function fillContacts() {
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+
+        const contactsRow = $('.contactsRow').eq(1);
+
+        if (currentPage === 1) {
+            $('.contactsRow:not(.contactsRow--header)').remove();
+        }
+
+        $.each(contactsData.slice(startIndex, endIndex), function(index, contact) {
+            var newRow = contactsRow.clone()
+
+            newRow.find('.contactsText-name').text(contact.fullname);
+            newRow.find('.contactsText-position').text(contact.position);
+            newRow.find('.contacts-text').eq(0).text(contact.phoneNumber);
+            newRow.find('.contacts-text').eq(1).text(contact.internalPhoneNumber);
+            newRow.find('.contacts-text').eq(2).text(contact.office);
+
+            $('.contactsWrapper').append(newRow);
+            newRow.hide().fadeIn(500);
+        });
+
+        if (endIndex < contactsData.length) {
+            $('.contactsShowMore').show();
+        } else {
+            $('.contactsShowMore').hide();
+        }
+    }
+
+    // Пагинация по таблице с контактами
+    $('.contactsShowMore').on('click', function() {
+        currentPage++;
+        fillContacts();
+        $('.highlighted').removeClass('highlighted')
+    });
     
+    // Заполнение таблицы с контактами, если это страница контактов
+    var fullUrl = window.location.href;
+    if (fullUrl.includes('contacts')) {
+        fillContacts(contactsData);
+    }
+
+    // Поиск по фамилии на странице "Контакты"
+    const findLastName = (lastName) => {
+        var targetElement = $(`.contactsText-name:contains-ci("${lastName}"):first`).closest('.contactsRow')
+        
+        // Применение эффектов к найденому элементу
+        if (targetElement.length === 0 || lastName === '') {
+            // Поиск индекса объекта в массиве контактов
+            var index = contactsData.findIndex(function(contact) {
+                return contact.fullname.toLowerCase().includes(lastName.toLowerCase());
+            });
+
+
+            if (index !== -1 && index !== 0) {
+                var steps = Math.ceil((index - currentPage) / itemsPerPage);
+                for (var i = 0; i < steps; i++) {
+                    currentPage ++
+                    fillContacts()
+                }
+                var targetElement = $(`.contactsText-name:contains-ci("${contactsData[index].fullname}"):first`).closest('.contactsRow')
+            } else {
+                $('.highlighted').removeClass('highlighted')
+                return
+            }
+        }
+
+        $('.highlighted').removeClass('highlighted')
+        targetElement.addClass('highlighted')
+
+        var offsetTop = targetElement.offset().top;
+        var windowHeight = $(window).height();
+        $('html, body').animate({
+            scrollTop: offsetTop - (windowHeight / 2)
+        }, 500);
+    }
+    
+    var delayTimer;
+
+    $('.findInput').on('input', function() {
+        clearTimeout(delayTimer);
+
+        delayTimer = setTimeout(function() {
+            findLastName($('.findInput').val());
+        }, 500);
+    });
+
         
     // Изменение масштаба
     const bigZoom = (btn) => {
@@ -715,8 +913,6 @@ $(document).ready(() => {
                 )
             }
         })
-
-       
     }
 
 
@@ -763,8 +959,10 @@ $(document).ready(() => {
         document.querySelector('.mobileMenuClose').src = imagePath + closeBtn;
 
         const menuArrow = theme === 'dark' ? 'menuArrowDark.svg' : 'menuArrow.svg'
-        
         $('.mobileLink--img').attr('src', imagePath + menuArrow)
+
+        const contactsLoup = theme === 'dark' ? 'darkLoup.svg' : 'loup.svg'
+        $('.findLoupIco').attr('src', imagePath + contactsLoup)
     }
     themeChangePictuge()
 
@@ -884,6 +1082,8 @@ $(document).ready(() => {
         $(item).hide().appendTo(parent).fadeIn();
         $(item).hide().appendTo(parent).fadeIn();
     })
+
+
 
 
     
