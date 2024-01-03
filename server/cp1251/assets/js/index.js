@@ -7,6 +7,26 @@ $.extend($.expr[":"], {
 
 $(document).ready(() => {
 
+
+    function showError(text) {
+        $('.errorMessage').text(text)
+        $('.errorMessage').addClass('errorMessage--show')
+
+        setTimeout(() => {
+            $('.errorMessage').removeClass('errorMessage--show')
+        }, 3000)
+    }
+
+    function showSuccess(text) {
+        $('.successMessage').text(text)
+        $('.successMessage').addClass('successMessage--show')
+
+        setTimeout(() => {
+            $('.successMessage').removeClass('successMessage--show')
+        }, 3000)
+    }
+
+
     // Пагинация по новостям
     $(document).ready(function () {
         let currentPage = 3;
@@ -27,7 +47,7 @@ $(document).ready(() => {
             });
         }
 
-        $('.showMore').on('click', function () {
+        $('.showMore--index').on('click', function () {
             loadMoreNews();
         });
     });
@@ -38,6 +58,9 @@ $(document).ready(() => {
         if(validateForm()){
             sendDataToServer();
         }
+        else {
+            showError('Данные введены некорректно!')
+        }
     });
 
 
@@ -46,11 +69,16 @@ $(document).ready(() => {
         var email = $("#email").val();
         var text = $("#text").val();
 
-        if (name === "" || email === "" || text === ""){
-            alert("Некорректные данные!");
+        if (name === "" || email === "" || text === "" || !isValidEmail(email) || name.length < 3 || email.length < 3 || text.length < 20){
             return false;
         }
         return true;
+    }
+
+
+    function isValidEmail(email) {
+        var emailPattern = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+        return emailPattern.test(email);
     }
 
 
@@ -61,12 +89,10 @@ $(document).ready(() => {
             url: "contacts_send_feedback.php",
             data: formData,
             success: function(response){
-                // Успешно
-                console.log(response);
+                showSuccess('Отзыв успешно отправлен!')
             },
             error: function(error){
-                // Неуспешно
-                console.log(error);
+                showError('Что-то пошло не так...')
             }
         });
     }

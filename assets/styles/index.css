@@ -13,6 +13,7 @@ html {
 }
 
 
+
 .imgVis {
     opacity: var(--hide-image);
 }
@@ -89,6 +90,39 @@ body {
     padding: 50px 0;
 }
 
+.successMessage,
+.errorMessage {
+    padding: 40px 60px;
+
+    border-radius: 5px;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+
+    position: fixed;
+    z-index: 9;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: top 0.5s ease-in-out;
+}
+
+.successMessage--show,
+.errorMessage--show {
+    top: 50%;
+}
+
+.successMessage {
+    background: #2BA029;
+}
+
+.errorMessage {
+    background: #FF5858;
+}
+
+
 @media (max-width: 1450px) {
     .container {
         max-width: 1440px;
@@ -117,6 +151,16 @@ body {
 @media (max-width: 800px) {
     .grayBg {
         padding: 25px 0;
+    }
+
+    .successMessage,
+    .errorMessage {
+        padding: 20px 30px;
+        font-size: 18px;
+        font-weight: 400;
+
+        width: calc(80% - 60px);
+        text-align: center;
     }
 }
 

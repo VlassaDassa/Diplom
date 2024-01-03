@@ -20,6 +20,9 @@
 
 <body>
 
+    <div class="errorMessage">Какая-то ошибка...</div>
+    <div class="successMessage">Всё успешно!</div>
+
     <div class="settingVision">
         <img src="./assets/images/closeIco.svg" alt="Закрыть" class="settingVisionCloseBtn">
 

@@ -369,7 +369,7 @@
                     ?>
                 </div>
 
-                <button class="showMore">Смотреть ещё</button>
+                <button class="showMore showMore--index">Смотреть ещё</button>
 
             </section> <!-- ./news -->
         </div> <!-- ./container -->
