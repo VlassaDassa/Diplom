@@ -1,0 +1,13 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="40" cy="40" r="40" fill="white"/>
+<path d="M40 54.0625C47.7665 54.0625 54.0625 47.7665 54.0625 40C54.0625 32.2335 47.7665 25.9375 40 25.9375C32.2335 25.9375 25.9375 32.2335 25.9375 40C25.9375 47.7665 32.2335 54.0625 40 54.0625Z" stroke="#FEC123" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 18.4375V13.75" stroke="#FEC123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.7422 24.7422L21.4375 21.4375" stroke="#FEC123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.4375 40H13.75" stroke="#FEC123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.7422 55.2578L21.4375 58.5625" stroke="#FEC123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 61.5625V66.25" stroke="#FEC123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M55.2578 55.2578L58.5625 58.5625" stroke="#FEC123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M61.5625 40H66.25" stroke="#FEC123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M55.2578 24.7422L58.5625 21.4375" stroke="#FEC123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="40" cy="40" r="15" fill="#FEC123"/>
+</svg>

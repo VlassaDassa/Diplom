@@ -87,11 +87,11 @@
         <div class="container">
             <div class="mobileHeaderWrapper">
                 <div class="headerBtnsWrapper">
-                    <a href="#" class="headerBtn">Главная</a>
+                    <a href="./testIndex.php" class="headerBtn">Главная</a>
                     <div class="headerBtn" id='menu'>Меню</div>
                 </div>
                 
-                <a href="#" class="headerItem">Контакты</a>
+                <a href="./testContacts.php" class="headerItem">Контакты</a>
             </div>
         </div>
     </section> <!-- ./mobileHeader -->
@@ -122,7 +122,7 @@
     <section class="menu">
         <ul class="container menuWrapper">
             <li class="menu_item menu_item--mainPage">
-                Главная
+                <a href="./testIndex.php">Главная</a>
             </li>
 
             <li class="menu_item">
@@ -146,7 +146,7 @@
             </li>
 
             <li class="menu_item menu_item--mainPage">
-                <a href="#">Контакты</a>
+                <a href="./testContacts.php">Контакты</a>
             </li>
         </ul> <!-- ./container menuWrapper -->
     </section> <!-- ./menu -->
@@ -297,9 +297,9 @@
                 <div class="guestBookWrapper">
                     <div class="guestBookForm">
                         <form id="guestBook__form">
-                            <input id="name" class="guestBook-input" placeholder="Имя" type="text">
-                            <input id="email" class="guestBook-input" placeholder="Email" type="email">
-                            <input id="text" class="guestBook-input" placeholder="Вопрос" type="text">
+                            <input name="name" id="name" class="guestBook-input" placeholder="Имя" type="text">
+                            <input name="email" id="email" class="guestBook-input" placeholder="Email" type="email">
+                            <input name="text" id="text" class="guestBook-input" placeholder="Вопрос" type="text">
 
                             <button class="showMore guestBook-ShowMore">Отправить</button>
                         </form>
@@ -446,7 +446,7 @@
                 <div class="navigationsColumn">
                     <h1 class="navigationsColumn-title">Контакты</h1>
 
-                    <a href="#" class="navigationsColumn-item">Контакты</a>
+                    <a href="./testContacts.php" class="navigationsColumn-item">Контакты</a>
                 </div>
 
                 <div class="navigationsColumn">
