@@ -94,7 +94,7 @@
                     <div class="headerBtn" id='menu'>Меню</div>
                 </div>
                 
-                <a href="./testContacts.html" class="headerItem">Контакты</a>
+                <a href="./testContacts.php" class="headerItem">Контакты</a>
             </div>
         </div>
     </section> <!-- ./mobileHeader -->
@@ -358,7 +358,7 @@
                             echo '</div>';
                             echo '<div class="contentWrapper">';
                             echo '<h1 class="newsItem-title">Новости</h1>';
-                            echo '<p class="newsItem-text">' . htmlspecialchars(getTextInsideTags($rezult['name'])) . '</p>';
+                            echo '<a href=news_page.php?id='.$rezult['id'].'><p class="newsItem-text">' . htmlspecialchars(getTextInsideTags($rezult['name'])) . '</p></a>';
                             echo '<p class="newsItem-date">' . htmlspecialchars($rezult['date']) . '</p>';
                             echo '<a href=news_page.php?id='.$rezult['id'].' class="newsItem-link"><img src="./assets/images/arrow.svg" class="newsItemLink-icon"></a>';
                             echo '</div>';
@@ -437,7 +437,7 @@
                     <a href="#" class="navigationsColumn-item">Начальник и заместители</a>
                     <a href="#" class="navigationsColumn-item">МКУ ЦМХО</a>
                     <a href="#" class="navigationsColumn-item">Планы и отчёты</a>
-                    <a href="#" class="navigationsColumn-item">Противодействие коррупции</a>
+                    <a href="./anticorruption.php" class="navigationsColumn-item">Противодействие коррупции</a>
                 </div>
 
                 <div class="navigationsColumn">
@@ -468,7 +468,7 @@
                 <div class="navigationsColumn">
                     <h1 class="navigationsColumn-title">Контакты</h1>
 
-                    <a href="./testContacts.html" class="navigationsColumn-item">Контакты</a>
+                    <a href="./testContacts.php" class="navigationsColumn-item">Контакты</a>
                 </div>
 
                 <div class="navigationsColumn">

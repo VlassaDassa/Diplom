@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru" data-size="small" data-letter-spacing="small" data-font-type="notSerif" data-hide-image="hide">
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0">
     
@@ -13,15 +13,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
- 
+
     <title>Управление образования</title>
 
 </head>
-
 <body>
-
-    <div class="errorMessage">Какая-то ошибка...</div>
-    <div class="successMessage">Всё успешно!</div>
 
     <div class="settingVision">
         <img src="./assets/images/closeIco.svg" alt="Закрыть" class="settingVisionCloseBtn">
@@ -70,7 +66,6 @@
 
     <div class="overlay"></div>
 
-
     <div class="mobileMenu">
         <img src="./assets/images/closeIco.svg" alt="Закрыть" class="mobileMenuClose">
 
@@ -115,12 +110,10 @@
 
         </div> <!-- ./contaner -->
     </header> <!-- ./headerWrapper -->
-    
 
     <section class="container">
         <div class="menu line"></div>
     </section> <!-- ./menu line -->
-
 
     <section class="menu">
         <ul class="container menuWrapper">
@@ -154,7 +147,6 @@
         </ul> <!-- ./container menuWrapper -->
     </section> <!-- ./menu -->
 
-
     <section class="extendedMenu">
         <div class="container extendedMenuWrapper">
 
@@ -172,225 +164,262 @@
 
         </div>
     </section> <!-- ./extendedMenu -->
-    
-    
-    <main class="contactsPage">
+
+
+    <main class="inform_besopas news">
         <div class="container">
+            <h1 class="title">Информационная безопасность</h1>
 
-            <section class="contactsSection">
-                <h1 class="title">Контакты</h1>
+            <br>
 
-                <div class="contactsWrapper">
+            <p class="newsParagraph">
+                <h2 class="newsSubtitle">
+                    <strong class="newsStrong">
+                        Нормативное регулирование
+                    </strong>
+                </h2>
+            </p>
 
-                    <div class="contactsRow contactsRow--header">
-                        <div class="contactsName">
-                            <img src="./assets/images/contacts-person.svg" alt="Имя" class="contactsIco">
-                        </div>
-                        
-                        <div class="contactsDirectPhone">
-                            <img src="./assets/images/contacts-phone.svg" alt="Прямой телефон" class="contactsIco">
-                        </div>
-                        
-                        <div class="contactsInternalPhone">
-                            <img src="./assets/images/contacts-phone.svg" alt="Внутренний телефон телефон" class="contactsIco">
-                        </div>
-                        
-                        <div class="contactsOffice">
-                            <img src="./assets/images/contacts-office.svg" alt="Кабинет" class="contactsIco">
-                        </div>
-                    </div>
+            <p class="newsParagraph">
+                <a href="http://www.consultant.ru/document/cons_doc_LAW_108808/" class="newsLink">Федеральный закон от 29.12.2010 № 436-ФЗ «О защите детей от информации, причиняющей вред их здоровью и развитию» (последняя редакция)</a>
+            </p>
+            <br>
+            <p class="newsParagraph">
+                <a href="http://www.consultant.ru/document/cons_doc_LAW_61801/" class="newsLink">Федеральный закон от 27.07.2006 № 152-ФЗ «О персональных данных» (последняя редакция)</a>
+            </p>
+            <br>
+            <p class="newsParagraph">
+                <a href="http://www.consultant.ru/document/cons_doc_LAW_61798/" class="newsLink">Федеральный закон от 27.07.2006 № 149-ФЗ «Об информации, информационных технологиях и о защите информации» (последняя редакция)</a>
+            </p>
+            <br>
+            <p class="newsParagraph">
+                <a href="http://www.consultant.ru/document/cons_doc_LAW_167591/" class="newsLink">Приказ Минкомсвязи России от 16.06.2014 № 161 «Об утверждении требований к административным и организационным мерам, техническим и программно-аппаратным средствам защиты детей от информации, причиняющей вред их здоровью и (или) развитию»</a>
+            </p>
+            <br>
+            <p class="newsParagraph">
+                <a href="http://www.consultant.ru/document/cons_doc_LAW_123707/" class="newsLink">Письмо Минобрнауки России от 28.04.2014 № ДЛ-115/03 «О направлении методических материалов для обеспечения информационной безопасности детей при использовании ресурсов сети Интернет»</a>
+            </p>
+            <br>
+            <p class="newsParagraph">
+                <a href="http://primdou72.ru/images/INFORMbezop/%D0%9F%D0%B8%D1%81%D1%8C%D0%BC%D0%BE_%D0%BE%D1%82_14.05.2018_N_08-1184_%D0%9E_%D0%BD%D0%B0%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5.PDF" class="newsLink">Письмо Минобрнауки России от 14.05.2018 № 08-1184 «О направлении информации»(вместе с «Методическими рекомендациями о размещении на информационных стендах, официальных интернет-сайтах и других информационных ресурсах общеобразовательных организаций и органов, осуществляющих управление в сфере образования, информации о безопасном поведении и использовании сети «Интернет»)</a>
+            </p>
+            <br>
+            <br>
+            <br>
+            
+            <p class="newsParagraph">
+                <h2 class="newsSubtitle">
+                    <strong class="newsStrong">
+                        Педагогическим работникам
+                    </strong>
+                </h2>
+            </p>
+            <p class="newsParagraph">
+                <strong class="newsJustStrong">Памятка педагогам по обеспечению информационной безопасности обучающихся (воспитанников)</strong>
+            </p>
 
+            <br>
 
-                    <div class="contactsRow">
-                        <div class="contactsName">
-                            <p class="contactsText-name">Кожехов Михаил Сергеевич</p>
-                            <p class="contactsText-position">Начальник управления образования</p>
-                        </div>
-                        
-                        <div class="contactsDirectPhone">
-                            <p class="contactsSubtitle">Прямой телефон:</p>
-                            <p class="contacts-text">4-97-96</p>
-                        </div>
-                        
-                        <div class="contactsInternalPhone">
-                            <p class="contactsSubtitle">Внутренний телефон:</p>
-                            <p class="contacts-text">501</p>
-                        </div>
-                        
-                        <div class="contactsOffice">
-                            <p class="contactsSubtitle">Кабинет:</p>
-                            <p class="contacts-text">408</p>
-                        </div>
-                    </div>
+            <p class="newsParagraph">
+                1. Объясните учащимся правила поведения в Интернете. Расскажите о мерах, принимаемых к нарушителям, ответственности за нарушение правил поведения в сети.
+            </p>
 
-                    <div class="contactsRow">
-                        <div class="contactsName">
-                            <p class="contactsText-name">Клюшанова Светлана Викторовна</p>
-                            <p class="contactsText-position">заместитель начальника управления образования</p>
-                        </div>
-                        
-                        <div class="contactsDirectPhone">
-                            <p class="contactsSubtitle">Прямой телефон:</p>
-                            <p class="contacts-text">4-97-95</p>
-                        </div>
-                        
-                        <div class="contactsInternalPhone">
-                            <p class="contactsSubtitle">Внутренний телефон:</p>
-                            <p class="contacts-text">509</p>
-                        </div>
-                        
-                        <div class="contactsOffice">
-                            <p class="contactsSubtitle">Кабинет:</p>
-                            <p class="contacts-text">408</p>
-                        </div>
-                    </div>
+            <br>
 
-                    <div class="contactsRow">
-                        <div class="contactsName">
-                            <p class="contactsText-name">Ферлей Татьяна Юрьевна</p>
-                            <p class="contactsText-position">заместитель начальника управления образования</p>
-                        </div>
-                        
-                        <div class="contactsDirectPhone">
-                            <p class="contactsSubtitle">Прямой телефон:</p>
-                            <p class="contacts-text">4-97-95</p>
-                        </div>
-                        
-                        <div class="contactsInternalPhone">
-                            <p class="contactsSubtitle">Внутренний телефон:</p>
-                            <p class="contacts-text">523</p>
-                        </div>
-                        
-                        <div class="contactsOffice">
-                            <p class="contactsSubtitle">Кабинет:</p>
-                            <p class="contacts-text">408</p>
-                        </div>
-                    </div>
+            <p class="newsParagraph">
+                2. Совместно с учащимися сформулируйте правила поведения в случае нарушения их прав в Интернете.
+            </p>
 
-                </div> <!-- ./contactsWrapper -->
+            <br>
 
-                <div class="contactsControls">
-                    <div class="showMore contactsShowMore">Смотреть ещё</div>
+            <p class="newsParagraph">
+                3. Приучайте несовершеннолетних уважать права других людей в Интернете. Объясните им смысл понятия «авторское право», расскажите об ответственности за нарушение авторских прав.
+            </p>
 
-                    <div class="findContainer">
-                        <input type="text" class="findInput" placeholder="Поиск по фамилии">
-                        <img src="./assets/images/loup.svg" class="findLoupIco">
-                    </div>
-                </div>
-            </section> <!-- ./contacts -->
+            <br>
 
+            <p class="newsParagraph">
+                4. Проявляйте интерес к «виртуальной» жизни своих учеников, и при необходимости сообщайте родителям о проблемах их детей.
+            </p>
 
-            <section class="addressDetails">
-                <h1 class="title">Адрес и реквизиты</h1>
+            <br>
 
-                <p class="addressDetails-text">Управление образования администрации Конаковского района</p>
-                <p class="addressDetails-text">171252, Тверская область, г. Конаково, ул. Энергетиков, д.13</p>
-                <p class="addressDetails-text">Адрес электронной почты: <a href="mailto:uob2004@yandex.ru" class="newsLink">uob2004@yandex.ru</a></p>
-                <p class="addressDetails-text">УФК по Тверской области В ГРКЦ Банка России по Тверской области г. Тверь Р/c 40204810500000000041  </p>
-                <p class="addressDetails-text"><span class="addressDetails-strongText">БИК</span>042809001</p>
-                <p class="addressDetails-text"><span class="addressDetails-strongText">ИНН</span>6911008563</p>
-                <p class="addressDetails-text"><span class="addressDetails-strongText">КПП</span>691101001</p>
-                <p class="addressDetails-text">Начальник Кожехов Михаил Сергеевич</p>
-            </section> <!-- ./addressDetails -->
+            <p class="newsParagraph">
+                5. Научите учеников внимательно относиться к информации, получаемой из Интернета. Формируйте представление о достоверной и недостоверной информации. Наставайте на посещении проверенных сайтов.
+            </p>
 
+            <br>
 
-            <section class="guestBook">
-                <h1 class="title">Гостевая книга</h1>
+            <p class="newsParagraph">
+                6. Обеспечьте профилактику интернет-зависимости учащихся через вовлечение детей в различные внеклассные мероприятия в реальной жизни (посещение театров, музеев, участие в играх, соревнованиях), чтобы показать, что реальная жизнь намного интереснее виртуальной.
+            </p>
 
-                <div class="guestBookWrapper">
-                    <div class="guestBookForm">
-                        <form id="guestBook__form">
-                            <input name="name" id="name" class="guestBook-input" placeholder="Имя" type="text">
-                            <input name="email" id="email" class="guestBook-input" placeholder="Email" type="email">
-                            <input name="text" id="text" class="guestBook-input" placeholder="Вопрос" type="text">
+            <br>
 
-                            <button class="showMore guestBook-ShowMore">Отправить</button>
-                        </form>
-                    </div>
+            <p class="newsParagraph">
+                7. Периодически совместно с учащимися анализируйте их занятость и организацию досуга, целесообразность и необходимость использования ими ресурсов сети для учебы и отдыха с целью профилактики интернет-зависимости и обсуждайте с родителями результаты своих наблюдений.
+            </p>
 
-                    <img src="./assets/images/guestBookArrow.svg" class="guestBookArrow">
+            <br>
 
-                    <h1 class="guestBook-bigText">Оставьте свой отзыв, вопрос или предложение</h1>
-                </div>
-            </section>
+            <p class="newsParagraph">
+                8. В случае возникновения проблем, связанных с Интернет-зависимостью, своевременно доводите информацию до сведения родителей, привлекайте к работе с учащимися и их родителями психолога, социального педагога.
+            </p>
 
+            <br>
 
-            <section class="messages">
-                <h1 class="title guestBook--title">Сообщения</h1>
+            <p class="newsParagraph">
+                9. Проводите мероприятия, на которых рассказывайте о явлении Интернет-зависимости, ее признаках, способах преодоления.
+            </p>
 
-                <div class="messagesWrapper">
-                    <div class="messagesContainer">
-                        <!-- Вывод отзывов -->
-                        <?php
-                            include("include/html.inc.php");
-                            include("config/config.inc.php");
+            <br>
 
-                            $link = mysqli_connect($db['host'], $db['login'], $db['pass'], $db['base']) or die("Что-то пошло не так...");
-                            mysqli_select_db($link, $db['base']) or die("Что-то пошло не так...");
+            <p class="newsParagraph">
+                10. Систематически повышайте свою квалификацию в области информационно-коммуникационных технологий, а также по вопросам здоровьесбережения.
+            </p>
 
-                            // Делаем запрос на получение первых 3 отзывов
-                            $query = mysqli_query($link, "SELECT * FROM guestMessages ORDER BY guestMessages.id DESC LIMIT 3") or die("Что-то пошло не так...");
+            <br>
 
-                            // Проверяем, есть ли данные для следующей порции (от 3 до 6)
-                            $queryNext = mysqli_query($link, "SELECT * FROM guestMessages ORDER BY guestMessages.id DESC LIMIT 3, 3") or die("Что-то пошло не так...");
-                            $hasNextData = mysqli_num_rows($queryNext) > 0;
+            <p class="newsParagraph">
+                11. Станьте примером для своих учеников. Соблюдайте законодательство в области защиты персональных данных и информационной безопасности. Рационально относитесь к своему здоровью. Разумно используйте в своей жизни возможности интернета и мобильных сетей.
+            </p>
 
-                            $output = '';
+            <br>
+            <br>
 
-                            while ($rezult = mysqli_fetch_array($query, MYSQLI_ASSOC)) {
-                                $output .= '<div class="messageItem">';
-                                $output .= '<div class="messageItem-header">';
-                                $output .= '<div class="messageItem-nameWrapper">';
-                                $output .= '<img class="messageItem-personIco" src="./assets/images/contacts-person.svg" />';
-                                $output .= '<p class="messageItem-name">'.$rezult['name'].'</p>';
-                                $output .= '</div>';
-                                $output .= '<p class="messageItem-date">'.$rezult['date'].'</p>';
-                                $output .= '</div>';
-                                $output .= '<p class="messageItem-content">'.$rezult['text'].'</p>';
-                                $output .= '</div>';
-                            }
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/Metodicheskie_rekomendacii_po_informacionnoj_gramo.pdf" class="newsLink">Методические рекомендации по повышению информационной грамотности педагогических работников.</a>
+            </p>
 
-                            // Если есть хотя бы одно сообщение, выводим их и кнопку "Смотреть ещё"
-                            if (!empty($output)) {
-                                echo $output;
-                            }
-                            
-                            else {
-                                // Если нет сообщений, выводим соответствующее сообщение
-                                echo '<div class="noMessage">Сообщений нет...</div>';
-                            }
-                            
-                            if ($hasNextData) {
-                                echo '<button class="showMore messagesShowMore">Смотреть ещё</button>';
-                            }
+            <br>
 
-                            mysqli_close($link);
-                        ?>
-                    </div>    
+            <p class="newsParagraph">
+                <a href="https://pd.rkn.gov.ru/multimedia/video114.htm" class="newsLink">Видео-материалы для проведения уроков по вопросам защиты персональных данных</a>
+            </p>
 
-                    <div class="messageIco">
-                        <svg width="659" height="389" viewBox="0 0 659 389" fill="none" xmlns="http://www.w3.org/2000/svg" class="svgIco">
-                            <!-- Прямоугольник с тенью -->
-                            <rect width="454" height="210" rx="21" transform="matrix(0.866025 -0.5 0.866025 0.5 39.9489 262)"
-                                fill="#2F82FF" style="filter: drop-shadow(0px 4px 22.9px rgba(0, 0, 0, 0.375));" />
-                            
-                            <!-- Полигон (треугольник) с тенью -->
-                            <path id="animatedPolygon"
-                                d="M352.255 172.231C349.71 176.508 343.927 179.883 336.547 181.398L58.185 238.544L56.3766 237.5C46.3325 231.701 46.3325 222.299 56.3766 216.5L413.979 10.0383C423.581 4.49431 439.15 4.49431 448.753 10.0383V10.0383L352.255 172.231Z"
-                                fill="#599CFF" style="filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));">
-                                <!-- Анимация изменения transform -->
-                                <animateTransform attributeName="transform" type="translate" values="0,0;0,25;0,0" dur="5s" repeatCount="indefinite"
-                                    calcMode="spline" keyTimes="0;0.5;1" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" />
-                            </path>
-                        </svg>
+            <br>
+            <br>
+            <br>
 
-                    </div>
-                </div>
-                
-            </section>
+            <p class="newsParagraph">
+                <h2 class="newsSubtitle">
+                    <strong class="newsStrong">
+                        Обучающимся
+                    </strong>
+                </h2>
+            </p>
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/Prilojenie%202.pdf" class="newsLink">Информационная памятка для обучающихся</a>
+            </p>
 
-        </div> <!-- ./container -->
-    </main> <!-- ./mainPage -->
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/rules.png" class="newsLink">Правила поведения в сети Интернет</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/rules_internet.pdf" class="newsLink">10 правил безопасности в Интернете</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/rules_mvd.pdf" class="newsLink">Безопасный Интернет — детям (буклет от МВД)</a>
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <p class="newsParagraph">
+                <h2 class="newsSubtitle">
+                    <strong class="newsStrong">
+                        Родителям (законным представителям) обучающихся
+                    </strong>
+                </h2>
+            </p>
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/Prilojenie%203.pdf" class="newsLink">Памятка для родителей об информационной безопасности детей</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/memo_01.pdf" class="newsLink">Как защититься от Интернет-угроз (брошюра)</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/memo_02.pdf" class="newsLink">Информационная безопасность детей (пособие)</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/memo_03.pdf" class="newsLink">Безопасность детей в Интернете (памятка)</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/memo_04.pdf" class="newsLink">Безопасность детей в Интернете(памятка для родителей)</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="INF.BEZOPASNOST/memo_05.pdf" class="newsLink">Безопасность детей в Интернете (памятка от компании Майкрософт)</a>
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <p class="newsParagraph">
+                <h2 class="newsSubtitle">
+                    <strong class="newsStrong">
+                        Детские безопасные сайты
+                    </strong>
+                </h2>
+            </p>
+            <p class="newsParagraph">
+                <a href="http://www.spas-extreme.ru/" class="newsLink">Портал детской безопасности МЧС России</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="http://detionline.com/" class="newsLink">Проект Фонда развития Интернета по созданию безопасного содержимого в сети «Дети онлайн»</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="http://www.ya-roditel.ru/" class="newsLink">Я родитель. Сайт для родителей и детей</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="http://www.i-deti.org/" class="newsLink">Интерактивный портал, посвященный защите персональных данных</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="https://xn--d1abkefqip0a2f.xn--p1ai/" class="newsLink">Сайт Единого урока по безопасности в сети «Интернет»</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="http://www.xn--d1abkefqip0a2f.xn--d1acj3b/" class="newsLink">Сайт Единого урока для детей и подростков</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="http://xn--b1afankxqj2c.xn--p1ai/" class="newsLink">Сетевичок.рф - главный советчик в сети для детей. Здесь можно узнать о безопасности в сети понятным и доступным языком, а при возникновении критической ситуации обратиться за советом. А также принять участие в конкурсах и стать самым цифровым гражданином!</a>
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <p class="newsParagraph">
+                <h2 class="newsSubtitle">
+                    <strong class="newsStrong">
+                        Новости
+                    </strong>
+                </h2>
+            </p>
+            <p class="newsParagraph">
+                <a href="http://www.uob-konakovo.ru/news_page.php?id=526" class="newsLink">В Конаковском районе проведен Единый урок по безопасности в сети Интернет</a>
+            </p>
+
+            <p class="newsParagraph">
+                <a href="https://m.youtube.com/watch?v=5S%20foVVu3E8M&feature=emb_logo" class="newsLink">Детская безопасность в Интернете - ответственность взрослых</a>
+            </p>
+
+        </div>
+    </main>
+
 
 
     <footer class="footer">
@@ -405,7 +434,7 @@
                     <a href="#" class="navigationsColumn-item">Начальник и заместители</a>
                     <a href="#" class="navigationsColumn-item">МКУ ЦМХО</a>
                     <a href="#" class="navigationsColumn-item">Планы и отчёты</a>
-                    <a href="./anticorruption.php" class="navigationsColumn-item">Противодействие коррупции</a>
+                    <a href="#" class="navigationsColumn-item">Противодействие коррупции</a>
                 </div>
 
                 <div class="navigationsColumn">
@@ -436,7 +465,7 @@
                 <div class="navigationsColumn">
                     <h1 class="navigationsColumn-title">Контакты</h1>
 
-                    <a href="./testContacts.php" class="navigationsColumn-item">Контакты</a>
+                    <a href="./tesContacts.php" class="navigationsColumn-item">Контакты</a>
                 </div>
 
                 <div class="navigationsColumn">
@@ -523,5 +552,8 @@
     <script src="./assets/js/index.js"></script>
 
     <script src="./assets/js/to_up.js"></script>
+
+
+    
 </body>
 </html>

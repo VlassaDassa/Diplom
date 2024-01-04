@@ -226,7 +226,7 @@
                     <a href="#" class="navigationsColumn-item">Начальник и заместители</a>
                     <a href="#" class="navigationsColumn-item">МКУ ЦМХО</a>
                     <a href="#" class="navigationsColumn-item">Планы и отчёты</a>
-                    <a href="#" class="navigationsColumn-item">Противодействие коррупции</a>
+                    <a href="./anticorruption.php" class="navigationsColumn-item">Противодействие коррупции</a>
                 </div>
 
                 <div class="navigationsColumn">

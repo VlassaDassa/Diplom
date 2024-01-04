@@ -35,7 +35,6 @@
         return $firstImageSrc;
     }
 
-
     function getTextInsideTags($html) {
         $text = strip_tags($html);
         $text = trim($text);
@@ -46,13 +45,13 @@
         echo '<div class="newsItemWrapper">';
         echo '<div class="newsItem">';
         echo '<div class="newsImgWrapper">';
-        echo '<img src="' . htmlspecialchars(getFirstImageSrc($rezult)) . '" class="newsImage imgVis">';
+        echo '<a href=news_page.php?id='.$rezult['id'].'><img src="' . htmlspecialchars(getFirstImageSrc($rezult)) . '" class="newsImage imgVis"></a>';
         echo '</div>';
         echo '<div class="contentWrapper">';
         echo '<h1 class="newsItem-title">Новости</h1>';
-        echo '<p class="newsItem-text">' . htmlspecialchars(getTextInsideTags($rezult['name'])) . '</p>';
+        echo '<a href=news_page.php?id='.$rezult['id'].'><p class="newsItem-text">' . htmlspecialchars(getTextInsideTags($rezult['name'])) . '</p></a>';
         echo '<p class="newsItem-date">' . htmlspecialchars($rezult['date']) . '</p>';
-        echo '<a href=news_page.php?id=' . $rezult['id'] . ' class="newsItem-link"><img src="./assets/images/arrow.svg" class="newsItemLink-icon"></a>';
+        echo '<a href=news_page.php?id='.$rezult['id'].' class="newsItem-link"><img src="./assets/images/arrow.svg" class="newsItemLink-icon"></a>';
         echo '</div>';
         echo '</div>';
         echo '</div>';

@@ -7,7 +7,6 @@ $.extend($.expr[":"], {
 
 $(document).ready(() => {
 
-
     function showError(text) {
         $('.errorMessage').text(text)
         $('.errorMessage').addClass('errorMessage--show')
@@ -53,6 +52,44 @@ $(document).ready(() => {
     });
 
 
+    // Пагинация по отзывам
+    $(document).ready(function () {
+        let curPage = 2;
+        const feedbacksPerPage = 3;
+
+        function loadMoreFeedbacks() {
+            $.ajax({
+                url: 'load_more_feedbacks.php',
+                type: 'POST',
+                data: { page: curPage, perPage: feedbacksPerPage },
+                success: function (data) {
+                    // Разбиваем строку на HTML и флаг
+                    let parts = data.split('#####');
+                    let html = parts[0];
+                    let hasNextData = parts[1];
+
+                    console.log(html);
+                    $('div[align="justify"]').after(html);
+                    curPage++;
+
+                    // Проверяем, есть ли следующая порция данных
+                    if (hasNextData === '0') {
+                        $('.messagesShowMore').hide();
+                    }
+                },
+                error: function () {
+                    alert('Что-то пошло не так...');
+                }
+            });
+        }
+
+        $('.messagesShowMore').on('click', function () {
+            loadMoreFeedbacks();
+        });
+    });
+
+
+    // Отправка отзыва
     $(".guestBook-ShowMore").click(function(e){
         e.preventDefault()
         if(validateForm()){
@@ -64,6 +101,7 @@ $(document).ready(() => {
     });
 
 
+    // Проверка формы для отправки отзыва
     function validateForm(){
         var name = $("#name").val();
         var email = $("#email").val();
@@ -75,24 +113,39 @@ $(document).ready(() => {
         return true;
     }
 
-
+    // Проверка email
     function isValidEmail(email) {
         var emailPattern = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
         return emailPattern.test(email);
     }
 
 
+    // Отправка отзыва
     function sendDataToServer(){
-        var formData = $("#guestBook__form").serialize();
+        var name = encodeURIComponent($("#name").val());
+        var email = encodeURIComponent($("#email").val());
+        var text = encodeURIComponent($("#text").val());
+
+        // Преобразование в кодировку Windows-1251
+        name = unescape(encodeURIComponent(name));
+        email = unescape(encodeURIComponent(email));
+        text = unescape(encodeURIComponent(text));
+
+        var formData = "name=" + name + "&email=" + email + "&text=" + text;
+    
         $.ajax({
             type: "POST",
             url: "contacts_send_feedback.php",
             data: formData,
+            contentType: "application/x-www-form-urlencoded; charset=windows-1251",
             success: function(response){
-                showSuccess('Отзыв успешно отправлен!')
+                showSuccess('Отзыв успешно отправлен!');
+                $("#name").val("")
+                $("#email").val("")
+                $("#text").val("")
             },
             error: function(error){
-                showError('Что-то пошло не так...')
+                showError('Что-то пошло не так...');
             }
         });
     }
@@ -568,7 +621,7 @@ $(document).ready(() => {
 
                 {
                     'name': 'Противодействие коррупции',
-                    'link': '#',
+                    'link': './anticorruption.php',
                 },
             ]
         },
@@ -726,7 +779,7 @@ $(document).ready(() => {
                     'fields': [
                         {
                             'name': 'Пожарная безопасность',
-                            'link': '#',
+                            'link': './pojar_besopas.php',
                         },
 
                         {
@@ -736,17 +789,17 @@ $(document).ready(() => {
 
                         {
                             'name': 'Дорожная безопасность',
-                            'link': '#',
+                            'link': './doroj_besopas.php',
                         },
 
                         {
                             'name': 'Информационная безопасность',
-                            'link': '#',
+                            'link': './inform_besopas.php',
                         },
 
                         {
                             'name': 'Противодействие экстремизму и терроризму',
-                            'link': '#',
+                            'link': './antiekstremism.php',
                         },
                     ]
                 },

@@ -1815,12 +1815,18 @@ body {
     line-height: 1.5;
 }
 
+.newsJustStrong {
+    font-weight: 600;
+}
+
+
 .newsParagraph + .newsParagraph{
     margin-top: 20px;
 }
 
 .newsSubtitle {
     font-size: 20px !important;
+    line-height: 1.5;
 }
 
 
@@ -2364,6 +2370,9 @@ body {
 .messageItem-content {
     font-size: 20px;
     line-height: 1.5;
+
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 
