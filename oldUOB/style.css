@@ -1,0 +1,229 @@
+/* CSS Document */
+* { padding: 0; margin: 0; }
+.main_border {border:1px solid #000000;}
+p {font-family:Verdana; font-size:12px; margin: 15px;}
+.left {
+	background-color:#eee6a3;
+	border-right: 1px solid #000000;
+	width:190px;
+}
+body {background-image: url(img/fon.png);}
+
+
+p.title {
+background-color: #896623;
+color: #ffffff;
+font-weight:bold;
+margin:5px;
+padding:5px;
+text-indent:0px;
+}
+
+#coolmenu{
+border: 1px solid gray; /*—тиль рамки */
+border-bottom-width: 0;
+width: 90%; /*Ўирина меню */
+background-color: #f6f6f6;  /*‘оновый цвет €чейки*/
+margin:8px; /*Ўирина отступов*/
+}
+
+* html #coolmenu{ 
+width: 190px;/*Ўирина меню дл€ Internet Explorer*/
+}
+
+#coolmenu a{
+font: 13px Verdana; /*Ўрифт текста*/
+padding: 2px; /*¬нутренний отсутп текста ссылки от краев €чейки*/
+padding-left: 4px;/*¬нутренний отсутп текста ссылки от левого кра€ €чейки*/
+display: block;
+width: 100%; /*Ўирина €чейки*/
+color: #000000;  /*÷вет текста*/
+text-decoration: none; /*ѕодчеркивание у ссылок - нет*/
+border-bottom: 1px solid gray;
+}
+
+html>body #coolmenu a{ 
+width: auto;
+}
+
+#coolmenu a:hover{
+background-color: #d2b48c; /*‘оновый цвет €чейки при наведение курсора*/
+color: #000000;  /*÷вет текста при наведении курсора*/
+}
+
+.presidenttext {
+	color: #FF0000;
+	font-style: italic;
+}
+
+a.podr { font-family: Tahoma, Arial, Verdana; font-size: 8pt; color: #303030; text-decoration: none; padding-left : 35px;}
+a.podr:link { font-family: Tahoma, Arial, Verdana; font-size: 8pt; color: #303030; text-decoration: none; padding-left : 35px;}
+a.podr:active { font-family: Tahoma, Arial, Verdana; font-size: 8pt; color: #303030; text-decoration: none; padding-left : 35px;}
+a.podr:visited { font-family: Tahoma, Arial, Verdana; font-size: 8pt; color: #303030; text-decoration: none; padding-left : 35px;}
+a.podr:hover { font-family: Tahoma, Arial, Verdana; font-size: 8pt; color: #606060; text-decoration: underline; padding-left : 35px;}
+
+.news { font-family: Tahoma, Arial, Verdana; font-size: 8pt; color: #222222;}
+.data { font-family: Tahoma, Arial, Verdana; font-size: 8pt; color: #000000;}
+
+.guest { 
+	background-color : #ffffff;
+	padding : 2px;
+	border : 1px solid #f0f0f0;
+	padding-left : 15px;
+	}
+
+.guest_name {
+	color : #000000;
+	padding : 1px;
+	font-size: 10pt;
+	padding-left : 15px;	
+	}
+
+.guest_text {
+	color : #000000;
+	padding : 1px;
+	font-size: 9pt;
+	padding-left : 15px;
+	}
+
+.guest_form {
+	background-color : #00000;
+	padding : 2px;
+	padding-left : 5px;
+	border : 1px solid #DDDDDD;
+	color : #000000;
+	font-size: 8pt;
+	}
+
+.guest_form_z {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.sight_news_title {
+	background-color : #f0f0f0;
+	padding : 2px;
+	border : 1px solid #DDDDDD;
+	font-weight : bold;
+	color : #000000;
+	font-size: 10pt;
+	}
+
+.sight_news {
+	background-color : #f0f0f0;
+	padding : 2px;
+	border : 1px solid #DDDDDD;
+    padding-left : 10px;
+	color : #000000;
+	font-size: 8pt;
+	}
+
+a.page { color : #51002E; font-size: 10pt; text-decoration: underline; font-weight: bold;}
+a.page:link { color : #51002E; font-size: 10pt; text-decoration: underline; font-weight: bold;}
+a.page:active { color : #51002E; font-size: 10pt; text-decoration: underline; font-weight: bold;}
+a.page:visited { color : #51002E; font-size: 10pt; text-decoration: underline; font-weight: bold;}
+a.page:hover { color : #000000; font-size: 10pt; text-decoration: none; font-weight: bold;}
+.mail {color : #0000ff;}
+.fax {color : #000080;}
+.right{
+	width:190px;
+	border-left:1px solid gray;
+	padding:5px;
+	background-color:#eee6a3;
+}
+.center{
+	background-image:url('../img/fon_center.jpg');
+	padding:15px;
+}
+.glav{
+margin:10px 100px 0px 100px;
+vertical-align:top;
+}
+.container div{
+display:inline-block;
+vertical-align:top;
+
+}
+.menu{
+width:200px;
+}
+.leftbox{
+width:250px;
+
+}
+.centerbox{
+width:55%;
+background-color:#ffffff;
+margin-right:5px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+padding-right: 10px;
+  
+}
+.centerbox img {
+max-width:585px;
+}
+.rightbox{
+width:18%;
+}
+
+
+#accordion {
+	width:250px;
+background: linear-gradient(to top, #0086D6, #004173);
+}
+#accordion li{
+	cursor: pointer;
+	background:url(accordion_bg.png) repeat-x;
+	font-weight:bold;
+	color:#FFFFFF;
+        font-size:20px;
+	border-top:1px solid #009AD6;
+	margin-bottom:2px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	padding: 4px 8px;
+}
+
+#accordion li.active{
+	color:#FFFFFF;
+}
+#accordion li ul{
+	padding:0;
+	margin:10px 0 0 0;
+}
+
+#accordion li.active li{
+	text-indent:0;
+}
+#accordion li li{
+	font-weight: normal;
+	background:none;
+	border:0;
+}
+#accordion a{
+text-decoration: none;
+}
+#accordion a:link {
+color:#FFFFFF;
+}
+#accordion a:visited {
+color:#FFFFFF;
+}
+#accordion a:hover {
+color:#FFFFFF;
+}
+#accordion a:active {
+color:#FFFFFF;
+}
+.zag{
+border-radius: 10px 10px 0px 0;
+width:250px;
+color:#FFFFFF;
+background-color:#004173;
+padding-top:15px;
+padding-bottom:15px;
+font-weight:bold;
+}

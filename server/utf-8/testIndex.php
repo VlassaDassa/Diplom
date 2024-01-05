@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <div class="settingVision">
         <img src="./assets/images/closeIco.svg" alt="Закрыть" class="settingVisionCloseBtn">
 
