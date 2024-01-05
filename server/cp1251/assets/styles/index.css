@@ -2474,3 +2474,87 @@ body {
         margin-top: 75px;
     }
 }
+
+
+/* 404 */
+.notFoundPage {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-image: url('./../images/bg404.png');
+}
+
+.notFoundPage__title {
+    font-size: 128px;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.notFoundPage__paragraph {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.notFoundPage__paragraph + .notFoundPage__paragraph {
+    margin-top: 15px;
+}
+
+.notFoundPage__link {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1024px) {
+    .notFoundPage__title {
+        font-size: 96px;
+        margin-bottom: 20px;
+    }
+
+    .notFoundPage__paragraph {
+        font-size: 20px;
+    }
+
+    .notFoundPage__paragraph + .notFoundPage__paragraph {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .notFoundPage__title {
+        font-size: 64px;
+        margin-bottom: 15px;
+    }
+
+    .notFoundPage__paragraph {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .notFoundPage__paragraph + .notFoundPage__paragraph {
+        margin-top: 5px;
+    }
+
+    .notFoundPage {
+        margin-top: 100px;
+        margin-bottom: 75px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .notFoundPage__title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .notFoundPage__paragraph {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .notFoundPage {
+        margin-bottom: 50px;
+    }
+}
+/* ./404 */
