@@ -27,7 +27,7 @@ function HeadSight ($PageName) // шапка сайта, навигация
    <div id="celebs">
 <div class="zag" align="center">Меню</div>
     <ul id="accordion">
-      <li><a href="index.php">Главная</a></li>
+      <li><a href="oldIndex.php">Главная</a></li>
 <li><a>Муниципальные механизмы управления качеством образования</a>
    <ul>
 
@@ -180,7 +180,7 @@ function HeadSight ($PageName) // шапка сайта, навигация
         <li><a href="bus.gov.php">BUS.GOV.RU ОФИЦИАЛЬНЫЙ САЙТ  для размещения информации о государственных (муниципальных) учреждениях</a></li>
        </ul>
  </li>
-      <li><a href="contacts.php">Контакты</a></li>
+      <li><a href="oldContacts.php">Контакты</a></li>
  <li><a href="vakansii.php">Вакансии</a></li>
 <li><a href="moderniz.php">Модернизация школьных систем образования</a></li>
     </ul>
@@ -248,7 +248,7 @@ function RightSight ()
     <ul id="accordion">
 <div class="zag" align="center">Новости сайта</div>
     <ul id="accordion">
-      <li><a href="index.php"></a></li>
+      <li><a href="oldIndex.php"></a></li>
   '; //текст главы организации
   
   

@@ -14,56 +14,55 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-    <script src='https://pos.gosuslugi.ru/bin/script.min.js'></script>
     <link rel="stylesheet" href="./assets/styles/gosuslugi.css">
 
-    <title>РЈРїСЂР°РІР»РµРЅРёРµ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ</title>
+    <title>Управление образования</title>
 
 </head>
 
 <body>
     <div class="settingVision">
-        <img src="./assets/images/closeIco.svg" alt="Р—Р°РєСЂС‹С‚СЊ" class="settingVisionCloseBtn">
+        <img src="./assets/images/closeIco.svg" alt="Закрыть" class="settingVisionCloseBtn">
 
         <div class="settingVision-row">
             
             <div class="settingVision-item">
-                <h1 class="settingVision-title">РЁСЂРёС„С‚</h1>
+                <h1 class="settingVision-title">Шрифт</h1>
                 <div class="settingVision-itemWrapper">
-                    <button data-setVis="notSerif" class="font-type settingVision-btn settingVision-btn--selected">Р‘РµР· Р·Р°СЃРµС‡РµРє</button>
-                    <button data-setVis="serif" class="font-type settingVision-btn">РЎ Р·Р°СЃРµС‡РєР°РјРё</button>
+                    <button data-setVis="notSerif" class="font-type settingVision-btn settingVision-btn--selected">Без засечек</button>
+                    <button data-setVis="serif" class="font-type settingVision-btn">С засечками</button>
                 </div>
             </div>
 
             <div class="settingVision-item">
-                <h1 class="settingVision-title">Р Р°СЃСЃС‚РѕСЏРЅРёРµ РјРµР¶РґСѓ Р±СѓРєРІР°РјРё</h1>
+                <h1 class="settingVision-title">Расстояние между буквами</h1>
                 <div class="settingVision-itemWrapper">
-                    <button data-setVis="spacingSmall" class="letter-space settingVision-btn settingVision-btn--selected">РњР°Р»РµРЅСЊРєРѕРµ</button>
-                    <button data-setVis="spacingMedium" class="letter-space settingVision-btn">РЎСЂРµРґРЅРµРµ</button>
-                    <button data-setVis="spacingBig" class="letter-space settingVision-btn">Р‘РѕР»СЊС€РѕРµ</button>
+                    <button data-setVis="spacingSmall" class="letter-space settingVision-btn settingVision-btn--selected">Маленькое</button>
+                    <button data-setVis="spacingMedium" class="letter-space settingVision-btn">Среднее</button>
+                    <button data-setVis="spacingBig" class="letter-space settingVision-btn">Большое</button>
                 </div>
             </div>
 
             <div class="settingVision-item">
-                <h1 class="settingVision-title">РЎРєСЂС‹РІР°С‚СЊ РёР·РѕР±СЂР°Р¶РµРЅРёСЏ</h1>
+                <h1 class="settingVision-title">Скрывать изображения</h1>
                 <div class="settingVision-itemWrapper">
-                    <button data-setVis="imageShow" class="imgHideShow settingVision-btn">РЎРєСЂС‹РІР°С‚СЊ</button>
-                    <button data-setVis="imageHide" class="imgHideShow settingVision-btn settingVision-btn--selected">РќРµ СЃРєСЂС‹РІР°С‚СЊ</button>
+                    <button data-setVis="imageShow" class="imgHideShow settingVision-btn">Скрывать</button>
+                    <button data-setVis="imageHide" class="imgHideShow settingVision-btn settingVision-btn--selected">Не скрывать</button>
                 </div>
             </div>
 
             <div class="settingVision-item">
-                <h1 class="settingVision-title">РњР°СЃС€С‚Р°Р±</h1>
+                <h1 class="settingVision-title">Масштаб</h1>
                 <div class="settingVision-itemWrapper">
-                    <button class="defaultScale settingVision-btn settingVision-btn--selected">РћР±С‹С‡РЅС‹Р№</button>
-                    <button class="bigScale settingVision-btn">Р‘РѕР»СЊС€РѕР№</button>
+                    <button class="defaultScale settingVision-btn settingVision-btn--selected">Обычный</button>
+                    <button class="bigScale settingVision-btn">Большой</button>
                 </div>
             </div>
             
 
         </div>
 
-        <button class="resetOptions">РЎР±СЂРѕСЃРёС‚СЊ</button>
+        <button class="resetOptions">Сбросить</button>
 
     </div>
 
@@ -71,7 +70,7 @@
 
 
     <div class="mobileMenu">
-        <img src="./assets/images/closeIco.svg" alt="Р—Р°РєСЂС‹С‚СЊ" class="mobileMenuClose">
+        <img src="./assets/images/closeIco.svg" alt="Закрыть" class="mobileMenuClose">
 
         <div class="mobileMenuWrapper">
               <div class="mobileMenu-title">
@@ -79,7 +78,7 @@
                         <img src="./assets/images/menuArrowLeft.svg" class="backBtn-img">
                     </div>
 
-                    <h1 class="mobileMenu-titleText">РЈРїСЂР°РІР»РµРЅРёРµ</h1>
+                    <h1 class="mobileMenu-titleText">Управление</h1>
               </div>  
 
         </div>
@@ -89,11 +88,11 @@
         <div class="container">
             <div class="mobileHeaderWrapper">
                 <div class="headerBtnsWrapper">
-                    <a href="./testIndex.php" class="headerBtn">Р“Р»Р°РІРЅР°СЏ</a>
-                    <div class="headerBtn" id='menu'>РњРµРЅСЋ</div>
+                    <a href="./index.php" class="headerBtn">Главная</a>
+                    <div class="headerBtn" id='menu'>Меню</div>
                 </div>
                 
-                <a href="./testContacts.php" class="headerItem">РљРѕРЅС‚Р°РєС‚С‹</a>
+                <a href="./contacts.php" class="headerItem">Контакты</a>
             </div>
         </div>
     </section> <!-- ./mobileHeader -->
@@ -102,7 +101,7 @@
     <header class="headerWrapper">
         <div class="header container">
 
-            <p class="headerText">РЈРџР РђР’Р›Р•РќРР• РћР‘Р РђР—РћР’РђРќРРЇ РђР”РњРРќРРЎРўР РђР¦РР РљРћРќРђРљРћР’РЎРљРћР“Рћ Р РђР™РћРќРђ</p>
+            <p class="headerText">УПРАВЛЕНИЕ ОБРАЗОВАНИЯ АДМИНИСТРАЦИИ КОНАКОВСКОГО РАЙОНА</p>
         
             <div class="headerIconWrapper">
                 <img class="imgVis" src="./assets/images/headerIcon.svg">
@@ -124,31 +123,31 @@
     <section class="menu">
         <ul class="container menuWrapper">
             <li class="menu_item menu_item--mainPage">
-                <a href="./testIndex.php">Р“Р»Р°РІРЅР°СЏ</a>
+                <a href="./index.php">Главная</a>
             </li>
 
             <li class="menu_item">
-                РЈРїСЂР°РІР»РµРЅРёРµ
+                Управление
             </li>
 
             <li class="menu_item">
-                Р”РµСЏС‚РµР»СЊРЅРѕСЃС‚СЊ
+                Деятельность
             </li>
 
             <li class="menu_item">
-                Р”РѕРєСѓРјРµРЅС‚С‹
+                Документы
             </li>
 
             <li class="menu_item">
-                РџРѕРґРІРµРґРѕРјСЃС‚РІРµРЅРЅС‹Рµ РѕСЂРіР°РЅРёР·Р°С†РёРё
+                Подведомственные организации
             </li>
 
             <li class="menu_item">
-                РџСЂРёС‘РјРЅР°СЏ
+                Приёмная
             </li>
 
             <li class="menu_item menu_item--mainPage">
-                <a href="./testContacts.php">РљРѕРЅС‚Р°РєС‚С‹</a>
+                <a href="./contacts.php">Контакты</a>
             </li>
         </ul> <!-- ./container menuWrapper -->
     </section> <!-- ./menu -->
@@ -158,7 +157,7 @@
         <div class="container extendedMenuWrapper">
 
             <div class="extendedMenu-titleWrapper">
-                <h1 class="extendedMenu-title">РЈРїСЂР°РІР»РµРЅРёРµ</h1>
+                <h1 class="extendedMenu-title">Управление</h1>
             </div>
 
             <div class="extendedMenu-linkWrapper">
@@ -182,20 +181,20 @@
                       
                           <div class="bf-22__decor">
                             <div class="bf-22__logo-wrap">
-                              <img class="bf-22__logo" src="https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo-blue.svg" alt="Р“РѕСЃСѓСЃР»СѓРіРё">
-                              <div class="bf-22__slogan">Р РµС€Р°РµРј РІРјРµСЃС‚Рµ</div>
+                              <img class="bf-22__logo" src="https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo-blue.svg" alt="Госуслуги">
+                              <div class="bf-22__slogan">Решаем вместе</div>
                             </div>
                           </div>
 
                           
                           <div class="bf-22__content">
                             <div class="bf-22__text">
-                              Р•СЃС‚СЊ РїСЂРµРґР»РѕР¶РµРЅРёСЏ РїРѕ РѕСЂРіР°РЅРёР·Р°С†РёРё СѓС‡РµР±РЅРѕРіРѕ РїСЂРѕС†РµСЃСЃР° РёР»Рё Р·РЅР°РµС‚Рµ, РєР°Рє СЃРґРµР»Р°С‚СЊ С€РєРѕР»Сѓ Р»СѓС‡С€Рµ?
+                              Есть предложения по организации учебного процесса или знаете, как сделать школу лучше?
                             </div>
                       
                             <div class="bf-22__bottom-wrap">
                               <div class="bf-22__btn-wrap">
-                                <button class="pos-banner-btn_2" type="button">РќР°РїРёСЃР°С‚СЊ Рѕ РїСЂРѕР±Р»РµРјРµ
+                                <button class="pos-banner-btn_2" type="button">Написать о проблеме
                                 </button>
                               </div>
                             </div>
@@ -225,20 +224,20 @@
                   
                       <div class="bf-22__decor">
                         <div class="bf-22__logo-wrap">
-                          <img class="bf-22__logo" src="https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo-blue.svg" alt="Р“РѕСЃСѓСЃР»СѓРіРё">
-                          <div class="bf-22__slogan">Р РµС€Р°РµРј РІРјРµСЃС‚Рµ</div>
+                          <img class="bf-22__logo" src="https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo-blue.svg" alt="Госуслуги">
+                          <div class="bf-22__slogan">Решаем вместе</div>
                         </div>
                       </div>
 
                       
                       <div class="bf-22__content">
                         <div class="bf-22__text">
-                          Р•СЃС‚СЊ РїСЂРµРґР»РѕР¶РµРЅРёСЏ РїРѕ РѕСЂРіР°РЅРёР·Р°С†РёРё СѓС‡РµР±РЅРѕРіРѕ РїСЂРѕС†РµСЃСЃР° РёР»Рё Р·РЅР°РµС‚Рµ, РєР°Рє СЃРґРµР»Р°С‚СЊ С€РєРѕР»Сѓ Р»СѓС‡С€Рµ?
+                          Есть предложения по организации учебного процесса или знаете, как сделать школу лучше?
                         </div>
                   
                         <div class="bf-22__bottom-wrap">
                           <div class="bf-22__btn-wrap">
-                            <button class="pos-banner-btn_2" type="button">РќР°РїРёСЃР°С‚СЊ Рѕ РїСЂРѕР±Р»РµРјРµ
+                            <button class="pos-banner-btn_2" type="button">Написать о проблеме
                             </button>
                           </div>
                         </div>
@@ -252,58 +251,58 @@
         <section class="aboutUs grayBg">
             <div class="container">
                 <div class="aboutUs-titleWrapper">
-                    <p class="aboutUsTitle">РњС‹ РїСЂРёРІРµС‚СЃС‚РІСѓРµРј Р’Р°СЃ РЅР° РѕС„РёС†РёР°Р»СЊРЅРѕРј СЃР°Р№С‚Рµ РЈРїСЂР°РІР»РµРЅРёСЏ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ</p>
+                    <p class="aboutUsTitle">Мы приветствуем Вас на официальном сайте Управления образования</p>
                 </div>
 
                 <div class="aboutUsItem">
                     <img src="./assets/images/handIco.svg" class="aboutUsIcon handIcon imgVis">
                     <p class="aboutUsItem-text">
-                        РњС‹ РїСЂРёРІРµС‚СЃС‚РІСѓРµРј РїРµРґР°РіРѕРіРѕРІ, СЂР°Р±РѕС‚РЅРёРєРѕРІ РґРѕС€РєРѕР»СЊРЅРѕРіРѕ Рё РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ, 
-                        Р·Р°РІРµРґСѓСЋС‰РёС… С€РєРѕР»СЊРЅС‹РјРё Р±РёР±Р»РёРѕС‚РµРєР°РјРё, СЂСѓРєРѕРІРѕРґРёС‚РµР»РµР№ РѕР±СЂР°Р·РѕРІР°С‚РµР»СЊРЅС‹С… СѓС‡СЂРµР¶РґРµРЅРёР№, 
-                        СѓС‡Р°С‰РёС…СЃСЏ Рё РёС… СЂРѕРґРёС‚РµР»РµР№ РЅР° СЃР°Р№С‚Рµ РЈРїСЂР°РІР»РµРЅРёСЏ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ 
-                        РђРґРјРёРЅРёСЃС‚СЂР°С†РёРё РљРѕРЅР°РєРѕРІСЃРєРѕРіРѕ СЂР°Р№РѕРЅР°.
+                        Мы приветствуем педагогов, работников дошкольного и дополнительного образования, 
+                        заведующих школьными библиотеками, руководителей образовательных учреждений, 
+                        учащихся и их родителей на сайте Управления образования 
+                        Администрации Конаковского района.
                     </p>
                 </div> <!-- ./aboutUsItem -->
 
                 <div class="aboutUsItem aboutUsItem-right">
                     <img src="./assets/images/wifiIco.svg" class="aboutUsIcon wifiIcon imgVis">
                     <p class="aboutUsItem-text">
-                        РњС‹ СѓР±РµР¶РґРµРЅС‹: СЃС‚СЂР°РЅРёС†Р° РІ РРЅС‚РµСЂРЅРµС‚Рµ СЃРґРµР»Р°РµС‚ РїСЂРѕС†РµСЃСЃ РѕР±СѓС‡РµРЅРёСЏ Рё РІРѕСЃРїРёС‚Р°РЅРёСЏ Р±РѕР»РµРµ РѕС‚РєСЂС‹С‚С‹Рј Рё РґРѕСЃС‚СѓРїРЅС‹Рј, 
-                        РїРѕРґРґРµСЂР¶РёС‚ РѕР±С‰РµСЃС‚РІРµРЅРЅРѕРµ СѓС‡Р°СЃС‚РёРµ РІ Р¶РёР·РЅРё РєР°Р¶РґРѕР№ С€РєРѕР»С‹, РґРµС‚СЃРєРѕРіРѕ СЃР°РґР°, СЃРїРѕСЂС‚РёРІРЅРѕРіРѕ РєР»СѓР±Р° Рё С‚РІРѕСЂС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРґРёРЅРµРЅРёСЏ РґРµС‚РµР№ Рё СЋРЅРѕС€РµСЃС‚РІР°, 
-                        Р°РєС‚РёРІРёР·РёСЂСѓРµС‚ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹С… СЂРµСЃСѓСЂСЃРѕРІ РіР»РѕР±Р°Р»СЊРЅРѕР№ СЃРµС‚Рё РґР»СЏ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ СЋРЅС‹С… РєРѕРЅР°РєРѕРІС†РµРІ, 
-                        РІС‹СЃС‚СЂРѕРёС‚ РЅРѕРІС‹Рµ СЃРІСЏР·Рё СЂР°Р±РѕС‚РЅРёРєРѕРІ РїСЂРѕСЃРІРµС‰РµРЅРёСЏ Рё РёС… РІРѕСЃРїРёС‚Р°РЅРЅРёРєРѕРІ, 
-                        РїРѕСЃР»СѓР¶РёС‚ СЃС‚Р°РЅРѕРІР»РµРЅРёСЋ СЃРѕРІСЂРµРјРµРЅРЅРѕРіРѕ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРіРѕ РѕР±С‰РµСЃС‚РІР°.
+                        Мы убеждены: страница в Интернете сделает процесс обучения и воспитания более открытым и доступным, 
+                        поддержит общественное участие в жизни каждой школы, детского сада, спортивного клуба и творческого объединения детей и юношества, 
+                        активизирует использование информационных ресурсов глобальной сети для образования юных конаковцев, 
+                        выстроит новые связи работников просвещения и их воспитанников, 
+                        послужит становлению современного информационного общества.
                     </p>
                 </div> <!-- ./aboutUsItem -->
 
                 <div class="aboutUsItem">
                     <img src="./assets/images/docIco.svg" class="aboutUsIcon docIcon imgVis">
                     <p class="aboutUsItem-text">
-                        Р—РґРµСЃСЊ РІС‹ СЃРјРѕР¶РµС‚Рµ СѓР·РЅР°С‚СЊ РЅРѕРІРѕСЃС‚Рё РІ СЃРёСЃС‚РµРјРµ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ, РёР·СѓС‡РёС‚СЊ РЅРѕСЂРјР°С‚РёРІРЅС‹Рµ РїСЂР°РІРѕРІС‹Рµ Р°РєС‚С‹, 
-                        РїСЂРѕС‡РµСЃС‚СЊ Р°РЅР°Р»РёС‚РёС‡РµСЃРєРёРµ СЃС‚Р°С‚СЊРё РїРѕ РІРѕРїСЂРѕСЃР°Рј РѕР±СЂР°Р·РѕРІР°РЅРёСЏ.
+                        Здесь вы сможете узнать новости в системе образования, изучить нормативные правовые акты, 
+                        прочесть аналитические статьи по вопросам образования.
                     </p>
                 </div> <!-- ./aboutUsItem -->
 
 
                 <div class="aboutUs-mobileText">
                     <p class="aboutUsItem-text">
-                        РњС‹ РїСЂРёРІРµС‚СЃС‚РІСѓРµРј РїРµРґР°РіРѕРіРѕРІ, СЂР°Р±РѕС‚РЅРёРєРѕРІ РґРѕС€РєРѕР»СЊРЅРѕРіРѕ Рё РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ, 
-                        Р·Р°РІРµРґСѓСЋС‰РёС… С€РєРѕР»СЊРЅС‹РјРё Р±РёР±Р»РёРѕС‚РµРєР°РјРё, СЂСѓРєРѕРІРѕРґРёС‚РµР»РµР№ РѕР±СЂР°Р·РѕРІР°С‚РµР»СЊРЅС‹С… СѓС‡СЂРµР¶РґРµРЅРёР№, 
-                        СѓС‡Р°С‰РёС…СЃСЏ Рё РёС… СЂРѕРґРёС‚РµР»РµР№ РЅР° СЃР°Р№С‚Рµ РЈРїСЂР°РІР»РµРЅРёСЏ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ 
-                        РђРґРјРёРЅРёСЃС‚СЂР°С†РёРё РљРѕРЅР°РєРѕРІСЃРєРѕРіРѕ СЂР°Р№РѕРЅР°.
+                        Мы приветствуем педагогов, работников дошкольного и дополнительного образования, 
+                        заведующих школьными библиотеками, руководителей образовательных учреждений, 
+                        учащихся и их родителей на сайте Управления образования 
+                        Администрации Конаковского района.
                     </p>
 
                     <p class="aboutUsItem-text">
-                        РњС‹ СѓР±РµР¶РґРµРЅС‹: СЃС‚СЂР°РЅРёС†Р° РІ РРЅС‚РµСЂРЅРµС‚Рµ СЃРґРµР»Р°РµС‚ РїСЂРѕС†РµСЃСЃ РѕР±СѓС‡РµРЅРёСЏ Рё РІРѕСЃРїРёС‚Р°РЅРёСЏ Р±РѕР»РµРµ РѕС‚РєСЂС‹С‚С‹Рј Рё РґРѕСЃС‚СѓРїРЅС‹Рј, 
-                        РїРѕРґРґРµСЂР¶РёС‚ РѕР±С‰РµСЃС‚РІРµРЅРЅРѕРµ СѓС‡Р°СЃС‚РёРµ РІ Р¶РёР·РЅРё РєР°Р¶РґРѕР№ С€РєРѕР»С‹, РґРµС‚СЃРєРѕРіРѕ СЃР°РґР°, СЃРїРѕСЂС‚РёРІРЅРѕРіРѕ РєР»СѓР±Р° Рё С‚РІРѕСЂС‡РµСЃРєРѕРіРѕ РѕР±СЉРµРґРёРЅРµРЅРёСЏ РґРµС‚РµР№ Рё СЋРЅРѕС€РµСЃС‚РІР°, 
-                        Р°РєС‚РёРІРёР·РёСЂСѓРµС‚ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹С… СЂРµСЃСѓСЂСЃРѕРІ РіР»РѕР±Р°Р»СЊРЅРѕР№ СЃРµС‚Рё РґР»СЏ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ СЋРЅС‹С… РєРѕРЅР°РєРѕРІС†РµРІ, 
-                        РІС‹СЃС‚СЂРѕРёС‚ РЅРѕРІС‹Рµ СЃРІСЏР·Рё СЂР°Р±РѕС‚РЅРёРєРѕРІ РїСЂРѕСЃРІРµС‰РµРЅРёСЏ Рё РёС… РІРѕСЃРїРёС‚Р°РЅРЅРёРєРѕРІ, 
-                        РїРѕСЃР»СѓР¶РёС‚ СЃС‚Р°РЅРѕРІР»РµРЅРёСЋ СЃРѕРІСЂРµРјРµРЅРЅРѕРіРѕ РёРЅС„РѕСЂРјР°С†РёРѕРЅРЅРѕРіРѕ РѕР±С‰РµСЃС‚РІР°.
+                        Мы убеждены: страница в Интернете сделает процесс обучения и воспитания более открытым и доступным, 
+                        поддержит общественное участие в жизни каждой школы, детского сада, спортивного клуба и творческого объединения детей и юношества, 
+                        активизирует использование информационных ресурсов глобальной сети для образования юных конаковцев, 
+                        выстроит новые связи работников просвещения и их воспитанников, 
+                        послужит становлению современного информационного общества.
                     </p>
 
                     <p class="aboutUsItem-text">
-                        Р—РґРµСЃСЊ РІС‹ СЃРјРѕР¶РµС‚Рµ СѓР·РЅР°С‚СЊ РЅРѕРІРѕСЃС‚Рё РІ СЃРёСЃС‚РµРјРµ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ, РёР·СѓС‡РёС‚СЊ РЅРѕСЂРјР°С‚РёРІРЅС‹Рµ РїСЂР°РІРѕРІС‹Рµ Р°РєС‚С‹, 
-                        РїСЂРѕС‡РµСЃС‚СЊ Р°РЅР°Р»РёС‚РёС‡РµСЃРєРёРµ СЃС‚Р°С‚СЊРё РїРѕ РІРѕРїСЂРѕСЃР°Рј РѕР±СЂР°Р·РѕРІР°РЅРёСЏ.
+                        Здесь вы сможете узнать новости в системе образования, изучить нормативные правовые акты, 
+                        прочесть аналитические статьи по вопросам образования.
                     </p>
                 </div>
             </div> 
@@ -312,14 +311,14 @@
         <div class="container">
             <section class="news">
                 <h1 class="title">
-                    РќРѕРІРѕСЃС‚Рё
+                    Новости
                 </h1>
                 
                 <div class="newsWrapper">
                     <?php
                         include("config/config.inc.php");
 
-                        $link = mysqli_connect($db['host'], $db['login'], $db['pass'], $db['base']) or die("РќРµ СѓРґР°Р»РѕСЃСЊ РІС‹РїРѕР»РЅРёС‚СЊ РїРѕРґРєР»СЋС‡РµРЅРёРµ");
+                        $link = mysqli_connect($db['host'], $db['login'], $db['pass'], $db['base']) or die("Не удалось выполнить подключение");
 
                         $query = mysqli_query($link, "SELECT * FROM news ORDER BY id DESC LIMIT 3");
 
@@ -356,7 +355,7 @@
                             echo '<a href=news_page.php?id='.$rezult['id'].'><img src="' . htmlspecialchars(getFirstImageSrc($rezult)) . '" class="newsImage imgVis"></a>';
                             echo '</div>';
                             echo '<div class="contentWrapper">';
-                            echo '<h1 class="newsItem-title">РќРѕРІРѕСЃС‚Рё</h1>';
+                            echo '<h1 class="newsItem-title">Новости</h1>';
                             echo '<a href=news_page.php?id='.$rezult['id'].'><p class="newsItem-text">' . htmlspecialchars(getTextInsideTags($rezult['name'])) . '</p></a>';
                             echo '<p class="newsItem-date">' . htmlspecialchars($rezult['date']) . '</p>';
                             echo '<a href=news_page.php?id='.$rezult['id'].' class="newsItem-link"><img src="./assets/images/arrow.svg" class="newsItemLink-icon"></a>';
@@ -368,50 +367,50 @@
                     ?>
                 </div>
 
-                <button class="showMore showMore--index">РЎРјРѕС‚СЂРµС‚СЊ РµС‰С‘</button>
+                <button class="showMore showMore--index">Смотреть ещё</button>
 
             </section> <!-- ./news -->
         </div> <!-- ./container -->
 
         <section class="phoneNumbers grayBg">
             <div class="container">
-                <h1 class="title">Р“РѕСЂСЏС‡Р°СЏ Р»РёРЅРёСЏ</h1>
+                <h1 class="title">Горячая линия</h1>
 
                 <div class="phoneNumbersWrapper">
                     <div class="phoneItems">
                         <div class="phoneItem">
                             <h1 class="phoneItems-title">8(48242)4-97-95</h1>
                             <p class="phoneItems-text">
-                                Р“РѕСЂСЏС‡Р°СЏ Р»РёРЅРёСЏ РїРѕ РѕСЂРіР°РЅРёР·Р°С†РёРё СЂР°Р±РѕС‚С‹ РѕР±СЂР°Р·РѕРІР°С‚РµР»СЊРЅС‹С… 
-                                СѓС‡СЂРµР¶РґРµРЅРёР№ РІ СѓСЃР»РѕРІРёСЏС… СЃР»РѕР¶РЅРѕР№ СЌРїРёРґРµРјРёРѕР»РѕРіРёС‡РµСЃРєРѕР№ РѕР±СЃС‚Р°РЅРѕРІРєРµ
+                                Горячая линия по организации работы образовательных 
+                                учреждений в условиях сложной эпидемиологической обстановке
                             </p>
                         </div> <!-- ./phoneItem -->
     
                         <div class="phoneItem">
                             <h1 class="phoneItems-title">8(48242)4-97-95</h1>
                             <p class="phoneItems-text">
-                                Р“РѕСЂСЏС‡Р°СЏ Р»РёРЅРёСЏ РґР»СЏ РёРЅС„РѕСЂРјРёСЂРѕРІР°РЅРёСЏ СЂРѕРґРёС‚РµР»РµР№ (Р·Р°РєРѕРЅРЅС‹С… РїСЂРµРґСЃС‚Р°РІРёС‚РµР»РµР№) 
-                                РЅРµСЃРѕРІРµСЂС€РµРЅРЅРѕР»РµС‚РЅРёС… Рѕ РјРµСЂРѕРїСЂРёСЏС‚РёСЏС…, СЂРµР°Р»РёР·СѓРµРјС‹С… РІ СЃРІСЏР·Рё СЃ РєР°РїРёС‚Р°Р»СЊРЅС‹Рј
-                                СЂРµРјРѕРЅС‚РѕРј РњР‘РћРЈ РЎРћРЁ Рї.Р Р°РґС‡РµРЅРєРѕ
+                                Горячая линия для информирования родителей (законных представителей) 
+                                несовершеннолетних о мероприятиях, реализуемых в связи с капитальным
+                                ремонтом МБОУ СОШ п.Радченко
                             </p>
                         </div> <!-- ./phoneItem -->
     
                         <div class="phoneItem">
                             <h1 class="phoneItems-title">8(48242)4-97-95</h1>
                             <p class="phoneItems-text">
-                                Р“РѕСЂСЏС‡Р°СЏ Р»РёРЅРёСЏ РїРѕ РІРѕРїСЂРѕСЃР°Рј РїСЂРѕРІРµРґРµРЅРёСЏ РёС‚РѕРіРѕРІРѕРіРѕ СЃРѕС‡РёРЅРµРЅРёСЏ
-                                (РёР·Р»РѕР¶РµРЅРёСЏ) РІ 11-С… РєР»Р°СЃСЃР°С…, 
-                                РёС‚РѕРіРѕРІРѕРіРѕ СЃРѕР±РµСЃРµРґРѕРІР°РЅРёСЏ РїРѕ СЂСѓСЃСЃРєРѕРјСѓ СЏР·С‹РєСѓ РІ 9-С… РєР»Р°СЃСЃР°С…, 
-                                Р“РѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅРѕР№ РёС‚РѕРіРѕРІРѕР№ Р°С‚С‚РµСЃС‚Р°С†РёРё
+                                Горячая линия по вопросам проведения итогового сочинения
+                                (изложения) в 11-х классах, 
+                                итогового собеседования по русскому языку в 9-х классах, 
+                                Государственной итоговой аттестации
                             </p>
                         </div> <!-- ./phoneItem -->
     
                         <div class="phoneItem">
                             <h1 class="phoneItems-title">4-97-99</h1>
                             <p class="phoneItems-text">
-                                РЎРїСЂР°РІРєРё РїРѕ РІРѕРїСЂРѕСЃР°Рј РїРѕСЃС‚Р°РЅРѕРІРєРё РЅР° РѕС‡РµСЂРµРґСЊ Рё РѕС„РѕСЂРјР»РµРЅРёСЏ РґРµС‚РµР№ РІ РјСѓРЅРёС†РёРїР°Р»СЊРЅС‹Рµ 
-                                РґРѕС€РєРѕР»СЊРЅС‹Рµ СѓС‡СЂРµР¶РґРµРЅРёСЏ РљРѕРЅР°РєРѕРІСЃРєРѕРіРѕ СЂР°Р№РѕРЅР° РјРѕР¶РЅРѕ 
-                                РїРѕР»СѓС‡РёС‚СЊ РІ СѓРїСЂР°РІР»РµРЅРёРё РѕР±СЂР°Р·РѕРІР°РЅРёСЏ РїРѕ С‚РµР»РµС„РѕРЅСѓ
+                                Справки по вопросам постановки на очередь и оформления детей в муниципальные 
+                                дошкольные учреждения Конаковского района можно 
+                                получить в управлении образования по телефону
                             </p>
                         </div> <!-- ./phoneItem -->
                     </div>
@@ -430,108 +429,108 @@
         <div class="container">
             <div class="footerContainer">
                 <div class="navigationsColumn">
-                    <h1 class="navigationsColumn-title">РЈРїСЂР°РІР»РµРЅРёРµ</h1>
+                    <h1 class="navigationsColumn-title">Управление</h1>
 
-                    <a href="#" class="navigationsColumn-item">РџРѕР»РѕР¶РµРЅРёРµ РѕР± СѓРїСЂР°РІР»РµРЅРёРё</a>
-                    <a href="#" class="navigationsColumn-item">РќР°С‡Р°Р»СЊРЅРёРє Рё Р·Р°РјРµСЃС‚РёС‚РµР»Рё</a>
-                    <a href="#" class="navigationsColumn-item">РњРљРЈ Р¦РњРҐРћ</a>
-                    <a href="#" class="navigationsColumn-item">РџР»Р°РЅС‹ Рё РѕС‚С‡С‘С‚С‹</a>
-                    <a href="./anticorruption.php" class="navigationsColumn-item">РџСЂРѕС‚РёРІРѕРґРµР№СЃС‚РІРёРµ РєРѕСЂСЂСѓРїС†РёРё</a>
+                    <a href="#" class="navigationsColumn-item">Положение об управлении</a>
+                    <a href="#" class="navigationsColumn-item">Начальник и заместители</a>
+                    <a href="#" class="navigationsColumn-item">МКУ ЦМХО</a>
+                    <a href="#" class="navigationsColumn-item">Планы и отчёты</a>
+                    <a href="./anticorruption.php" class="navigationsColumn-item">Противодействие коррупции</a>
                 </div>
 
                 <div class="navigationsColumn">
-                    <h1 class="navigationsColumn-title">Р”РѕРєСѓРјРµРЅС‚С‹</h1>
+                    <h1 class="navigationsColumn-title">Документы</h1>
 
-                    <a href="#" class="navigationsColumn-item">Р¤РµРґРµСЂР°Р»СЊРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹</a>
-                    <a href="#" class="navigationsColumn-item">Р РµРіРёРѕРЅР°Р»СЊРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹</a>
-                    <a href="#" class="navigationsColumn-item">РњСѓРЅРёС†РёРїР°Р»СЊРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹</a>
+                    <a href="#" class="navigationsColumn-item">Федеральные документы</a>
+                    <a href="#" class="navigationsColumn-item">Региональные документы</a>
+                    <a href="#" class="navigationsColumn-item">Муниципальные документы</a>
                 </div>
 
                 <div class="navigationsColumn">
-                    <h1 class="navigationsColumn-title">РџРѕРґРІРµРґРѕРјСЃС‚РІРµРЅРЅС‹Рµ РѕСЂРіР°РЅРёР·Р°С†РёРё</h1>
+                    <h1 class="navigationsColumn-title">Подведомственные организации</h1>
 
-                    <a href="#" class="navigationsColumn-item">РЁРєРѕР»С‹</a>
-                    <a href="#" class="navigationsColumn-item">Р”РµС‚СЃРєРёРµ СЃР°РґС‹</a>
-                    <a href="#" class="navigationsColumn-item">РЈС‡СЂРµР¶РґРµРЅРёСЏ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ</a>
+                    <a href="#" class="navigationsColumn-item">Школы</a>
+                    <a href="#" class="navigationsColumn-item">Детские сады</a>
+                    <a href="#" class="navigationsColumn-item">Учреждения дополнительного образования</a>
                 </div>
 
                 <div class="navigationsColumn">
-                    <h1 class="navigationsColumn-title">РџСЂРёРµРјРЅР°СЏ</h1>
+                    <h1 class="navigationsColumn-title">Приемная</h1>
 
-                    <a href="#" class="navigationsColumn-item">Р›РёС‡РЅС‹Р№ РїСЂРёРµРј</a>
-                    <a href="#" class="navigationsColumn-item">Р§Р°СЃС‚Рѕ Р·Р°РґР°РІР°РµРјС‹Рµ РІРѕРїСЂРѕСЃС‹</a>
-                    <a href="#" class="navigationsColumn-item">Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ</a>
-                    <a href="#" class="navigationsColumn-item">Р“РѕСЂСЏС‡РёРµ Р»РёРЅРёРё</a>
+                    <a href="#" class="navigationsColumn-item">Личный прием</a>
+                    <a href="#" class="navigationsColumn-item">Часто задаваемые вопросы</a>
+                    <a href="#" class="navigationsColumn-item">Задать вопрос</a>
+                    <a href="#" class="navigationsColumn-item">Горячие линии</a>
                 </div>
 
                 <div class="navigationsColumn">
-                    <h1 class="navigationsColumn-title">РљРѕРЅС‚Р°РєС‚С‹</h1>
+                    <h1 class="navigationsColumn-title">Контакты</h1>
 
-                    <a href="./testContacts.php" class="navigationsColumn-item">РљРѕРЅС‚Р°РєС‚С‹</a>
+                    <a href="./contacts.php" class="navigationsColumn-item">Контакты</a>
                 </div>
 
                 <div class="navigationsColumn">
-                    <h1 class="navigationsColumn-title">Р”РµСЏС‚РµР»СЊРЅРѕСЃС‚СЊ</h1>
+                    <h1 class="navigationsColumn-title">Деятельность</h1>
 
-                    <a href="#" class="navigationsColumn-item">Р”РµСЏС‚РµР»СЊРЅРѕСЃС‚СЊ</a>
+                    <a href="#" class="navigationsColumn-item">Деятельность</a>
                 </div>
             </div> <!-- ./Desktop footer -->
 
             <div class="mobile_footer_wrapper">
                 <div class="mobile_footer_wrapper__item">
-                    <div class="mobile_footer_wrapper__title">РЈРїСЂР°РІР»РµРЅРёРµ</div>
+                    <div class="mobile_footer_wrapper__title">Управление</div>
                     <ul class="mobile_footer_wrapper__list">
-                        <li class="mobile_footer_wrapper__link"><a href="#">РџРѕР»РѕР¶РµРЅРёРµ РѕР± РЈРїСЂР°РІР»РµРЅРёРё</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РџР»Р°РЅС‹ Рё РѕС‚С‡РµС‚С‹</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РЎС‚СЂСѓРєС‚СѓСЂР° РЈРїСЂР°РІР»РµРЅРёСЏ</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Положение об Управлении</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Планы и отчеты</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Структура Управления</a></li>
                     </ul>
                 </div> <!-- ./mobile_footer_wrapper__item -->
     
                 <div class="mobile_footer_wrapper__item">
-                    <div class="mobile_footer_wrapper__title">Р”Р•РЇРўР•Р›Р¬РќРћРЎРўР¬</div>
+                    <div class="mobile_footer_wrapper__title">ДЕЯТЕЛЬНОСТЬ</div>
                     <ul class="mobile_footer_wrapper__list">
-                        <li class="mobile_footer_wrapper__link"><a href="#">РњСѓРЅРёС†РёРїР°Р»СЊРЅС‹Рµ СѓСЃР»СѓРіРё</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р“РѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅР°СЏ РёС‚РѕРіРѕРІР°СЏ Р°С‚С‚РµСЃС‚Р°С†РёСЏ</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ РѕР±СЂР°Р·РѕРІР°РЅРёРµ</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РћР±СЂР°Р·РѕРІР°РЅРёРµ РґРµС‚РµР№ СЃ РѕСЃРѕР±С‹РјРё РѕР±СЂР°Р·РѕРІР°С‚РµР»СЊРЅС‹РјРё РїРѕС‚СЂРµР±РЅРѕСЃС‚СЏРјРё</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р’РѕСЃРїРёС‚Р°С‚РµР»СЊРЅР°СЏ СЂР°Р±РѕС‚Р°</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РџСЂРѕС„РёР»Р°РєС‚РёРєР° Р°СЃРѕС†РёР°Р»СЊРЅРѕРіРѕ РїРѕРІРµРґРµРЅРёСЏ РЅРµСЃРѕРІРµСЂС€РµРЅРЅРѕР»РµС‚РЅРёС…</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р‘РµР·РѕРїР°СЃРЅРѕСЃС‚СЊ</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РџСЂРёРµРј РІ РѕР±СЂР°Р·РѕРІР°С‚РµР»СЊРЅС‹Рµ РѕСЂРіР°РЅРёР·Р°С†РёРё</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р Р°Р±РѕС‚Р° СЃ РєР°РґСЂР°РјРё</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РЎРµРјРµР№РЅРѕРµ РѕР±СЂР°Р·РІРѕР°РЅРёРµ Рё СЃР°РјРѕРѕР±СЂР°Р·РѕРІР°РЅРёРµ</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РћСЂРіР°РЅРёР·Р°С†РёСЏ РїРёС‚Р°РЅРёСЏ РґРµС‚РµР№</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РћСЂРіР°РЅРёР·Р°С†РёСЏ Р»РµС‚РЅРµРіРѕ РѕС‚РґС‹С…Р° Рё РѕР·РґРѕСЂРѕРІР»РµРЅРёСЏ РґРµС‚РµР№</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РћС†РµРЅРєР° РєР°С‡РµСЃС‚РІР° РѕР±СЂР°Р·РѕРІР°РЅРёСЏ</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Муниципальные услуги</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Государственная итоговая аттестация</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Дополнительное образование</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Образование детей с особыми образовательными потребностями</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Воспитательная работа</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Профилактика асоциального поведения несовершеннолетних</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Безопасность</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Прием в образовательные организации</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Работа с кадрами</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Семейное образвоание и самообразование</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Организация питания детей</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Организация летнего отдыха и оздоровления детей</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Оценка качества образования</a></li>
                     </ul>
                 </div> <!-- ./mobile_footer_wrapper__item -->
     
                 <div class="mobile_footer_wrapper__item">
-                    <div class="mobile_footer_wrapper__title">Р”РћРљРЈРњР•РќРўР«</div>
+                    <div class="mobile_footer_wrapper__title">ДОКУМЕНТЫ</div>
                     <ul class="mobile_footer_wrapper__list">
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р¤РµРґРµСЂР°Р»СЊРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РњСѓРЅРёС†РёРїР°Р»СЊРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р РµРіРёРѕРЅР°Р»СЊРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Федеральные документы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Муниципальные документы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Региональные документы</a></li>
                     </ul>
                 </div> <!-- ./mobile_footer_wrapper__item -->
 
 
                 <div class="mobile_footer_wrapper__item">
-                    <div class="mobile_footer_wrapper__title">РџРћР”Р’Р•Р”РћРњРЎРўР’Р•РќРќР«Р• РћР Р“РђРќРР—РђР¦РР</div>
+                    <div class="mobile_footer_wrapper__title">ПОДВЕДОМСТВЕННЫЕ ОРГАНИЗАЦИИ</div>
                     <ul class="mobile_footer_wrapper__list">
-                        <li class="mobile_footer_wrapper__link"><a href="#">РЁРєРѕР»С‹</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">РЈС‡СЂРµР¶РґРµРЅРёСЏ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р”РµС‚СЃРєРёРµ СЃР°РґС‹</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Школы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Учреждения дополнительного образования</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Детские сады</a></li>
                     </ul>
                 </div> <!-- ./mobile_footer_wrapper__item -->
 
                 <div class="mobile_footer_wrapper__item">
-                    <div class="mobile_footer_wrapper__title">РџР РРЃРњРќРђРЇ</div>
+                    <div class="mobile_footer_wrapper__title">ПРИЁМНАЯ</div>
                     <ul class="mobile_footer_wrapper__list">
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р›РёС‡РЅС‹Р№ РїСЂРёРµРј</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р—Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р§Р°СЃС‚Рѕ Р·Р°РґР°РІР°РµРјС‹Рµ РІРѕРїСЂРѕСЃС‹</a></li>
-                        <li class="mobile_footer_wrapper__link"><a href="#">Р“РѕСЂСЏС‡РёРµ Р»РёРЅРёРё</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Личный прием</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Задать вопрос</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Часто задаваемые вопросы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Горячие линии</a></li>
                     </ul>
                 </div> <!-- ./mobile_footer_wrapper__item -->
                
@@ -545,23 +544,24 @@
 
     </footer>
 
-    <button class="scroll-to-top-btn" title="РќР°РІРµСЂС…"></button>
+    <button class="scroll-to-top-btn" title="Наверх"></button>
 
-    <img class='themeBtn' src="./assets/images/darkTheme.svg" alt="Р’С‹Р±РѕСЂ С‚РµРјС‹">
-    <img class='visionBtn' src="./assets/images/visionBtn.svg" alt="Р’РµСЂСЃРёСЏ РґР»СЏ СЃР»Р°Р±РѕРІРёРґСЏС‰РёС…">
+    <img class='themeBtn' src="./assets/images/darkTheme.svg" alt="Выбор темы" title="Выбор темы">
+    <img class='visionBtn' src="./assets/images/visionBtn.svg" alt="Версия для слабовидящих" title="Версия для слабовидящих">
 
 
     <script src="./assets/js/index.js"></script>
 
     <script src="./assets/js/to_up.js"></script>
 
-    <!-- Р”Р»СЏ РіРѕСЃСѓСЃР»СѓРі -->
+    <!-- Для госуслуг -->
+    <script src='./assets/js/gosuslugi.js'></script>
+    
     <script>
         (function(){
           "use strict";function ownKeys(e,t){var n=Object.keys(e);if(Object.getOwnPropertySymbols){var o=Object.getOwnPropertySymbols(e);if(t)o=o.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable});n.push.apply(n,o)}return n}function _objectSpread(e){for(var t=1;t<arguments.length;t++){var n=null!=arguments[t]?arguments[t]:{};if(t%2)ownKeys(Object(n),true).forEach(function(t){_defineProperty(e,t,n[t])});else if(Object.getOwnPropertyDescriptors)Object.defineProperties(e,Object.getOwnPropertyDescriptors(n));else ownKeys(Object(n)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(n,t))})}return e}function _defineProperty(e,t,n){if(t in e)Object.defineProperty(e,t,{value:n,enumerable:true,configurable:true,writable:true});else e[t]=n;return e}var POS_PREFIX_22="--pos-banner-fluid-22__",posOptionsInitialBanner22={background:"linear-gradient(#2d73bc 26.49%,#38bafe 79.45%)","grid-template-columns":"100%","grid-template-rows":"262px auto","max-width":"100%","text-font-size":"20px","text-margin":"0 0 24px 0","button-wrap-max-width":"100%","bg-url":"url('https://pos.gosuslugi.ru/bin/banner-fluid/18/banner-fluid-bg-18-2.svg')","bg-url-position":"right bottom","content-padding":"26px 24px 24px","content-grid-row":"0","logo-wrap-padding":"16px 12px 12px","logo-width":"65px","logo-wrap-top":"0","logo-wrap-left":"0","slogan-font-size":"12px"},setStyles=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:POS_PREFIX_22;Object.keys(e).forEach(function(o){t.style.setProperty(n+o,e[o])})},removeStyles=function(e,t){var n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:POS_PREFIX_22;Object.keys(e).forEach(function(e){t.style.removeProperty(n+e)})};function changePosBannerOnResize(){var e=document.documentElement,t=_objectSpread({},posOptionsInitialBanner22),n=document.getElementById("js-show-iframe-wrapper"),o=n?n.offsetWidth:document.body.offsetWidth;if(o>340)t["button-wrap-max-width"]="209px";if(o>482)t["content-padding"]="24px",t["text-font-size"]="24px";if(o>568)t["grid-template-columns"]="1fr 292px",t["grid-template-rows"]="100%",t["content-grid-row"]="1",t["content-padding"]="32px 24px",t["bg-url-position"]="calc(100% + 35px) bottom";if(o>610)t["bg-url-position"]="calc(100% + 12px) bottom";if(o>726)t["bg-url-position"]="right bottom";if(o>783)t["grid-template-columns"]="1fr 390px";if(o>820)t["grid-template-columns"]="1fr 420px",t["bg-url-position"]="right bottom";if(o>1098)t["bg-url"]="url('https://pos.gosuslugi.ru/bin/banner-fluid/18/banner-fluid-bg-18-3.svg')",t["bg-url-position"]="calc(100% + 55px) bottom",t["grid-template-columns"]="1fr 557px",t["text-font-size"]="32px",t["content-padding"]="32px 32px 32px 50px",t["logo-width"]="78px",t["slogan-font-size"]="15px",t["logo-wrap-padding"]="20px 16px 16px";if(o>1422)t["max-width"]="1422px",t["grid-template-columns"]="1fr 720px",t["content-padding"]="32px 48px 32px 160px",t.background="linear-gradient(90deg, #2d73bc 5.49%,#38bafe 59.45%, #f8efec 60%)";setStyles(t,e)}changePosBannerOnResize(),window.addEventListener("resize",changePosBannerOnResize),window.onunload=function(){var e=document.documentElement,t=_objectSpread({},posOptionsInitialBanner22);window.removeEventListener("resize",changePosBannerOnResize),removeStyles(t,e)};
         })()
     </script>
 
-    <script>Widget("https://pos.gosuslugi.ru/form", 327974)</script>
 </body>
 </html>

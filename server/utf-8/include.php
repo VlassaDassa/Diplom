@@ -307,8 +307,8 @@
                 
                     <button class="scroll-to-top-btn" title="Наверх"></button>
                 
-                    <img class="themeBtn" src="./assets/images/darkTheme.svg" alt="Выбор темы">
-                    <img class="visionBtn" src="./assets/images/visionBtn.svg" alt="Версия для слабовидящих">
+                    <img class="themeBtn" src="./assets/images/darkTheme.svg" alt="Выбор темы" title="Выбор темы">
+                    <img class="visionBtn" src="./assets/images/visionBtn.svg" alt="Версия для слабовидящих" title="Версия для слабовидящих">
                 
                 
                     <script src="./assets/js/index.js"></script>

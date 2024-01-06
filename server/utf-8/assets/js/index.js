@@ -373,6 +373,14 @@ $(document).ready(() => {
             'margin': '0 auto'
         });
 
+        setStyles('.guestBookArrow', {
+            'display': 'none'
+        }); 
+
+        setStyles('.messageIco', {
+            'display': 'none'
+        });
+
 
         setStyles('.headerIconWrapper', {
             'display': 'none'
@@ -595,7 +603,7 @@ $(document).ready(() => {
             'fields': [
                 {
                     'name': 'Положение об Управлении',
-                    'link': '#',
+                    'link': '404.php',
                 },
                 
 
@@ -604,19 +612,19 @@ $(document).ready(() => {
                     'fields': [
                         {
                             'name': 'Начальник и заместители',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'МКУ ЦМХО',
-                            'link': '#',
+                            'link': '404.php',
                         }
                     ]
                 },
 
                 {
                     'name': 'Планы и отчеты',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
                 {
@@ -634,7 +642,7 @@ $(document).ready(() => {
                     'fields': [
                         {
                             'name': 'Административные регламенты',
-                            'link': '#',
+                            'link': '404.php',
                         },
                     ]
                 },
@@ -644,17 +652,17 @@ $(document).ready(() => {
                     'fields': [
                         {
                             'name': 'Прием в дошкольные образовательные учреждения',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'Прием в общеобразовательные учреждения',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'Прием в учреждения дополнительного образования',
-                            'link': '#',
+                            'link': '404.php',
                         },
                     ]
                 },
@@ -664,17 +672,17 @@ $(document).ready(() => {
                     'fields': [
                         {
                             'name': 'Основной государственный экзамен (ОГЭ)',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'Единый государственный экзамен (ЕГЭ)',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'Акции в рамках подготовки к ГИА',
-                            'link': '#',
+                            'link': '404.php',
                         },
                     ]
                 },
@@ -684,64 +692,64 @@ $(document).ready(() => {
                     'fields': [
                         {
                             'name': 'Аттестация педагогических работников',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'Профессиональные конкурсы',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'Кадровый резерв руководителей',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'Конкурсный прием руководителей',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'Вакансии',
-                            'link': '#',
+                            'link': '404.php',
                         },
                     ]
                 },
 
                 {
                     'name': 'Дополнительное образование',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
                 {
                     'name': 'Семейное образвоание и самообразование',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
                 {
                     'name': 'Образование детей с особыми образовательными потребностями',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
                 {
                     'name': 'Организация питания детей',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
                 {
                     'name': 'Воспитательная работа',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
                 {
                     'name': 'Организация летнего отдыха и оздоровления детей',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
                 {
                     'name': 'Профилактика асоциального поведения несовершеннолетних',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
                 {
@@ -749,27 +757,27 @@ $(document).ready(() => {
                     'fields': [
                         {
                             'name': 'Результативность школ',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'МУМы',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'НОКО',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'ВПР',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
                             'name': 'Функциональная грамотность',
-                            'link': '#',
+                            'link': '404.php',
                         },
                     ]
                 },
@@ -784,7 +792,7 @@ $(document).ready(() => {
 
                         {
                             'name': 'Безопасность на воде',
-                            'link': '#',
+                            'link': '404.php',
                         },
 
                         {
@@ -812,19 +820,19 @@ $(document).ready(() => {
             'fields': [
                 {
                     'name': 'Федеральные документы',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
 
                 {
                     'name': 'Региональные документы',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
 
                 {
                     'name': 'Муниципальные документы',
-                    'link': '#',
+                    'link': '404.php',
                 },
                 
             ]
@@ -835,19 +843,19 @@ $(document).ready(() => {
             'fields': [
                 {
                     'name': 'Школы ',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
 
                 {
                     'name': 'Детские сады',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
 
                 {
                     'name': 'Учреждения дополнительного образования',
-                    'link': '#',
+                    'link': '404.php',
                 },
                 
             ]
@@ -858,32 +866,32 @@ $(document).ready(() => {
             'fields': [
                 {
                     'name': 'Личный прием',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
 
                 {
                     'name': 'Часто задаваемые вопросы',
-                    'link': '#',
+                    'link': '404.php',
                 },
 
 
                 {
                     'name': 'Задать вопрос',
-                    'link': '#',
+                    'link': '404.php',
                 },
                 
 
                 {
                     'name': 'Горячие линии',
-                    'link': '#',
+                    'link': '404.php',
                 },
             ]
         },
 
         {
             'name': 'Контакты',
-            'link': '#',
+            'link': './contacts.php',
         },
     ]
 
@@ -1019,7 +1027,7 @@ $(document).ready(() => {
         $('.mobileMenu').addClass('mobileMenu--show')
         $('.overlay').addClass('overlay--show')
 
-        $('body').css('overflow', 'hidden');
+        document.documentElement.style.overflowY = 'hidden';
     })
 
 
@@ -1028,7 +1036,7 @@ $(document).ready(() => {
         $('.mobileMenu').removeClass('mobileMenu--show')
         $('.overlay').removeClass('overlay--show')
         
-        $('body').css('overflow', 'auto');
+        document.documentElement.style.overflowY = 'auto';
     })
 
 
