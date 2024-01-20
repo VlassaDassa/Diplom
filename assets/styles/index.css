@@ -90,6 +90,10 @@ body {
     padding: 50px 0;
 }
 
+.defaultSection {
+    margin: 50px 0;
+}
+
 .successMessage,
 .errorMessage {
     padding: 40px 60px;
@@ -1460,6 +1464,11 @@ body {
 }
 
 
+.contacts-text {
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
     /* mobile */
 .mobile_footer_wrapper {
     display: none;
@@ -1819,7 +1828,7 @@ body {
 }
 
 .newsSubtitle {
-    font-size: 20px !important;
+    font-size: 24px !important;
     line-height: 1.5;
 }
 
@@ -1984,12 +1993,12 @@ body {
 }
 
 .contactsDirectPhone {
-    max-width: 310px;
+    max-width: 350px;
     width: 100%;
 }
 
 .contactsInternalPhone {
-    max-width: 299px;
+    max-width: 250px;
     width: 100%;
 }
 
@@ -2017,6 +2026,7 @@ body {
 
 .contactsSubtitle {
     font-weight: 600;
+    line-height: 1.5;
     color: var(--pale-text);
 }
 
@@ -2026,7 +2036,11 @@ body {
 .contactsOffice {
     display: flex;
     align-items: center;
-    column-gap: 18px;
+    column-gap: 40px;
+}
+
+.contactsInternalPhone {
+    column-gap: 20px;
 }
 
 
@@ -2123,6 +2137,13 @@ body {
     .contactsSubtitle {
         color: #2F82FF;
     }
+
+    .contactsDirectPhone,
+    .contactsInternalPhone,
+    .contactsOffice {
+        align-items: unset;
+    }
+
 }
 
 
@@ -2552,3 +2573,28 @@ body {
     }
 }
 /* ./404 */
+
+
+
+/* Navigation */
+.navigationOnPage {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.navList {
+    margin-top: 15px;
+    margin-left: 50px;
+
+    list-style-type:disc;
+}
+
+
+.navList li {
+    margin-top: 20px;
+
+}
+/* ./Navigation */
+
+
