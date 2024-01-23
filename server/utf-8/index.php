@@ -101,7 +101,7 @@
     <header class="headerWrapper">
         <div class="header container">
 
-            <p class="headerText">УПРАВЛЕНИЕ ОБРАЗОВАНИЯ АДМИНИСТРАЦИИ КОНАКОВСКОГО РАЙОНА</p>
+            <p class="headerText">УПРАВЛЕНИЕ ОБРАЗОВАНИЯ КОНАКОВСКОГО МУНИЦИПАЛЬНОГО ОКРУГА</p>
         
             <div class="headerIconWrapper">
                 <img class="imgVis" src="./assets/images/headerIcon.svg">

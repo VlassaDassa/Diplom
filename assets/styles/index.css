@@ -1838,6 +1838,7 @@ body {
     transition: color 0.2s ease-in-out;
 
     font-size: 20px;
+    line-height: 1.5;
 }
 
 

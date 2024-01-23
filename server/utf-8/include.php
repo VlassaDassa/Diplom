@@ -107,7 +107,7 @@
                 <header class="headerWrapper">
                     <div class="header container">
             
-                        <p class="headerText">УПРАВЛЕНИЕ ОБРАЗОВАНИЯ АДМИНИСТРАЦИИ КОНАКОВСКОГО РАЙОНА</p>
+                        <p class="headerText">УПРАВЛЕНИЕ ОБРАЗОВАНИЯ КОНАКОВСКОГО МУНИЦИПАЛЬНОГО ОКРУГА</p>
                     
                         <div class="headerIconWrapper">
                             <img class="imgVis" src="./assets/images/headerIcon.svg">
@@ -192,36 +192,36 @@
                                 <div class="navigationsColumn">
                                     <h1 class="navigationsColumn-title">Управление</h1>
                 
-                                    <a href="#" class="navigationsColumn-item">Положение об управлении</a>
-                                    <a href="#" class="navigationsColumn-item">Начальник и заместители</a>
-                                    <a href="#" class="navigationsColumn-item">МКУ ЦМХО</a>
-                                    <a href="#" class="navigationsColumn-item">Планы и отчёты</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Положение об управлении</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Начальник и заместители</a>
+                                    <a href="./404.php" class="navigationsColumn-item">МКУ ЦМХО</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Планы и отчёты</a>
                                     <a href="./anticorruption.php" class="navigationsColumn-item">Противодействие коррупции</a>
                                 </div>
                 
                                 <div class="navigationsColumn">
                                     <h1 class="navigationsColumn-title">Документы</h1>
                 
-                                    <a href="#" class="navigationsColumn-item">Федеральные документы</a>
-                                    <a href="#" class="navigationsColumn-item">Региональные документы</a>
-                                    <a href="#" class="navigationsColumn-item">Муниципальные документы</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Федеральные документы</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Региональные документы</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Муниципальные документы</a>
                                 </div>
                 
                                 <div class="navigationsColumn">
                                     <h1 class="navigationsColumn-title">Подведомственные организации</h1>
                 
-                                    <a href="#" class="navigationsColumn-item">Школы</a>
-                                    <a href="#" class="navigationsColumn-item">Детские сады</a>
-                                    <a href="#" class="navigationsColumn-item">Учреждения дополнительного образования</a>
+                                    <a href="./schools.php" class="navigationsColumn-item">Школы</a>
+                                    <a href="./detSad.php" class="navigationsColumn-item">Детские сады</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Учреждения дополнительного образования</a>
                                 </div>
                 
                                 <div class="navigationsColumn">
                                     <h1 class="navigationsColumn-title">Приемная</h1>
                 
-                                    <a href="#" class="navigationsColumn-item">Личный прием</a>
-                                    <a href="#" class="navigationsColumn-item">Часто задаваемые вопросы</a>
-                                    <a href="#" class="navigationsColumn-item">Задать вопрос</a>
-                                    <a href="#" class="navigationsColumn-item">Горячие линии</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Личный прием</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Часто задаваемые вопросы</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Задать вопрос</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Горячие линии</a>
                                 </div>
                 
                                 <div class="navigationsColumn">
@@ -233,7 +233,7 @@
                                 <div class="navigationsColumn">
                                     <h1 class="navigationsColumn-title">Деятельность</h1>
                 
-                                    <a href="#" class="navigationsColumn-item">Деятельность</a>
+                                    <a href="./404.php" class="navigationsColumn-item">Деятельность</a>
                                 </div>
                             </div> <!-- ./Desktop footer -->
                 
@@ -241,37 +241,37 @@
                                 <div class="mobile_footer_wrapper__item">
                                     <div class="mobile_footer_wrapper__title">Управление</div>
                                     <ul class="mobile_footer_wrapper__list">
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Положение об Управлении</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Планы и отчеты</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Структура Управления</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Положение об Управлении</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Планы и отчеты</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Структура Управления</a></li>
                                     </ul>
                                 </div> <!-- ./mobile_footer_wrapper__item -->
                     
                                 <div class="mobile_footer_wrapper__item">
                                     <div class="mobile_footer_wrapper__title">ДЕЯТЕЛЬНОСТЬ</div>
                                     <ul class="mobile_footer_wrapper__list">
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Муниципальные услуги</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Государственная итоговая аттестация</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Дополнительное образование</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Образование детей с особыми образовательными потребностями</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Воспитательная работа</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Профилактика асоциального поведения несовершеннолетних</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Безопасность</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Прием в образовательные организации</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Работа с кадрами</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Семейное образвоание и самообразование</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Организация питания детей</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Организация летнего отдыха и оздоровления детей</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Оценка качества образования</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Муниципальные услуги</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Государственная итоговая аттестация</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Дополнительное образование</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Образование детей с особыми образовательными потребностями</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Воспитательная работа</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Профилактика асоциального поведения несовершеннолетних</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Безопасность</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Прием в образовательные организации</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Работа с кадрами</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Семейное образвоание и самообразование</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Организация питания детей</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Организация летнего отдыха и оздоровления детей</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Оценка качества образования</a></li>
                                     </ul>
                                 </div> <!-- ./mobile_footer_wrapper__item -->
                     
                                 <div class="mobile_footer_wrapper__item">
                                     <div class="mobile_footer_wrapper__title">ДОКУМЕНТЫ</div>
                                     <ul class="mobile_footer_wrapper__list">
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Федеральные документы</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Муниципальные документы</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Региональные документы</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Федеральные документы</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Муниципальные документы</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Региональные документы</a></li>
                                     </ul>
                                 </div> <!-- ./mobile_footer_wrapper__item -->
                 
@@ -279,19 +279,19 @@
                                 <div class="mobile_footer_wrapper__item">
                                     <div class="mobile_footer_wrapper__title">ПОДВЕДОМСТВЕННЫЕ ОРГАНИЗАЦИИ</div>
                                     <ul class="mobile_footer_wrapper__list">
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Школы</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Учреждения дополнительного образования</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Детские сады</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Школы</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Учреждения дополнительного образования</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Детские сады</a></li>
                                     </ul>
                                 </div> <!-- ./mobile_footer_wrapper__item -->
                 
                                 <div class="mobile_footer_wrapper__item">
                                     <div class="mobile_footer_wrapper__title">ПРИЁМНАЯ</div>
                                     <ul class="mobile_footer_wrapper__list">
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Личный прием</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Задать вопрос</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Часто задаваемые вопросы</a></li>
-                                        <li class="mobile_footer_wrapper__link"><a href="#">Горячие линии</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Личный прием</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Задать вопрос</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Часто задаваемые вопросы</a></li>
+                                        <li class="mobile_footer_wrapper__link"><a href="./404.php">Горячие линии</a></li>
                                     </ul>
                                 </div> <!-- ./mobile_footer_wrapper__item -->
                             

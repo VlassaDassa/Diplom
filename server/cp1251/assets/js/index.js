@@ -155,98 +155,138 @@ $(document).ready(() => {
     const contactsData = [
         {
             'fullname': 'Кожехов Михаил Сергеевич',
-            'position': 'начальник управления образования',
-            'phoneNumber': '4-97-96',
+            'position': 'Начальник Управления образования администрации Конаковского района',
+            'phoneNumber': '4-97-96\n89157316176',
             'internalPhoneNumber': '501',
             'office': '408',
         },
 
         {
             'fullname': 'Клюшанова Светлана Викторовна',
-            'position': 'заместитель начальника управления образования',
-            'phoneNumber': '4-97-95',
+            'position': 'Заместитель начальника Управления образования администрации Конаковского района',
+            'phoneNumber': '4-97-95\n89806365915',
             'internalPhoneNumber': '509',
             'office': '408',
         },
 
         {
-            'fullname': 'Ферлей Татьяна Юрьевна',
-            'position': 'заместитель начальника управления образования',
+            'fullname': 'Архипова Ольга Викторовна',
+            'position': 'Заместитель начальника Управления образования администрации Конаковского района',
             'phoneNumber': '4-97-95',
-            'internalPhoneNumber': '523',
-            'office': '408',
+            'internalPhoneNumber': '508',
+            'office': '408', 
         },
 
         {
-            'fullname': 'Кулиева Любовь Николаевна',
-            'position': 'заведующий отделом дошкольного, общего и дополнительного образования',
-            'phoneNumber': '4-97-95',
-            'internalPhoneNumber': '524',
-            'office': '402',
+            'fullname': 'Соколова Ирина Юрьевна',
+            'position': 'Директор',
+            'phoneNumber': '4-97-95\n89109381745',
+            'internalPhoneNumber': '540',
+            'office': '408', 
+        },
+
+        {
+            'fullname': 'Пустынникова Маргарита Геннадьевна',
+            'position': 'Главный специалист',
+            'phoneNumber': '89040154962',
+            'internalPhoneNumber': '505',
+            'office': '402', 
+        },
+
+        {
+            'fullname': 'Болоненкова Елена Петровна',
+            'position': 'Главный специалист',
+            'phoneNumber': '89038029444',
+            'internalPhoneNumber': '537',
+            'office': '402', 
+        },
+
+        {
+            'fullname': 'Петухова Светлана Юрьевна',
+            'position': 'Главный специалист',
+            'phoneNumber': '89040219634',
+            'internalPhoneNumber': '538',
+            'office': '409', 
+        },
+
+        {
+            'fullname': 'Ферлей Татьяна Юрьевна',
+            'position': 'Главный специалист',
+            'phoneNumber': '89092693784',
+            'internalPhoneNumber': '523',
+            'office': '409',
         },
 
         {
             'fullname': 'Гормаш Екатерина Геннадьевна',
-            'position': 'заместитель заведующего отделом дошкольного, общего и дополнительного образования',
-            'phoneNumber': '4-97-99',
+            'position': 'Заместитель заведующего отделом',
+            'phoneNumber': '4-97-99\n89109390155',
             'internalPhoneNumber': '510',
             'office': '406',
         },
 
         {
             'fullname': 'Брусова Елена Константиновна',
-            'position': 'главный специалист не муниципальной службы отдела дошкольного, общего и дополнительного образования',
-            'phoneNumber': '4-97-99',
+            'position': 'Главный специалист',
+            'phoneNumber': '89520648740',
             'internalPhoneNumber': '510',
             'office': '406',
         },
 
         {
             'fullname': 'Шарапова Мария Владимировна',
-            'position': 'главный специалист не муниципальной службы отдела дошкольного, общего и дополнительного образования',
-            'phoneNumber': '4-97-95',
-            'internalPhoneNumber': '507',
-            'office': '402',
+            'position': 'Главный специалист',
+            'phoneNumber': '89109396663',
+            'internalPhoneNumber': '519',
+            'office': '403',
         },
 
         {
-            'fullname': 'Захмылова Татьяна Васильевна',
-            'position': 'главный специалист не муниципальной службы отдела дошкольного, общего и дополнительного образования',
-            'phoneNumber': '4-97-95',
-            'internalPhoneNumber': '505',
-            'office': '402',
+            'fullname': 'Рачкина Наталья Александровна',
+            'position': 'Секретарь',
+            'phoneNumber': '89038030629',
+            'internalPhoneNumber': '500',
+            'office': '408',
         },
 
         {
             'fullname': 'Гурьянова Людмила Юрьевна',
-            'position': 'заведующий отделом мониторинга и организационной работы',
-            'phoneNumber': '4-97-95',
+            'position': 'Заведующий отделом',
+            'phoneNumber': '4-97-95\n89607020905',
             'internalPhoneNumber': '506',
             'office': '404',
         },
 
         {
+            'fullname': 'Гучмазова Маргарита Борисовна',
+            'position': 'Главный специалист',
+            'phoneNumber': '89607021312',
+            'internalPhoneNumber': '507',
+            'office': '402',
+        },
+
+        {
+            'fullname': 'Степанова Ирина Анатольевна',
+            'position': 'Заместитель заведующего отделом',
+            'phoneNumber': '89056031844',
+            'internalPhoneNumber': '539',
+            'office': '404',
+        },
+
+        {
             'fullname': 'Иванова Олеся Юрьевна',
-            'position': 'заместитель заведующего отделом мониторинга и организационной работы',
-            'phoneNumber': '4-97-95',
+            'position': 'Главный специалист',
+            'phoneNumber': '89040048011',
             'internalPhoneNumber': '518',
             'office': '403',
         },
 
         {
             'fullname': 'Мирошниченко Ольга Алексеевна',
-            'position': 'заместитель заведующего отделом материально-технического обеспечения',
-            'phoneNumber': '4-97-95',
+            'position': 'Главный специалист',
+            'phoneNumber': '89004723191',
             'internalPhoneNumber': '521',
-            'office': '427',
-        },
-
-        {
-            'fullname': 'Солонина Ирина Анатольевна',
-            'position': 'главный специалист не муниципальной службы',
-            'phoneNumber': '4-97-95',
-            'internalPhoneNumber': '500',
-            'office': '408',
+            'office': '409',
         },
     ]
 
@@ -843,13 +883,13 @@ $(document).ready(() => {
             'fields': [
                 {
                     'name': 'Школы ',
-                    'link': '404.php',
+                    'link': 'schools.php',
                 },
 
 
                 {
                     'name': 'Детские сады',
-                    'link': '404.php',
+                    'link': 'detSad.php',
                 },
 
 

@@ -883,13 +883,13 @@ $(document).ready(() => {
             'fields': [
                 {
                     'name': 'Школы ',
-                    'link': '404.php',
+                    'link': 'schools.php',
                 },
 
 
                 {
                     'name': 'Детские сады',
-                    'link': '404.php',
+                    'link': 'detSad.php',
                 },
 
 

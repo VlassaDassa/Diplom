@@ -101,7 +101,7 @@
     <header class="headerWrapper">
         <div class="header container">
 
-            <p class="headerText">сопюбкемхе напюгнбюмхъ юдлхмхярпюжхх йнмюйнбяйнцн пюинмю</p>
+            <p class="headerText">сопюбкемхе напюгнбюмхъ йнмюйнбяйнцн лсмхжхоюкэмнцн нйпсцю</p>
         
             <div class="headerIconWrapper">
                 <img class="imgVis" src="./assets/images/headerIcon.svg">

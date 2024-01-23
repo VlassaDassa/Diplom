@@ -47,7 +47,7 @@ function Widget(src, opaId, isFz59) {
     iframe.referrerPolicy = 'unsafe-url';
   
     div.appendChild(iframe);
-    header.innerHTML = 'Новое обращение';
+    header.innerHTML = 'РќРѕРІРѕРµ РѕР±СЂР°С‰РµРЅРёРµ';
   
     function destroy() {
       let body = document.getElementsByTagName('body')[0];
@@ -97,7 +97,7 @@ function Widget(src, opaId, isFz59) {
       
       openWidgetBtn.on('touchmove', function(e) {
   
-        document.getElementById(ACTION_ID).classList.add(BLOCK_ACTION_CLASS); // предотвращаем экшен при скролле на лаптопах
+        document.getElementById(ACTION_ID).classList.add(BLOCK_ACTION_CLASS); // РїСЂРµРґРѕС‚РІСЂР°С‰Р°РµРј СЌРєС€РµРЅ РїСЂРё СЃРєСЂРѕР»Р»Рµ РЅР° Р»Р°РїС‚РѕРїР°С…
       });
     }
   
@@ -107,7 +107,7 @@ function Widget(src, opaId, isFz59) {
       }
     }, false);
   
-    // переопределяем слоган
+    // РїРµСЂРµРѕРїСЂРµРґРµР»СЏРµРј СЃР»РѕРіР°РЅ
     (function overrideSlogan() {
       const posBanner = document.getElementById(ACTION_ID);
       const posButton = posBanner.querySelector('.bf-1 .pos-banner-btn_2') || posBanner.querySelector('.bf-2 .pos-banner-btn_2');
@@ -116,11 +116,11 @@ function Widget(src, opaId, isFz59) {
         const sloganTag = posBanner.querySelector('.bf-1__slogan') || posBanner.querySelector('.bf-2__slogan');
   
         if (sloganTag) {
-          sloganTag.innerHTML = 'Решаем вместе';
+          sloganTag.innerHTML = 'Р РµС€Р°РµРј РІРјРµСЃС‚Рµ';
         }
         
         if(posButton){
-          posButton.innerHTML = 'Сообщить о проблеме';
+          posButton.innerHTML = 'РЎРѕРѕР±С‰РёС‚СЊ Рѕ РїСЂРѕР±Р»РµРјРµ';
           posButton.style.width = '240px';
         }
       }
