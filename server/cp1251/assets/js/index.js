@@ -180,7 +180,7 @@ $(document).ready(() => {
         {
             'fullname': 'Соколова Ирина Юрьевна',
             'position': 'Директор',
-            'phoneNumber': '4-97-95\n89109381745',
+            'phoneNumber': '4-97-95',
             'internalPhoneNumber': '540',
             'office': '408', 
         },
@@ -188,7 +188,7 @@ $(document).ready(() => {
         {
             'fullname': 'Пустынникова Маргарита Геннадьевна',
             'position': 'Главный специалист',
-            'phoneNumber': '89040154962',
+            'phoneNumber': '-',
             'internalPhoneNumber': '505',
             'office': '402', 
         },
@@ -196,7 +196,7 @@ $(document).ready(() => {
         {
             'fullname': 'Болоненкова Елена Петровна',
             'position': 'Главный специалист',
-            'phoneNumber': '89038029444',
+            'phoneNumber': '-',
             'internalPhoneNumber': '537',
             'office': '402', 
         },
@@ -204,7 +204,7 @@ $(document).ready(() => {
         {
             'fullname': 'Петухова Светлана Юрьевна',
             'position': 'Главный специалист',
-            'phoneNumber': '89040219634',
+            'phoneNumber': '-',
             'internalPhoneNumber': '538',
             'office': '409', 
         },
@@ -212,7 +212,7 @@ $(document).ready(() => {
         {
             'fullname': 'Ферлей Татьяна Юрьевна',
             'position': 'Главный специалист',
-            'phoneNumber': '89092693784',
+            'phoneNumber': '-',
             'internalPhoneNumber': '523',
             'office': '409',
         },
@@ -220,7 +220,7 @@ $(document).ready(() => {
         {
             'fullname': 'Гормаш Екатерина Геннадьевна',
             'position': 'Заместитель заведующего отделом',
-            'phoneNumber': '4-97-99\n89109390155',
+            'phoneNumber': '4-97-99',
             'internalPhoneNumber': '510',
             'office': '406',
         },
@@ -228,7 +228,7 @@ $(document).ready(() => {
         {
             'fullname': 'Брусова Елена Константиновна',
             'position': 'Главный специалист',
-            'phoneNumber': '89520648740',
+            'phoneNumber': '-',
             'internalPhoneNumber': '510',
             'office': '406',
         },
@@ -236,7 +236,7 @@ $(document).ready(() => {
         {
             'fullname': 'Шарапова Мария Владимировна',
             'position': 'Главный специалист',
-            'phoneNumber': '89109396663',
+            'phoneNumber': '-',
             'internalPhoneNumber': '519',
             'office': '403',
         },
@@ -244,7 +244,7 @@ $(document).ready(() => {
         {
             'fullname': 'Рачкина Наталья Александровна',
             'position': 'Секретарь',
-            'phoneNumber': '89038030629',
+            'phoneNumber': '-',
             'internalPhoneNumber': '500',
             'office': '408',
         },
@@ -252,7 +252,7 @@ $(document).ready(() => {
         {
             'fullname': 'Гурьянова Людмила Юрьевна',
             'position': 'Заведующий отделом',
-            'phoneNumber': '4-97-95\n89607020905',
+            'phoneNumber': '4-97-95',
             'internalPhoneNumber': '506',
             'office': '404',
         },
@@ -260,7 +260,7 @@ $(document).ready(() => {
         {
             'fullname': 'Гучмазова Маргарита Борисовна',
             'position': 'Главный специалист',
-            'phoneNumber': '89607021312',
+            'phoneNumber': '-',
             'internalPhoneNumber': '507',
             'office': '402',
         },
@@ -268,7 +268,7 @@ $(document).ready(() => {
         {
             'fullname': 'Степанова Ирина Анатольевна',
             'position': 'Заместитель заведующего отделом',
-            'phoneNumber': '89056031844',
+            'phoneNumber': '-',
             'internalPhoneNumber': '539',
             'office': '404',
         },
@@ -276,7 +276,7 @@ $(document).ready(() => {
         {
             'fullname': 'Иванова Олеся Юрьевна',
             'position': 'Главный специалист',
-            'phoneNumber': '89040048011',
+            'phoneNumber': '-',
             'internalPhoneNumber': '518',
             'office': '403',
         },
@@ -284,7 +284,7 @@ $(document).ready(() => {
         {
             'fullname': 'Мирошниченко Ольга Алексеевна',
             'position': 'Главный специалист',
-            'phoneNumber': '89004723191',
+            'phoneNumber': '-',
             'internalPhoneNumber': '521',
             'office': '409',
         },
