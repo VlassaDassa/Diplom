@@ -1,0 +1,22 @@
+ht27071
+UOB2016kr
+
+phpMyAdmin:
+srv18338_admin
+uT67Tfdlk
+
+от админки:
+admin
+uT67Tfdlk
+
+Для ftp:
+ftp-srv18338.ht-systems.ru
+srv18338
+dr5KY4t6
+
+Версия php: 5.2.17
+
+SSH: 
+ssh-srv18338.ht-systems.ru
+srv18338
+dr5KY4t6

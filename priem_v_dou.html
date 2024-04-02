@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ru" data-size="small" data-letter-spacing="small" data-font-type="notSerif" data-hide-image="hide">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover,maximum-scale=1,user-scalable=0">
+    
+
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/toUp.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <title>Управление образования</title>
+
+</head>
+<body>
+
+    <div class="settingVision">
+        <img src="./assets/images/closeIco.svg" alt="Закрыть" class="settingVisionCloseBtn">
+
+        <div class="settingVision-row">
+            
+            <div class="settingVision-item">
+                <h1 class="settingVision-title">Шрифт</h1>
+                <div class="settingVision-itemWrapper">
+                    <button data-setVis="notSerif" class="font-type settingVision-btn settingVision-btn--selected">Без засечек</button>
+                    <button data-setVis="serif" class="font-type settingVision-btn">С засечками</button>
+                </div>
+            </div>
+
+            <div class="settingVision-item">
+                <h1 class="settingVision-title">Расстояние между буквами</h1>
+                <div class="settingVision-itemWrapper">
+                    <button data-setVis="spacingSmall" class="letter-space settingVision-btn settingVision-btn--selected">Маленькое</button>
+                    <button data-setVis="spacingMedium" class="letter-space settingVision-btn">Среднее</button>
+                    <button data-setVis="spacingBig" class="letter-space settingVision-btn">Большое</button>
+                </div>
+            </div>
+
+            <div class="settingVision-item">
+                <h1 class="settingVision-title">Скрывать изображения</h1>
+                <div class="settingVision-itemWrapper">
+                    <button data-setVis="imageShow" class="imgHideShow settingVision-btn">Скрывать</button>
+                    <button data-setVis="imageHide" class="imgHideShow settingVision-btn settingVision-btn--selected">Не скрывать</button>
+                </div>
+            </div>
+
+            <div class="settingVision-item">
+                <h1 class="settingVision-title">Масштаб</h1>
+                <div class="settingVision-itemWrapper">
+                    <button class="defaultScale settingVision-btn settingVision-btn--selected">Обычный</button>
+                    <button class="bigScale settingVision-btn">Большой</button>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <button class="resetOptions">Сбросить</button>
+
+    </div>
+
+    <div class="overlay"></div>
+
+
+    <div class="mobileMenu">
+        <img src="./assets/images/closeIco.svg" alt="Закрыть" class="mobileMenuClose">
+
+        <div class="mobileMenuWrapper">
+              <div class="mobileMenu-title">
+                    <div class="mobileMenu-backBtn">
+                        <img src="./assets/images/menuArrowLeft.svg" class="backBtn-img">
+                    </div>
+
+                    <h1 class="mobileMenu-titleText">Управление</h1>
+              </div>  
+
+        </div>
+    </div> <!-- ./mobileMenu -->
+ 
+    <section class="mobileHeader">
+        <div class="container">
+            <div class="mobileHeaderWrapper">
+                <div class="headerBtnsWrapper">
+                    <a href="#" class="headerBtn">Главная</a>
+                    <div class="headerBtn" id='menu'>Меню</div>
+                </div>
+                
+                <a href="./contacts.html" class="headerItem">Контакты</a>
+            </div>
+        </div>
+    </section> <!-- ./mobileHeader -->
+    
+
+    <header class="headerWrapper">
+        <div class="header container">
+
+            <p class="headerText">УПРАВЛЕНИЕ ОБРАЗОВАНИЯ АДМИНИСТРАЦИИ КОНАКОВСКОГО РАЙОНА</p>
+        
+            <div class="headerIconWrapper">
+                <img class="imgVis" src="./assets/images/headerIcon.svg">
+            </div>
+
+            <div class="emblemWrapper">
+                <img class="imgVis" src="./assets/images/emblem.svg">
+            </div>  
+
+        </div> <!-- ./contaner -->
+    </header> <!-- ./headerWrapper -->
+    
+
+    <section class="container">
+        <div class="menu line"></div>
+    </section> <!-- ./menu line -->
+
+
+    <section class="menu">
+        <ul class="container menuWrapper">
+            <li class="menu_item menu_item--mainPage">
+                Главная
+            </li>
+
+            <li class="menu_item">
+                Управление
+            </li>
+
+            <li class="menu_item">
+                Деятельность
+            </li>
+
+            <li class="menu_item">
+                Документы
+            </li>
+
+            <li class="menu_item">
+                Подведомственные организации
+            </li>
+
+            <li class="menu_item">
+                Приёмная
+            </li>
+
+            <li class="menu_item menu_item--mainPage">
+                <a href="./contacts.html">Контакты</a>
+            </li>
+        </ul> <!-- ./container menuWrapper -->
+    </section> <!-- ./menu -->
+
+
+    <section class="extendedMenu">
+        <div class="container extendedMenuWrapper">
+
+            <div class="extendedMenu-titleWrapper">
+                <h1 class="extendedMenu-title">Управление</h1>
+            </div>
+
+            <div class="extendedMenu-linkWrapper">
+                <ul class="extendedMenu-linkColumn" id="column1">
+                </ul>
+
+                <ul class="extendedMenu-linkColumn"  id="column2">
+                </ul>
+            </div>
+
+        </div>
+    </section> <!-- ./extendedMenu -->
+
+
+    <main class="news detSad">
+        <div class="container">
+
+            <div class="newsTitle">
+                <span class="newsTitle-text">Приём в дошкольные образовательные учреждения</span>
+            </div>
+
+            <section class="navigationOnPage">
+                <strong class="newsStrong newsTitle">Навигация:</strong>
+
+                <ul class="navList">
+
+                    <li>
+                        <a class="newsLink" href="#queueSecond">Постановка на очередь в детский сад, получение статуса «Очередник»</a>
+                    </li>
+
+                    <li>
+                        <a class="newsLink" href="#translate">Перевод из одного детского сада в другой</a>
+                    </li>
+
+                    <li>
+                        <a class="newsLink" href="#place">Предоставление места в детском саду</a>
+                    </li>
+                   
+                </ul>
+            </section>
+
+            <section class="detSadQueueSecond" id="queueSecond">
+                <h1 class="newsSubtitle newsStrong">Постановка на очередь в детский сад, получение статуса «Очередник»</h1>
+
+                <p class="newsParagraph">
+                    Управление образования Администрации Конаковского муниципального округа 
+                    сообщает, чтопостановка на очередь в детский сад осуществляется <span class="newsJustStrong">в течение всего 
+                    календарного года</span> в соответствиис <span class="newsJustStrong">Административным Регламентом</span>
+                    предоставления муниципальной услуги.
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">С целью постановки ребёнка на очередь в детский сад</span> родитель (законный 
+                    представитель, далее - родитель) заполняет <span class="newsJustStrong">электронную форму заявления на 
+                    Портале государственных услуг Российской Федерации.</span>
+                </p>
+
+                <p class="newsParagraph">
+                    В связи с изменениями региональных настроек «электронной очереди» 
+                    рекомендуем <span class="newsJustStrong">при заполнении электронного заявления указывать в качестве 
+                    «предпочитаемых» максимальное количество дошкольных учреждений (до 
+                    5)</span> (при добавлении нового детского сада очередь по этому саду информационная 
+                    система рассчитывает с даты добавления детского сада).
+                </p>
+
+                <p class="newsParagraph">
+                    Заполненные электронные формы заявлений поступают в реестр заявлений со 
+                    статусом «Новое». <span class="newsJustStrong">Заявления, длительно пребывающие в статусе «Новое», 
+                    могут быть удалены или заблокированы информационной системой.</span>
+                </p>
+
+                <p class="newsParagraph newsJustStrong">
+                    Заявление в «электронной очереди» должно иметь статус «Очередник».
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">Для получения статуса «Очередник» родители (законные представители) 
+                    детей обязаны в течение 2 недель после заполнения электронного 
+                    заявления</span> предоставить в Управление образования Администрации Конаковского 
+                    муниципального округа (далее – Управление образования) документы и заявление о 
+                    согласии на обработку персональных данных. 
+                </p>
+
+                <p class="newsParagraph">
+                    Вцелях обеспечения санитарно – эпидемиологического благополучия населения 
+                    вышеуказанные документы и заявления <span class="newsJustStrong">принимаются дистанционно: электронным 
+                    или почтовым отправлением.</span>
+                </p>
+
+                <p class="newsParagraph newsJustStrong">
+                    1 вариант. На электронный адрес: otdel.do@yandex.ru родители направляют 
+                    следующие документы:
+                </p>
+
+                <p class="newsParagraph">
+                    - скан или фото заявления о согласии на обработку персональных данных, 
+                    <span class="newsJustStrong">заверенного личной подписью родителя (форму заявления см.ниже);</span>
+                </p>
+
+                <p class="newsParagraph">
+                    - скан или фото документа, удостоверяющего личность заявителя (первой 
+                    страницы паспорта, вида на жительство);
+                </p>
+
+                <p class="newsParagraph">
+                    - скан или фото свидетельства о рождении ребёнка; 
+                </p>
+
+                <p class="newsParagraph">
+                    - скан или фото свидетельства о регистрации ребёнка по месту жительства или по 
+                    месту пребывания, документа, подтверждающего проживание (пребывание) ребёнка на 
+                    территории Конаковского муниципального округа;
+                </p>
+
+                <p class="newsParagraph">
+                    -скан или фото документа, подтверждающего право внеочередного или 
+                    первоочередного предоставления места (при наличии льготы);
+                </p>
+
+                <p class="newsParagraph">
+                    -скан или фото документа, подтверждающего право заявителя на пребывание в 
+                    Российской Федерации (для иностранных граждан).
+                </p>
+
+                <p class="newsParagraph newsJustStrong">
+                    2 вариант. Почтой России на адрес: 171252, Тверская область, г.Конаково, 
+                    ул.Энергетиков, д.13, каб.406, Управление образования Администрации 
+                    Конаковского муниципального округа, родители направляют следующие 
+                    документы:
+                </p>
+
+                <p class="newsParagraph">
+                    - оригинал заявления о согласии на обработку персональных данных, <span class="newsJustStrong">заверенного 
+                    личной подписью родителя;</span>
+                </p>
+
+                <p class="newsParagraph">
+                    - копию документа, удостоверяющего личность заявителя (первой страницы 
+                    паспорта, вида на жительство);
+                </p>
+
+                <p class="newsParagraph">
+                    - копию свидетельства о рождении ребёнка;
+                </p>
+
+                <p class="newsParagraph">
+                    - копию свидетельства о регистрации ребёнка по месту жительства или по месту 
+                    пребывания, документа, подтверждающего проживание (пребывание) ребёнка на 
+                    территории Конаковского муниципального округа;
+                </p>
+
+                <p class="newsParagraph">
+                    - оригинал или копию документа, подтверждающего право внеочередного или 
+                    первоочередного представления места (при наличии льготы);
+                </p>
+
+                <p class="newsParagraph">
+                    - копию документа, подтверждающего право заявителя на пребывание в 
+                    Российской Федерации (для иностранных граждан). 
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">Если негде вывести бланк заявления</span>, в Управление образования отправляется 
+                    оригинал (скан, фото) рукописного варианта заявления.
+                </p>
+
+                <p class="newsParagraph">
+                    Обращаем Ваше внимание на необходимость указания в заявлении 
+                    предпочитаемых детских садов, а также контактных телефонов и электронной почты 
+                    (желательно) для осуществления при необходимости обратной связи. 
+                </p>
+
+                <p class="newsParagraph">
+                    Копии, сканы и фото документов должны быть читаемы.
+                </p>
+
+                <p class="newsParagraph">
+                    Иностранные граждане все документы предоставляют <span class="newsJustStrong">на русском языке или 
+                    вместе с заверенным переводом на русский язык.</span>
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">Статус «Очередник»</span> выставляется после проверки правильности заполнения 
+                    заявления, достоверности сведений в нем <span class="newsJustStrong">только при наличии полного пакета 
+                    документов.</span>
+                </p>
+
+                <p class="newsParagraph newsJustStrong">
+                    После проверки документов на электронный адрес, с которого поступили 
+                    документы, будет выслан ответ о приёме документов либо об отказе в приёме с 
+                    объяснением причин.
+                </p>
+
+                <p class="newsParagraph">
+                    Расчет очереди информационная система начинает только после получения 
+                    статуса «Очередник». Соответственно,отслеживать очерёдностьможно только 
+                    после получения статуса «Очередник» и только на сайте Управления образования 
+                    Администрации Конаковского муниципального округа по ссылке <a href="https://eo.tvobr.ru:8880/?once=XFnEpY335h1otSHoI2SQS0JviNJbkg-01t5IsbEkWbzt_UA6kOfhlsCQajSUBm5FsH8uaT2o-2DN0_nD8bCBAwTdTuU#/" class="newsLink"> «Электронные 
+                    услуги в сфере образования»</a> через 
+                    Портал образовательных услуг Тверской области <span class="newsJustStrong">(на Портале государственных 
+                    услуг Российской Федерации данная функция не предусмотрена).</span>
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">При повторном заполнении электронного заявленияинформационная 
+                    система может заблокировать первоначальное заявление</span>, оставив в качестве 
+                    даты постановки на очередь в детский сад дату более позднего обращения. При 
+                    необходимости замены каких-либо данных в уже заполненном электронном 
+                    заявлении, обращаться в Управление образования по тел.8(48-242) 4-97-99 или на 
+                    электронный адрес: otdel.do@yandex.ru.
+                </p>
+
+                <p class="newsParagraph newsJustStrong">
+                    Справки по тел. 8(48-242) 4-97-99.
+                </p>
+
+                <p class="newsParagraph newsJustStrong">
+                    При необходимости получения места в детском саду, <a class="newsLink" href="#place">смотреть ссылку</a>  
+                </p>
+
+                <p class="newsParagraph">
+                    <h1 class="newsSubtitle newsStrong" id="placeDoc">
+                        Образцы и заявления
+                    </h1>
+                </p>
+
+                <p class="newsParagraph newsJustStrong" id="translateDoc">
+                    <a href="./detSad_document/2024-Soglasie_na_obrabotku_PD.docx" class="newsLink">Согласие на обработку ПД</a>
+                </p>
+            </section>
+
+
+            <section class="translate defaultSection" id="translate">
+                <h1 class="newsSubtitle newsStrong">Перевод из одного детского сада в другой</h1>
+
+                <p class="newsParagraph">
+                    Перевод детей из одного детского сада в другой по заявлению родителей 
+                    (законных представителей, далее – родители) осуществляется <span class="newsJustStrong">в течение 
+                    учебного года</span> при условии наличия вакантных мест. <span class="newsJustStrong">Заявление на перевод 
+                    действительно до 09 апреля;</span> если ребенок до 09 апреля не переведен, 
+                    следует <span class="newsJustStrong">обновить заявление на перевод в срок с 10 апреля по 10 мая.</span>
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">
+                        Приём заявлений на перевод детей из одного детского сада в другой 
+                        от родителей, планирующих оформление ребёнка в другой детский сад с 
+                        15 августа, осуществляется в сроки комплектования детских садов на 
+                        новый учебный год (с 10 апреля по 10 мая).
+                    </span>
+                </p>
+                
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">
+                        Форма и образец заполнения заявления о переводе размещены <a class="newsLink" href="#translateDoc">ниже.</a>
+                    </span>
+                </p>
+
+                <p class="newsParagraph">
+                    В целях обеспечения санитарно – эпидемиологического благополучия 
+                    населения <span class="newsJustStrong">Управление образования Администрации Конаковского 
+                    муниципального округа</span> заявления о переводе <span class="newsJustStrong">принимает дистанционно: 
+                    электронным или почтовым отправлением.</span>
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">
+                        1 вариант. На электронный адрес: <span class="newsLink">otdel.do@yandex.ru</span> родители 
+                        направляют:
+                    </span>
+
+                    - скан или фото заявления о переводе,содержащего сведения о родителях и <span class="newsJustStrong">заверенного личными подписями родителей.</span>
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">
+                        2 вариант. Почтой России на адрес: 171252, Тверская область, 
+                        г.Конаково, ул.Энергетиков, д.13, каб.406, Управление образования 
+                        Администрации Конаковского муниципального округа, родители 
+                        направляют:
+                    </span>
+
+                    - оригинал заявления о переводе,содержащего сведения о родителях и <span class="newsJustStrong">заверенного личными подписями родителей.</span>
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">Если нет возможности вывести бланк заявления,</span> будет принят 
+                    оригинал (скан, фото) рукописного варианта заявления с личной подписью 
+                    родителей.
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">3 вариант.</span> Заполнить бланк заявления о переводе можно у заведующего 
+                    детским садом, который посещает ребёнок.
+                </p>
+
+                <p class="newsParagraph">
+                    Обращаем Ваше внимание на <span class="newsJustStrong">необходимость заполнения на второй 
+                    странице заявления сведений о родителях,</span> их телефонах и адресах 
+                    электронной почты (при наличии), которые <span class="newsJustStrong">заверяются личной подписью 
+                    каждого родителя в отдельности.</span>
+                </p>
+
+                <p class="newsParagraph">
+                    Также обращаем Ваше внимание на необходимость указания не только 
+                    желаемого детского сада, но и тех, на которые Вы будете согласны при 
+                    отсутствии вакантных мест в желаемом детском саду.
+                </p>
+
+                <p class="newsParagraph">
+                    Сканы и фото заявлений должны быть читаемы. 
+                </p>
+
+                <p class="newsParagraph">
+                    После проверки заявления на электронный адрес, с которого оно 
+                    поступило, будет выслан ответ о приёме заявления либо об отказе в 
+                    приёме с объяснением причин.
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">Справки по телефону: 8(48-242) 4-97-99.</span>
+                </p>
+
+                <p class="newsParagraph">
+                    <h1 class="newsSubtitle newsStrong" id="translateDoc">
+                        Образцы и заявления
+                    </h1>
+                </p>
+
+                <p class="newsParagraph newsJustStrong" id="translateDoc">
+                    <a href="./detSad_document/2024-_Zayavl_na_perevod.doc" class="newsLink">Заявление на перевод</a>
+                </p>
+
+                <p class="newsParagraph newsJustStrong" id="translateDoc">
+                    <a href="./detSad_document/2024-_obrazets_zayavlenia_o_perevode.doc" class="newsLink">Образец заявления о переводе</a>
+                </p>
+            </section>
+
+            <section class="place defaultSection" id="place">
+                <h1 class="newsSubtitle newsStrong">Предоставление места в детском саду</h1>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">С 10 апреля по 10 мая</span> – сроки ежегодного <span class="newsJustStrong">приёма заявлений и документов 
+                    на предоставление места в детском саду от родителей, планирующих 
+                    оформление ребёнка в детский сад с 15 августа (сроки комплектования детских 
+                    садов на новый учебный год).</span>
+                </p>
+
+                <p class="newsParagraph">
+                    Оформление детей в детский сад осуществляется и в течение учебного года при 
+                    условии наличия вакантных мест.
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">С целью получения места в детском саду</span> родители (законные представители, 
+                    далее - родители) ребёнка <span class="newsJustStrong">должны подать в Управление образования 
+                    Администрации Конаковского муниципального округа письменное заявление о 
+                    предоставлении места в детском саду</span> (форму бланка и образец его заполнения 
+                    см.ниже), <span class="newsJustStrong">приложив к нему документы</span>, предусмотренные <span class="newsJustStrong">Административным 
+                    регламентом.</span>
+                </p>
+                
+                <p class="newsParagraph">
+                    В целях обеспечения санитарно – эпидемиологического благополучия 
+                    населения вышеуказанные документы и заявления <span class="newsJustStrong">принимаются дистанционно: 
+                    электронным или почтовым отправлением.</span>
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">1 вариант. На электронный адрес: <span class="newsLink">otdel.do@yandex.ru</span> родители 
+                    направляют следующие документы:</span>
+                </p>
+
+                <p class="newsParagraph">
+                    - скан или фото письменного заявления о предоставлении места в детском саду, 
+                    содержащего сведения о родителях из <span class="newsJustStrong">заверенного личными подписями 
+                    родителей;</span>
+                </p>
+
+                <p class="newsParagraph">
+                    - скан или фото заявления о согласии на обработку персональных 
+                    данных, <span class="newsJustStrong">заверенного личной подписью заявителя;</span>
+                </p>
+
+                <p class="newsParagraph">
+                    - скан или фото документа, удостоверяющего личность заявителя (первой 
+                    страницы паспорта, вида на жительство);
+                </p>
+
+                <p class="newsParagraph">
+                    - скан или фото свидетельства о рождении ребёнка,
+                </p>
+
+                <p class="newsParagraph">
+                    - скан или фото свидетельства о регистрации ребёнка по месту жительства или 
+                    по месту пребывания, документа, подтверждающего проживание (пребывание) 
+                    ребёнка на территории Конаковского муниципального округа;
+                </p>
+
+                <p class="newsParagraph">
+                    -скан или фото документа, подтверждающего право внеочередного или 
+                    первоочередного предоставления места (при наличии льготы),
+                </p>
+
+                <p class="newsParagraph">
+                    - для иностранных граждан – скан или фото документа, подтверждающего 
+                    право заявителя на пребывание в Российской Федерации.
+                </p>
+
+                <p class="newsParagraph newsJustStrong">
+                    2 вариант. Почтой России на адрес: 171252, Тверская область, г.Конаково, 
+                    ул.Энергетиков, д.13, каб.406, Управление образования Администрации 
+                    Конаковского муниципального округа, родители направляют следующие 
+                    документы:
+                </p>
+
+                <p class="newsParagraph">
+                    - оригинал письменного заявления о предоставлении места в детском саду, 
+                    содержащего сведения о родителях и <span class="newsJustStrong">заверенного личными подписями 
+                    родителей;</span>
+                </p>
+
+                <p class="newsParagraph">
+                    - оригинал заявления о согласии на обработку персональных 
+                    данных, <span class="newsJustStrong">заверенного личной подписью заявителя;</span>
+                </p>
+
+                <p class="newsParagraph">
+                    - копия документа, удостоверяющего личность заявителя (первой страницы 
+                    паспорта, вида на жительство);
+                </p>
+
+                <p class="newsParagraph">
+                    - копия свидетельства о рождении ребёнка;
+                </p>
+
+                <p class="newsParagraph">
+                    - копия свидетельства о регистрации ребёнка по месту жительства или по месту 
+                    пребывания, документа, подтверждающего проживание (пребывание) ребёнка на 
+                    территории Конаковского муниципального округа;
+                </p>
+
+                <p class="newsParagraph">
+                    - оригинал или копия документа, подтверждающего право внеочередного или 
+                    первоочередного предоставления места (при наличии льготы);
+                </p>
+
+                <p class="newsParagraph">
+                    - для иностранных граждан – копия документа, подтверждающего право 
+                    заявителя на пребывание в Российской Федерации.
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">Формы и образцы заполнения заявлений</span> о предоставлении места в детском 
+                    саду и о согласии на обработку персональных данных <span class="newsJustStrong">размещены <a class="newsLink" href="#placeDoc"> ниже.</a></span>
+                </p>
+
+                <p class="newsParagraph">
+                    Обращаем Ваше внимание на <span class="newsJustStrong">необходимость заполнения на второй странице 
+                    заявления сведений о родителях</span>, их телефонах и адресах электронной почты (при 
+                    наличии), которые <span class="newsJustStrong">заверяются личной подписью каждого родителя в 
+                    отдельности.</span>
+                </p>
+
+                <p class="newsParagraph">
+                    Также обращаем Ваше внимание на необходимость указания <span class="newsJustStrong">не только 
+                    желаемого детского сада, но и тех, на которые Вы будете согласны</span> при 
+                    отсутствии вакантных мест в желаемом детском саду.
+                </p>
+
+                <p class="newsParagraph">
+                    <span class="newsJustStrong">Если нет возможности вывести бланк заявления</span>, будет принят оригинал 
+                    (скан, фото) рукописного варианта заявления с личной подписью родителя. 
+                </p>
+
+                <p class="newsParagraph">
+                    Родители также могут подать документы, обратившись к руководителю 
+                    выбранного детского сада.
+                </p>
+
+                <p class="newsParagraph">
+                    Копии, сканы и фото документов должны быть читаемы. 
+                </p>
+
+                <p class="newsParagraph">
+                    Иностранные граждане и лица без гражданства все документы предоставляют 
+                    <span class="newsJustStrong">на русском языке или вместе с заверенным переводом</span> на русский язык.
+                </p>
+
+                <p class="newsParagraph">
+                    Регистрируются и принимаются к рассмотрению <span class="newsJustStrong">только полные пакеты 
+                    документов.</span>
+                </p>
+
+                <p class="newsParagraph newsJustStrong">
+                    После проверки документов и заявлений на электронный адрес, с которого 
+                    поступили документы, будет выслан ответ о приёме заявления либо об отказе в 
+                    приёме с объяснением причин.
+                </p>
+
+                <p class="newsParagraph newsJustStrong">
+                    Информацию о предоставлении места в детском саду можно получить по 
+                    телефону: 8(48-242) 4-97-99.
+                </p>
+
+                <p class="newsParagraph newsJustStrong">
+                    Справки по телефону: 8(48-242) 4-97-99..
+                </p>
+
+                <p class="newsParagraph">
+                    <h1 class="newsSubtitle newsStrong" id="placeDoc">
+                        Образцы и заявления
+                    </h1>
+                </p>
+
+                <p class="newsParagraph newsJustStrong" id="translateDoc">
+                    <a href="./detSad_document/2024-_Zayavl_na_predost_mesta_v_DOU.doc" class="newsLink">Заявление на предоставления места в ДОУ</a>
+                </p>
+
+                <p class="newsParagraph newsJustStrong" id="translateDoc">
+                    <a href="./detSad_document/2024-_obrazets_zayavlenia_o_perevode.doc" class="newsLink">Образец заявления на предоставления места в ДОУ</a>
+                </p>
+
+                <p class="newsParagraph newsJustStrong" id="translateDoc">
+                    <a href="./detSad_document/2024-Soglasie_na_obrabotku_PD (1).docx" class="newsLink">Согласие на обработку ПД</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="radiusFooter"></div>
+
+        <div class="container">
+            <div class="footerContainer">
+                <div class="navigationsColumn">
+                    <h1 class="navigationsColumn-title">Управление</h1>
+
+                    <a href="#" class="navigationsColumn-item">Положение об управлении</a>
+                    <a href="#" class="navigationsColumn-item">Начальник и заместители</a>
+                    <a href="#" class="navigationsColumn-item">МКУ ЦМХО</a>
+                    <a href="#" class="navigationsColumn-item">Планы и отчёты</a>
+                    <a href="#" class="navigationsColumn-item">Противодействие коррупции</a>
+                </div>
+
+                <div class="navigationsColumn">
+                    <h1 class="navigationsColumn-title">Документы</h1>
+
+                    <a href="#" class="navigationsColumn-item">Федеральные документы</a>
+                    <a href="#" class="navigationsColumn-item">Региональные документы</a>
+                    <a href="#" class="navigationsColumn-item">Муниципальные документы</a>
+                </div>
+
+                <div class="navigationsColumn">
+                    <h1 class="navigationsColumn-title">Подведомственные организации</h1>
+
+                    <a href="#" class="navigationsColumn-item">Школы</a>
+                    <a href="#" class="navigationsColumn-item">Детские сады</a>
+                    <a href="#" class="navigationsColumn-item">Учреждения дополнительного образования</a>
+                </div>
+
+                <div class="navigationsColumn">
+                    <h1 class="navigationsColumn-title">Приемная</h1>
+
+                    <a href="#" class="navigationsColumn-item">Личный прием</a>
+                    <a href="#" class="navigationsColumn-item">Часто задаваемые вопросы</a>
+                    <a href="#" class="navigationsColumn-item">Задать вопрос</a>
+                    <a href="#" class="navigationsColumn-item">Горячие линии</a>
+                </div>
+
+                <div class="navigationsColumn">
+                    <h1 class="navigationsColumn-title">Контакты</h1>
+
+                    <a href="./contacts.html" class="navigationsColumn-item">Контакты</a>
+                </div>
+
+                <div class="navigationsColumn">
+                    <h1 class="navigationsColumn-title">Деятельность</h1>
+
+                    <a href="#" class="navigationsColumn-item">Деятельность</a>
+                </div>
+            </div> <!-- ./Desktop footer -->
+
+            <div class="mobile_footer_wrapper">
+                <div class="mobile_footer_wrapper__item">
+                    <div class="mobile_footer_wrapper__title">Управление</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Положение об Управлении</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Планы и отчеты</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Структура Управления</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__item -->
+    
+                <div class="mobile_footer_wrapper__item">
+                    <div class="mobile_footer_wrapper__title">ДЕЯТЕЛЬНОСТЬ</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Муниципальные услуги</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Государственная итоговая аттестация</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Дополнительное образование</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Образование детей с особыми образовательными потребностями</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Воспитательная работа</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Профилактика асоциального поведения несовершеннолетних</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Безопасность</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Прием в образовательные организации</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Работа с кадрами</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Семейное образвоание и самообразование</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Организация питания детей</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Организация летнего отдыха и оздоровления детей</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Оценка качества образования</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__item -->
+    
+                <div class="mobile_footer_wrapper__item">
+                    <div class="mobile_footer_wrapper__title">ДОКУМЕНТЫ</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Федеральные документы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Муниципальные документы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Региональные документы</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__item -->
+
+
+                <div class="mobile_footer_wrapper__item">
+                    <div class="mobile_footer_wrapper__title">ПОДВЕДОМСТВЕННЫЕ ОРГАНИЗАЦИИ</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Школы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Учреждения дополнительного образования</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Детские сады</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__item -->
+
+                <div class="mobile_footer_wrapper__item">
+                    <div class="mobile_footer_wrapper__title">ПРИЁМНАЯ</div>
+                    <ul class="mobile_footer_wrapper__list">
+                        <li class="mobile_footer_wrapper__link"><a href="#">Личный прием</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Задать вопрос</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Часто задаваемые вопросы</a></li>
+                        <li class="mobile_footer_wrapper__link"><a href="#">Горячие линии</a></li>
+                    </ul>
+                </div> <!-- ./mobile_footer_wrapper__item -->
+               
+            </div> <!-- ./mobile_footer_wrapper -->
+
+            <div class="contacts">
+                <a href=""><img src="./assets/images/vk.svg" class="socialNetWorkIcon"></a> 
+                <p class="contactsPhoneNumber">8(48242)4-97-95</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <button class="scroll-to-top-btn" title="Наверх"></button>
+
+    <img class='themeBtn' src="./assets/images/darkTheme.svg" alt="Выбор темы">
+    <img class='visionBtn' src="./assets/images/visionBtn.svg" alt="Версия для слабовидящих">
+
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/to_up.js"></script>
+</body>
+</html>
