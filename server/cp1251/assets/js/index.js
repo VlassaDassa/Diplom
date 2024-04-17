@@ -154,9 +154,9 @@ $(document).ready(() => {
     // Данные для страницы "Контакты"
     const contactsData = [
         {
-            'fullname': 'Кожехов Михаил Сергеевич',
+            'fullname': '-',
             'position': 'Начальник Управления образования администрации Конаковского района',
-            'phoneNumber': '4-97-96\n89157316176',
+            'phoneNumber': '-',
             'internalPhoneNumber': '501',
             'office': '408',
         },
@@ -164,7 +164,7 @@ $(document).ready(() => {
         {
             'fullname': 'Клюшанова Светлана Викторовна',
             'position': 'Заместитель начальника Управления образования администрации Конаковского района',
-            'phoneNumber': '4-97-95\n89806365915',
+            'phoneNumber': '-',
             'internalPhoneNumber': '509',
             'office': '408',
         },
