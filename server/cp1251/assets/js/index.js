@@ -5,8 +5,12 @@ $.extend($.expr[":"], {
     }
 });
 
-$(document).ready(() => {
+try {
+    var navigations = JSON.parse(navigations_str)
+}
+catch {}
 
+$(document).ready(() => {
     function showError(text) {
         $('.errorMessage').text(text)
         $('.errorMessage').addClass('errorMessage--show')
@@ -68,7 +72,6 @@ $(document).ready(() => {
                     let html = parts[0];
                     let hasNextData = parts[1];
 
-                    console.log(html);
                     $('div[align="justify"]').after(html);
                     curPage++;
 
@@ -929,6 +932,12 @@ $(document).ready(() => {
             'link': './contacts.php',
         },
     ]
+    
+    // На всякий
+    try {
+        navigations = JSON.parse(navigations_str)
+    }
+    catch {}
 
     // Заполняемость расширенного меню
     function fillExtendedMenu(name) {
@@ -979,6 +988,39 @@ $(document).ready(() => {
 
     }
     
+    // Заполнение первого уровня меню
+    function fillFirstLevel() {
+        var parent = $('.menuWrapper')
+        $('.menu_item').remove()
+        var main_item = $('<div>', {
+            class: 'menu_item menu_item--mainPage',
+        }).append($('<a>', {
+            href: 'http://www.uob-konakovo.ru',
+            text: 'Главная',
+        }))
+        parent.append(main_item)
+
+        navigations.map((item) => {
+            var menu_item =  $('<div>', {
+                class: `menu_item`,
+            })
+
+            if (item.link) {
+                menu_item.append($('<a>', {
+                    href: item.link,
+                    text: item.name
+                }))
+                menu_item.addClass('menu_item--mainPage')
+            }
+            else {
+                menu_item.text(item.name)
+            }
+
+            parent.append(menu_item)
+        })
+    }
+
+    fillFirstLevel()
 
     // Закрытие расширенного меню
     function closeExtendedMenu() {
@@ -989,7 +1031,7 @@ $(document).ready(() => {
 
 
     // Открытие расширенного меню и заполнение его
-    $('.menu_item:not(.menu_item--mainPage)').on('click', function() {
+    $(document).on('click', '.menu_item:not(.menu_item--mainPage)', function() {
         // Закрытие расширенного меню
         if ($(this).hasClass('menu_item--selected')) {
             closeExtendedMenu()
